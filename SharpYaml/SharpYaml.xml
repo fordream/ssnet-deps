@@ -1062,6 +1062,32 @@
               </li>
               </ul></remarks>
         </member>
+        <member name="T:SharpYaml.Serialization.ITagTypeResolver">
+            <summary>
+            Provides tag discovery from a type and type discovery from a tag.
+            </summary>
+        </member>
+        <member name="M:SharpYaml.Serialization.ITagTypeResolver.TypeFromTag(System.String)">
+            <summary>
+            Finds a type from a tag, null if not found.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+            <returns>A Type or null if not found</returns>
+        </member>
+        <member name="M:SharpYaml.Serialization.ITagTypeResolver.TagFromType(System.Type)">
+            <summary>
+            Finds a tag from a type, null if not found.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>A tag or null if not found</returns>
+        </member>
+        <member name="M:SharpYaml.Serialization.ITagTypeResolver.ResolveType(System.String)">
+            <summary>
+            Resolves a type from the specified typeName.
+            </summary>
+            <param name="typeName">Name of the type.</param>
+            <returns>Type found for this typeName</returns>
+        </member>
         <member name="T:SharpYaml.Serialization.ObjectContext">
             <summary>
             The object context used when serializing/deserializing an object instance. See remarks.
@@ -3049,27 +3075,6 @@
             Prodives tag discovery from a type and type discovery from a tag.
             </summary>
         </member>
-        <member name="M:SharpYaml.Serialization.ITagTypeRegistry.TypeFromTag(System.String)">
-            <summary>
-            Finds a type from a tag, null if not found.
-            </summary>
-            <param name="tagName">Name of the tag.</param>
-            <returns>A Type or null if not found</returns>
-        </member>
-        <member name="M:SharpYaml.Serialization.ITagTypeRegistry.TagFromType(System.Type)">
-            <summary>
-            Finds a tag from a type, null if not found.
-            </summary>
-            <param name="type">The type.</param>
-            <returns>A tag or null if not found</returns>
-        </member>
-        <member name="M:SharpYaml.Serialization.ITagTypeRegistry.ResolveType(System.String)">
-            <summary>
-            Resolves a type from the specified typeName.
-            </summary>
-            <param name="typeName">Name of the type.</param>
-            <returns>Type found for this typeName</returns>
-        </member>
         <member name="M:SharpYaml.Serialization.ITagTypeRegistry.RegisterAssembly(System.Reflection.Assembly,SharpYaml.Serialization.IAttributeRegistry)">
             <summary>
             Registers an assembly when trying to resolve types. All types
@@ -4649,7 +4654,7 @@
             </summary>
             <param name="input">The input.</param>
         </member>
-        <member name="M:SharpYaml.Serialization.YamlStream.Save(System.IO.TextWriter,System.Boolean)">
+        <member name="M:SharpYaml.Serialization.YamlStream.Save(System.IO.TextWriter,System.Boolean,System.Int32)">
             <summary>
             Saves the stream to the specified output.
             </summary>
