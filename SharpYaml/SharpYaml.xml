@@ -424,6 +424,11 @@
             Skips the current event and any "child" event.
             </summary>
         </member>
+        <member name="M:SharpYaml.EventReader.Skip(System.Int32)">
+            <summary>
+            Skips until we reach the appropriate depth again
+            </summary>
+        </member>
         <member name="M:SharpYaml.EventReader.EnsureNotAtEndOfStream">
             <summary>
             Throws an exception if Ensures the not at end of stream.
@@ -1036,6 +1041,22 @@
             </summary>
             <value>The style.</value>
         </member>
+        <member name="T:SharpYaml.IParser">
+            <summary>
+            Represents a YAML stream paser.
+            </summary>
+        </member>
+        <member name="M:SharpYaml.IParser.MoveNext">
+            <summary>
+            Moves to the next event.
+            </summary>
+            <returns>Returns true if there are more events available, otherwise returns false.</returns>
+        </member>
+        <member name="P:SharpYaml.IParser.Current">
+            <summary>
+            Gets the current event.
+            </summary>
+        </member>
         <member name="T:SharpYaml.Serialization.ChainedEventEmitter">
             <summary>
             Provided the base implementation for an IEventEmitter that is a
@@ -1416,22 +1437,6 @@
         <member name="P:SharpYaml.InsertionQueue`1.Count">
             <summary>
             Gets the number of items that are contained by the queue.
-            </summary>
-        </member>
-        <member name="T:SharpYaml.IParser">
-            <summary>
-            Represents a YAML stream paser.
-            </summary>
-        </member>
-        <member name="M:SharpYaml.IParser.MoveNext">
-            <summary>
-            Moves to the next event.
-            </summary>
-            <returns>Returns true if there are more events available, otherwise returns false.</returns>
-        </member>
-        <member name="P:SharpYaml.IParser.Current">
-            <summary>
-            Gets the current event.
             </summary>
         </member>
         <member name="T:SharpYaml.LookAheadBuffer">
@@ -2649,12 +2654,6 @@
             </summary>
             <value>The type of the element.</value>
         </member>
-        <member name="P:SharpYaml.Serialization.Descriptors.CollectionDescriptor.HasOnlyCapacity">
-            <summary>
-            Gets a value indicating whether the collection has only the capacity as a property defined.
-            </summary>
-            <value><c>true</c> if the collection has only the capacity as a property defined; otherwise, <c>false</c>.</value>
-        </member>
         <member name="P:SharpYaml.Serialization.Descriptors.CollectionDescriptor.IsPureCollection">
             <summary>
             Gets a value indicating whether this instance is a pure collection (no public property/field)
@@ -3450,7 +3449,7 @@
         </member>
         <member name="P:SharpYaml.Serialization.SerializerContext.Reader">
             <summary>
-            Gets the reader used while deserializing.
+            Gets or sets the reader used while deserializing.
             </summary>
             <value>The reader.</value>
         </member>
@@ -3460,6 +3459,14 @@
             </summary>
             <value>The object serializer backend.</value>
         </member>
+        <member name="P:SharpYaml.Serialization.SerializerContext.AllowErrors">
+            <summary>
+            Gets or sets a value indicating whether errors are allowed.
+            </summary>
+            <value>
+              <c>true</c> if errors are allowed; otherwise, <c>false</c>.
+            </value>
+        </member>
         <member name="P:SharpYaml.Serialization.SerializerContext.ObjectFactory">
             <summary>
             Gets or sets the type of the create.
@@ -3468,7 +3475,7 @@
         </member>
         <member name="P:SharpYaml.Serialization.SerializerContext.Writer">
             <summary>
-            Gets the writer used while deserializing.
+            Gets or sets the writer used while deserializing.
             </summary>
             <value>The writer.</value>
         </member>
