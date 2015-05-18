@@ -24,8 +24,14 @@
 *@
 @model SharpDoc.TemplateContext
 @using SharpDoc.Model
+@Import("TocBody")
 <iframe id='mainFrame' name = 'mainFrame' frameborder='0' scrolling='auto' width='100%' height='100%'></iframe>
 
 <script type="text/javascript" language="JavaScript">
     loadContent("@Model.RootTopic.PageId", "@Param.FileExt");
+    @foreach (var topic in @Model.EnumerateTopicAsyncLoad(Model.RootTopic))
+    {
+        @:$('@String.Format("{0}_SubTopics", topic.PageId)').load("@String.Format("html/{0}_toc{1}", topic.PageId, @Param.FileExt)");
+        @:$('@String.Format("{0}_SubTopics", topic.PageId)').get("load").onSuccess = function () { loadContent("@Model.RootTopic.PageId", "@Param.FileExt"); };
+    }
 </script>

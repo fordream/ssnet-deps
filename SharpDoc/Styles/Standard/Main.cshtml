@@ -45,8 +45,11 @@
 @*// Generates topics*@
 @Include("TopicBuilder")
 @*// Write root index.html (which is just a redirect)*@
+@Import("PageIndexBody")
 @{
-    Model.WriteTo(null, Parse("Root"));
+    NTopic indexTopic = new NTopic {PageId = "index"};
+    Model.Topic = indexTopic;
+    Model.WriteTo(null, @Helpers.PageIndexBody.Dump());
 }
 @*// Write topics*@
 @Include("MainTopic")

@@ -284,6 +284,9 @@ function hightLightTopic(topicId) {
     });
 
     var newHightlight = $_(topicId + '_toc');
+    if (newHightlight == null)
+        return;
+
     newHightlight.addClass('highlight');
     newHightlight.addClass('highlighting');
     openToc(topicId);

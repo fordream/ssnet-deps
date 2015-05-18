@@ -57,9 +57,26 @@
             var subTopics = topic.SubTopics;
 
             toc.AppendFormat("<div id='{0}_SubTopics' class='{1}'>", topic.PageId, visibility).AppendLine();
-            for(var i = 0; i < topic.SubTopics.Count; i++)
+            if (topic.AsyncLoad)
             {
-                AddTopicToToc(toc, subTopics[i], level +1);
+                toc.AppendFormat("<div id='{0}_load' style='padding-left: {1}em'><div class='icon'></div>Loading...<div style='clear: both'></div></div>", topic.PageId, level + 1).AppendLine();
+                
+                // Generate separate file for this toc subtree
+                var separateToc = new StringBuilder();
+
+                for (var i = 0; i < topic.SubTopics.Count; i++)
+                {
+                    AddTopicToToc(separateToc, subTopics[i], level + 1);
+                }
+                
+                Model.WriteTo(new NTopic() { PageId = string.Format("{0}_toc", topic.PageId) }, separateToc.ToString());
+            }
+            else
+            {
+                for (var i = 0; i < topic.SubTopics.Count; i++)
+                {
+                    AddTopicToToc(toc, subTopics[i], level + 1);
+                }
             }
             toc.Append("</div>").AppendLine();
         }
@@ -74,6 +91,25 @@
         AddTopicToToc(toc, rootTopic, 0);
         return toc.ToString();        
     }
+
+    public IEnumerable<NTopic> EnumerateTocAsyncLoad(NTopic topic)
+    {
+        if (topic.AsyncLoad)
+        {
+            yield return topic;
+        }
+        else
+        {
+            // Recurse only if no load async (we can support recursively later, but load needs to be inside onSuccess() callback of parent)
+            for (var i = 0; i < topic.SubTopics.Count; i++)
+            {
+                foreach (var subTopic in EnumerateTocAsyncLoad(topic.SubTopics[i]))
+                {
+                    yield return subTopic;
+                }
+            }
+        }
+    }
 }
 
 @helper Dump()
@@ -83,4 +119,8 @@
         @Include("SearchBox")
     }
     @Raw(DumpToc())
+}
+
+@{
+    Model.EnumerateTopicAsyncLoad = EnumerateTocAsyncLoad;
 }
