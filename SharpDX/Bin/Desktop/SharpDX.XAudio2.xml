@@ -300,7 +300,7 @@
             </summary>	
             <unmanaged>IXAudio2EngineCallback</unmanaged>
             <summary>	
-            <p>The <see cref="T:SharpDX.XAudio2.EngineCallback"/> interface contains methods that notify the client when certain events happen in the <strong><see cref="T:SharpDX.XAudio2.XAudio2"/></strong> engine.</p><p>This interface should be implemented by the XAudio2 client. XAudio2 calls these methods via an interface reference provided by the client, using the <strong><see cref="M:SharpDX.XAudio2.XAudio2Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)"/></strong> method. Methods in this interface return <strong>void</strong>, rather than an <see cref="T:SharpDX.Result"/>. 	
+            <p>The <see cref="T:SharpDX.XAudio2.EngineCallback"/> interface contains methods that notify the client when certain events happen in the <strong><see cref="T:SharpDX.XAudio2.XAudio2"/></strong> engine.</p><p>This interface should be implemented by the XAudio2 client. XAudio2 calls these methods via an interface reference provided by the client, using the <strong>XAudio2Create</strong> method. Methods in this interface return <strong>void</strong>, rather than an <see cref="T:SharpDX.Result"/>. 	
             </p><p>See XAudio2 Callbacks for restrictions on callback implementation.</p>	
             </summary>	
             <!-- Failed to insert some or all of included XML --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2EngineCallback']/*"/>	
@@ -562,6 +562,15 @@
             <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2fx_reverb_parameters</msdn-id>	
             <unmanaged>unsigned char RearDelay</unmanaged>	
             <unmanaged-short>unsigned char RearDelay</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.XAudio2.Fx.ReverbParameters.SideDelay">
+            <summary>	
+            <dd> <p>Position of the left input within the simulated space relative to the listener. With <em>PositionLeft</em> set to the minimum value, the left input is placed close to the listener. In this position, early reflections are dominant, and the reverb decay is set back in the sound field and reduced in amplitude. With <em>PositionLeft</em> set to the maximum value, the left input is placed at a maximum distance from the listener within the simulated room. <em>PositionLeft</em> does not affect the reverb decay time (liveness of the room), only the apparent position of the source relative to the listener. Permitted range is from 0 to 30 (no units).</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2FX_REVERB_PARAMETERS::SideDelay']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2fx_reverb_parameters</msdn-id>	
+            <unmanaged>unsigned char SideDelay</unmanaged>	
+            <unmanaged-short>unsigned char SideDelay</unmanaged-short>	
         </member>
         <member name="F:SharpDX.XAudio2.Fx.ReverbParameters.PositionLeft">
             <summary>	
@@ -1339,6 +1348,15 @@
             <unmanaged>XAUDIO2_FLAGS</unmanaged>	
             <unmanaged-short>XAUDIO2_FLAGS</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.XAudio2.XAudio2Flags.DebugEngine">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAUDIO2_DEBUG_ENGINE']/*"/>	
+            <msdn-id>ee419230</msdn-id>	
+            <unmanaged>XAUDIO2_DEBUG_ENGINE</unmanaged>	
+            <unmanaged-short>XAUDIO2_DEBUG_ENGINE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.XAudio2.XAudio2Flags.None">
             <summary>	
             None.	
@@ -1374,78 +1392,6 @@
             Functions	
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAudio2.XAudio2Functions']/*"/>	
-        </member>
-        <member name="M:SharpDX.XAudio2.XAudio2Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)">
-            <summary>	
-            <p>Creates a new <strong>XAudio2</strong> object and returns a reference to its <strong><see cref="T:SharpDX.XAudio2.XAudio2"/></strong> interface.</p>	
-            </summary>	
-            <param name="xAudio2Out">No documentation.</param>	
-            <param name="flags">No documentation.</param>	
-            <param name="xAudio2Processor">No documentation.</param>	
-            <returns><p>Returns <see cref="F:SharpDX.Result.Ok"/> if successful, an error code otherwise. See <strong>XAudio2 Error Codes</strong> for descriptions of XAudio2 specific error codes. </p></returns>	
-            <remarks>	
-            <p>The DirectX SDK versions of XAUDIO2 supported a flag <strong>XAUDIO2_DEBUG_ENGINE</strong> to select between the release and 'checked' version. This flag is not supported or defined in the Windows 8 version of XAUDIO2. </p><p><strong>Note</strong>??No versions of the DirectX SDK contain the xaudio2.lib import library. DirectX SDK versions use COM to create a new <strong>XAudio2</strong> object.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAudio2Create']/*"/>	
-            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2create</msdn-id>	
-            <unmanaged>HRESULT XAudio2Create([Out, Fast] IXAudio2** ppXAudio2,[In] unsigned int Flags,[In] unsigned int XAudio2Processor)</unmanaged>	
-            <unmanaged-short>XAudio2Create</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.XAudio2.XAudio2Functions.CreateAudioReverb(SharpDX.ComObject)">
-            <summary>	
-            <p>Creates a new reverb audio processing object (APO), and returns a reference to it.</p>	
-            </summary>	
-            <param name="apoOut"><dd> <p>Contains a reference to the reverb APO that is created.</p> </dd></param>	
-            <returns><p>If this function succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
-            <remarks>	
-            <p><strong>XAudio2CreateReverb</strong> creates an effect performing Princeton Digital Reverb. The XAPO effect library (XAPOFX) includes an alternate reverb effect. Use <strong>CreateFX</strong> to create this alternate effect. </p><p>The reverb APO supports has the following restrictions: </p><ul> <li>Input audio data must be FLOAT32. </li> <li>Framerate must be within XAUDIO2FX_REVERB_MIN_FRAMERATE (20,000 Hz) and XAUDIO2FX_REVERB_MAX_FRAMERATE (48,000 Hz). </li> <li>The input and output channels must be one of the following combinations.<ul> <li>Mono input and mono output </li> <li>Mono input and 5.1 output </li> <li>Stereo input and stereo output </li> <li>Stereo input and 5.1 output</li> </ul> </li> </ul>The reverb APO maintains internal state information between processing samples. You can only use an instance of the APO with one source of audio data at a time. Multiple voices that require reverb effects would each need to create a separate reverb effect with<strong>XAudio2CreateReverb</strong>.<p>For information about creating new effects for use with XAudio2, see the XAPO Overview. </p><table> <tr><th>Windows</th></tr> <tr><td> <p>Because <strong>XAudio2CreateReverb</strong> calls <strong>CoCreateInstance</strong> on Windows, the application must have called the <strong>CoInitializeEx</strong> method before calling <strong>XAudio2CreateReverb</strong>. <strong><see cref="M:SharpDX.XAudio2.XAudio2Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)"/></strong> has the same requirement, which means <strong>CoInitializeEx</strong> typically will be called long before <strong>XAudio2CreateReverb</strong> is called. </p> <p>A typical calling pattern on Windows would be as follows: </p>  <pre>#ifndef _XBOX	
-            CoInitializeEx(<c>null</c>, COINIT_MULTITHREADED);	
-            #endif	
-            <see cref="T:SharpDX.XAudio2.XAudio2"/>* pXAudio2 = <c>null</c>;	
-            <see cref="T:SharpDX.Result"/> hr;	
-            if ( FAILED(hr = <see cref="M:SharpDX.XAudio2.XAudio2Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)"/>( &amp;pXAudio2, 0, <see cref="F:SharpDX.XAudio2.ProcessorSpecifier.DefaultProcessor"/> ) ) ) return hr;	
-            ...	
-            <see cref="T:SharpDX.ComObject"/> * pReverbAPO;	
-            XAudio2CreateReverb(&amp;pReverbAPO);	
-            </pre>  </td></tr> </table><p>?</p><p>The xaudio2fx.h header defines the <strong>AudioReverb</strong> class <see cref="T:System.Guid"/> as   a cross-platform audio processing object (XAPO). </p><code> class __declspec(uuid("C2633B16-471B-4498-B8C5-4F0959E2EC09")) AudioReverb;	
-            </code><p><strong>XAudio2CreateReverb</strong> returns this object as a reference to a reference to <strong><see cref="T:SharpDX.ComObject"/></strong> in the <em>ppApo</em> parameter. Although you can query the <strong><see cref="T:SharpDX.XAPO.AudioProcessor"/></strong> and <strong><see cref="T:SharpDX.XAPO.ParameterProvider"/></strong> interfaces from this <strong><see cref="T:SharpDX.ComObject"/></strong>, you typically never use these interfaces directly. Instead, you use them when you create a voice to add them as part of the effects chain. </p><p>The reverb uses the <strong><see cref="T:SharpDX.XAudio2.Fx.ReverbParameters"/></strong> parameter structure that you access via the <strong><see cref="M:SharpDX.XAudio2.Voice.SetEffectParameters(System.Int32,System.IntPtr,System.Int32,System.Int32)"/></strong>. </p><p><strong>Note</strong>??<strong>XAudio2CreateReverb</strong> is an inline function in xaudio2fx.h that calls <strong>CreateAudioReverb</strong>: </p><code> XAUDIO2FX_STDAPI CreateAudioReverb(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo);	
-            __inline <see cref="T:SharpDX.Result"/> XAudio2CreateReverb(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo, UINT32 /*Flags*/ DEFAULT(0))	
-            { return CreateAudioReverb(ppApo);	
-            }	
-            </code>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateAudioReverb']/*"/>	
-            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2createreverb</msdn-id>	
-            <unmanaged>HRESULT CreateAudioReverb([Out, Fast] IUnknown** ppApo)</unmanaged>	
-            <unmanaged-short>CreateAudioReverb</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.XAudio2.XAudio2Functions.CreateAudioVolumeMeter(SharpDX.ComObject)">
-            <summary>	
-            <p>Creates a new volume meter audio processing object (APO) and returns a reference to it.</p>	
-            </summary>	
-            <param name="apoOut"><dd> <p>Contains the created volume meter APO.</p> </dd></param>	
-            <returns><p>If this function succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
-            <remarks>	
-            <p>For information on creating new effects for use with XAudio2, see the XAPO Overview.</p><table> <tr><th>Windows</th></tr> <tr><td> <p>Because <strong>XAudio2CreateVolumeMeter</strong> calls <strong>CoCreateInstance</strong> on Windows, the application must have called the <strong>CoInitializeEx</strong> method before calling <strong>XAudio2CreateVolumeMeter</strong>. <strong><see cref="M:SharpDX.XAudio2.XAudio2Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)"/></strong> has the same requirement, which means <strong>CoInitializeEx</strong> typically will be called long before <strong>XAudio2CreateVolumeMeter</strong> is called. </p> <p>A typical calling pattern on Windows would be as follows: </p>  <pre>#ifndef _XBOX	
-            CoInitializeEx(<c>null</c>, COINIT_MULTITHREADED);	
-            #endif	
-            <see cref="T:SharpDX.XAudio2.XAudio2"/>* pXAudio2 = <c>null</c>;	
-            <see cref="T:SharpDX.Result"/> hr;	
-            if ( FAILED(hr = <see cref="M:SharpDX.XAudio2.XAudio2Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)"/>( &amp;pXAudio2, 0, <see cref="F:SharpDX.XAudio2.ProcessorSpecifier.DefaultProcessor"/> ) ) ) return hr;	
-            ...	
-            <see cref="T:SharpDX.ComObject"/> * pVolumeMeterAPO;	
-            XAudio2CreateVolumeMeter(&amp;pVolumeMeterAPO);	
-            </pre>  </td></tr> </table><p>?</p><p>The xaudio2fx.h header defines the <strong>AudioVolumeMeter</strong> class <see cref="T:System.Guid"/> as   a cross-platform audio processing object (XAPO). </p><code> class __declspec(uuid("4FC3B166-972A-40CF-BC37-7DB03DB2FBA3")) AudioVolumeMeter;	
-            </code><p><strong>XAudio2CreateVolumeMeter</strong> returns this object as a reference to a reference to <strong><see cref="T:SharpDX.ComObject"/></strong> in the <em>ppApo</em> parameter. Although you can query the <strong><see cref="T:SharpDX.XAPO.AudioProcessor"/></strong> and <strong><see cref="T:SharpDX.XAPO.ParameterProvider"/></strong> interfaces from this <strong><see cref="T:SharpDX.ComObject"/></strong>, you typically never use these interfaces directly. Instead, you use them when you create a voice to add them as part of the effects chain. </p><p>The volume meter uses the <strong><see cref="T:SharpDX.XAudio2.Fx.VolumeMeterLevels"/></strong> parameter structure that you access via the <strong><see cref="M:SharpDX.XAudio2.Voice.GetEffectParameters(System.Int32,System.IntPtr,System.Int32)"/></strong> method when the XAPO is bound to the audio graph.</p><p><strong>Note</strong>??<strong>XAudio2CreateVolumeMeter</strong> is an inline function in xaudio2fx.h that calls <strong>CreateAudioVolumeMeter</strong>: </p><code> XAUDIO2FX_STDAPI CreateAudioVolumeMeter(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo);	
-            __inline <see cref="T:SharpDX.Result"/> XAudio2CreateVolumeMeter(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo, UINT32 /*Flags*/ DEFAULT(0))	
-            { return CreateAudioVolumeMeter(ppApo);	
-            }	
-            </code>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateAudioVolumeMeter']/*"/>	
-            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2createvolumemeter</msdn-id>	
-            <unmanaged>HRESULT CreateAudioVolumeMeter([Out, Fast] IUnknown** ppApo)</unmanaged>	
-            <unmanaged-short>CreateAudioVolumeMeter</unmanaged-short>	
         </member>
         <member name="T:SharpDX.XAudio2.Fx.Reverb">
             <summary>	
@@ -1813,11 +1759,11 @@
             <returns> a <see cref="T:SharpDX.XAPO.RegistrationProperties"/> structure containing the registration properties the XAPO was created with; use XAPOFree to free the structure.</returns>
             <unmanaged>HRESULT IXAPO::GetRegistrationProperties([Out] XAPO_REGISTRATION_PROPERTIES** ppRegistrationProperties)</unmanaged>
         </member>
-        <member name="M:SharpDX.XAPO.AudioProcessorParamNative`1.#ctor(System.IntPtr)">
+        <member name="M:SharpDX.XAPO.AudioProcessorParamNative`1.#ctor(SharpDX.XAudio2.XAudio2)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAPO.AudioProcessorParamNative`1"/> class.
             </summary>
-            <param name="basePtr">The base PTR.</param>
+            <param name="device">The device.</param>
         </member>
         <member name="M:SharpDX.XAPO.AudioProcessorParamNative`1.NativePointerUpdated(System.IntPtr)">
             <summary>
@@ -2049,12 +1995,12 @@
             <summary>Constant DefaultRoomSize.</summary>
             <unmanaged>XAUDIO2FX_REVERB_DEFAULT_ROOM_SIZE</unmanaged>
         </member>
-        <member name="M:SharpDX.XAudio2.Fx.Reverb.#ctor">
+        <member name="M:SharpDX.XAudio2.Fx.Reverb.#ctor(SharpDX.XAudio2.XAudio2)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAudio2.Fx.Reverb"/> class.
             </summary>
         </member>
-        <member name="M:SharpDX.XAudio2.Fx.Reverb.#ctor(System.Boolean)">
+        <member name="M:SharpDX.XAudio2.Fx.Reverb.#ctor(SharpDX.XAudio2.XAudio2,System.Boolean)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAudio2.Fx.Reverb"/> class.
             </summary>
@@ -2379,7 +2325,7 @@
             <param name="operationSet"><dd> <p>Identifies this call as part of a deferred batch. See the XAudio2 Operation Sets overview for more information.</p> </dd></param>	
             <returns><p>Returns <see cref="F:SharpDX.Result.Ok"/> if successful, an error code otherwise. See <strong>XAudio2 Error Codes</strong> for descriptions of error codes.</p></returns>	
             <remarks>	
-            <p>This method is valid only for source and submix voices, because mastering voices write directly to the device with no matrix mixing. </p><p>Volume levels are expressed as floating-point amplitude multipliers between -<see cref="F:SharpDX.XAudio2.XAudio2.MaximumVolumeLevel"/> and <see cref="F:SharpDX.XAudio2.XAudio2.MaximumVolumeLevel"/> (-224 to 224), with a maximum gain of 144.5 dB. A volume level of 1.0 means there is no attenuation or gain and 0 means silence. Negative levels can be used to invert the audio's phase. See XAudio2 Volume and Pitch Control for additional information on volume control. </p><p>The X3DAudio function <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong> can produce an output matrix for use with <strong>SetOutputMatrix</strong> based on a sound's position and a listener's position.</p><p><strong>Note</strong>??<strong><see cref="M:SharpDX.XAudio2.Voice.GetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[])"/></strong> always returns the levels most recently set by <strong><see cref="M:SharpDX.XAudio2.Voice.SetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[],System.Int32)"/></strong>. However, they may not actually be in effect yet: they only take effect the next time the audio engine runs after the <strong><see cref="M:SharpDX.XAudio2.Voice.SetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[],System.Int32)"/></strong> call (or after the corresponding <strong><see cref="M:SharpDX.XAudio2.XAudio2.CommitChanges(System.Int32)"/></strong> call, if <strong><see cref="M:SharpDX.XAudio2.Voice.SetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[],System.Int32)"/></strong> was called with a deferred operation ID).</p>	
+            <p>This method is valid only for source and submix voices, because mastering voices write directly to the device with no matrix mixing. </p><p>Volume levels are expressed as floating-point amplitude multipliers between -<see cref="F:SharpDX.XAudio2.XAudio2.MaximumVolumeLevel"/> and <see cref="F:SharpDX.XAudio2.XAudio2.MaximumVolumeLevel"/> (-224 to 224), with a maximum gain of 144.5 dB. A volume level of 1.0 means there is no attenuation or gain and 0 means silence. Negative levels can be used to invert the audio's phase. See XAudio2 Volume and Pitch Control for additional information on volume control. </p><p>The X3DAudio function <strong>X3DAudioCalculate</strong> can produce an output matrix for use with <strong>SetOutputMatrix</strong> based on a sound's position and a listener's position.</p><p><strong>Note</strong>??<strong><see cref="M:SharpDX.XAudio2.Voice.GetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[])"/></strong> always returns the levels most recently set by <strong><see cref="M:SharpDX.XAudio2.Voice.SetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[],System.Int32)"/></strong>. However, they may not actually be in effect yet: they only take effect the next time the audio engine runs after the <strong><see cref="M:SharpDX.XAudio2.Voice.SetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[],System.Int32)"/></strong> call (or after the corresponding <strong><see cref="M:SharpDX.XAudio2.XAudio2.CommitChanges(System.Int32)"/></strong> call, if <strong><see cref="M:SharpDX.XAudio2.Voice.SetOutputMatrix(SharpDX.XAudio2.Voice,System.Int32,System.Int32,System.Single[],System.Int32)"/></strong> was called with a deferred operation ID).</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2Voice::SetOutputMatrix']/*"/>	
             <msdn-id>microsoft.directx_sdk.ixaudio2voice.ixaudio2voice.setoutputmatrix</msdn-id>	
@@ -2604,7 +2550,7 @@
             <param name="channelmaskRef"><dd> <p> Returns the channel mask for this voice. This corresponds to the <strong>dwChannelMask</strong> member of the  <strong><see cref="T:SharpDX.Multimedia.WaveFormatExtensible"/></strong> structure. </p> </dd></param>	
             <returns><p>This method does not return a value.</p></returns>	
             <remarks>	
-            <p>The <em>pChannelMask</em> argument is a bit-mask of the various channels in the speaker geometry reported by the audio system. This information is needed for the <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)"/></strong> <em>SpeakerChannelMask</em> parameter. </p><p>The X3DAUDIO.H header declares a number of <strong>SPEAKER_</strong> positional defines to decode these channels masks. </p><p>Examples include: </p><pre><see cref="F:SharpDX.Multimedia.Speakers.Stereo"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2)  <see cref="F:SharpDX.Multimedia.Speakers.FivePointOne"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2) // | <see cref="F:SharpDX.Multimedia.Speakers.FrontCenter"/> (0x4) // | <see cref="F:SharpDX.Multimedia.Speakers.LowFrequency"/> (0x8) // | <see cref="F:SharpDX.Multimedia.Speakers.BackLeft"/> (0x10) | <see cref="F:SharpDX.Multimedia.Speakers.BackRight"/> (0x20)</pre><p><strong>Note</strong>??For the DirectX SDK versions of XAUDIO, the channel mask for the output device was obtained via the <strong>IXAudio2::GetDeviceDetails</strong> method, which doesn't exist in Windows?8 and later.</p>	
+            <p>The <em>pChannelMask</em> argument is a bit-mask of the various channels in the speaker geometry reported by the audio system. This information is needed for the <strong>X3DAudioInitialize</strong> <em>SpeakerChannelMask</em> parameter. </p><p>The X3DAUDIO.H header declares a number of <strong>SPEAKER_</strong> positional defines to decode these channels masks. </p><p>Examples include: </p><pre><see cref="F:SharpDX.Multimedia.Speakers.Stereo"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2)  <see cref="F:SharpDX.Multimedia.Speakers.FivePointOne"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2) // | <see cref="F:SharpDX.Multimedia.Speakers.FrontCenter"/> (0x4) // | <see cref="F:SharpDX.Multimedia.Speakers.LowFrequency"/> (0x8) // | <see cref="F:SharpDX.Multimedia.Speakers.BackLeft"/> (0x10) | <see cref="F:SharpDX.Multimedia.Speakers.BackRight"/> (0x20)</pre><p><strong>Note</strong>??For the DirectX SDK versions of XAUDIO, the channel mask for the output device was obtained via the <strong>IXAudio2::GetDeviceDetails</strong> method, which doesn't exist in Windows?8 and later.</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2MasteringVoice::GetChannelMask']/*"/>	
             <msdn-id>microsoft.directx_sdk.ixaudio2masteringvoice.ixaudio2masteringvoice.getchannelmask</msdn-id>	
@@ -2646,7 +2592,7 @@
             <p>Returns the channel mask for this voice. (Only valid for XAudio 2.8, returns 0 otherwise)</p>	
             </summary>	
             <remarks>	
-            <p>The <em>pChannelMask</em> argument is a bit-mask of the various channels in the speaker geometry reported by the audio system. This information is needed for the <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)"/></strong> <em>SpeakerChannelMask</em> parameter. </p><p>The X3DAUDIO.H header declares a number of <strong>SPEAKER_</strong> positional defines to decode these channels masks. </p><p>Examples include: </p><pre><see cref="F:SharpDX.Multimedia.Speakers.Stereo"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2)  <see cref="F:SharpDX.Multimedia.Speakers.FivePointOne"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2) // | <see cref="F:SharpDX.Multimedia.Speakers.FrontCenter"/> (0x4) // | <see cref="F:SharpDX.Multimedia.Speakers.LowFrequency"/> (0x8) // | <see cref="F:SharpDX.Multimedia.Speakers.BackLeft"/> (0x10) | <see cref="F:SharpDX.Multimedia.Speakers.BackRight"/> (0x20)</pre><p><strong>Note</strong>??For the DirectX SDK versions of XAUDIO, the channel mask for the output device was obtained via the <strong>IXAudio2::GetDeviceDetails</strong> method, which doesn't exist in Windows?8 and later.</p>	
+            <p>The <em>pChannelMask</em> argument is a bit-mask of the various channels in the speaker geometry reported by the audio system. This information is needed for the <strong><see cref="!:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize"/></strong> <em>SpeakerChannelMask</em> parameter. </p><p>The X3DAUDIO.H header declares a number of <strong>SPEAKER_</strong> positional defines to decode these channels masks. </p><p>Examples include: </p><pre><see cref="F:SharpDX.Multimedia.Speakers.Stereo"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2)  <see cref="F:SharpDX.Multimedia.Speakers.FivePointOne"/> // <see cref="F:SharpDX.Multimedia.Speakers.FrontLeft"/> (0x1) | <see cref="F:SharpDX.Multimedia.Speakers.FrontRight"/> (0x2) // | <see cref="F:SharpDX.Multimedia.Speakers.FrontCenter"/> (0x4) // | <see cref="F:SharpDX.Multimedia.Speakers.LowFrequency"/> (0x8) // | <see cref="F:SharpDX.Multimedia.Speakers.BackLeft"/> (0x10) | <see cref="F:SharpDX.Multimedia.Speakers.BackRight"/> (0x20)</pre><p><strong>Note</strong>??For the DirectX SDK versions of XAUDIO, the channel mask for the output device was obtained via the <strong>IXAudio2::GetDeviceDetails</strong> method, which doesn't exist in Windows?8 and later.</p>	
             </remarks>	
             <!-- Failed to insert some or all of included XML --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IXAudio2MasteringVoice::GetChannelMask']/*"/>	
             <msdn-id>microsoft.directx_sdk.ixaudio2masteringvoice.ixaudio2masteringvoice.getchannelmask</msdn-id>	
@@ -3440,6 +3386,7 @@
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAudio2.XAudio2"/> class.
             </summary>
+            <param name="requestedVersion">The requested version.</param>
         </member>
         <member name="M:SharpDX.XAudio2.XAudio2.#ctor(SharpDX.XAudio2.XAudio2Flags,SharpDX.XAudio2.ProcessorSpecifier,SharpDX.XAudio2.XAudio2Version)">
             <summary>
@@ -3447,8 +3394,8 @@
             </summary>
             <param name="flags">Specify a Debug or Normal XAudio2 instance.</param>
             <param name="processorSpecifier">The processor specifier.</param>
-            <param name="version">The version to use (auto, 2.7 or 2.8).</param>
-            <exception cref="T:System.InvalidOperationException">XAudio2 version [ + version + ] is not installed</exception>
+            <param name="requestedVersion">The requestedVersion to use (auto, 2.7 or 2.8).</param>
+            <exception cref="T:System.InvalidOperationException">XAudio2 requestedVersion [ + requestedVersion + ] is not installed</exception>
         </member>
         <member name="M:SharpDX.XAudio2.XAudio2.SetupVtblFor27">
             <summary>
@@ -3556,9 +3503,9 @@
         </member>
         <member name="P:SharpDX.XAudio2.XAudio2.Version">
             <summary>
-            Gets the version of this XAudio2 instance, once a <see cref="T:SharpDX.XAudio2.XAudio2"/> device has been instanciated.
+            Gets the requestedVersion of this XAudio2 instance, once a <see cref="T:SharpDX.XAudio2.XAudio2"/> device has been instanciated.
             </summary>
-            <value>The version.</value>
+            <value>The requestedVersion.</value>
         </member>
         <member name="P:SharpDX.XAudio2.XAudio2.DeviceCount">
             <summary>	
@@ -4128,100 +4075,105 @@
             <unmanaged>X3DAUDIO_CALCULATE_REDIRECT_TO_LFE</unmanaged>	
             <unmanaged-short>X3DAUDIO_CALCULATE_REDIRECT_TO_LFE</unmanaged-short>	
         </member>
-        <member name="T:SharpDX.X3DAudio.X3DAudio">
+        <member name="T:SharpDX.XAPO.Fx.XAPOFx">
             <summary>	
             Functions	
             </summary>	
-            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.X3DAudio.X3DAudio']/*"/>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAPO.Fx.XAPOFx']/*"/>	
+            <summary>	
+            Functions	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAPO.Fx.XAPOFx']/*"/>	
         </member>
-        <member name="F:SharpDX.X3DAudio.X3DAudio.SpeedOfSound">
-            <summary>
-            Speed of sound in the air.
-            </summary>
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXEcho_15">
+            <summary>Constant None.</summary>
         </member>
-        <member name="F:SharpDX.X3DAudio.X3DAudio.PI">
-            <summary>
-            Represents the ratio of the circumference of a circle to its diameter.
-            </summary>
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXEQ_15">
+            <summary>Constant None.</summary>
         </member>
-        <member name="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)">
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXMasteringLimiter_15">
+            <summary>Constant None.</summary>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXReverb_15">
+            <summary>Constant None.</summary>
+        </member>
+        <member name="T:SharpDX.X3DAudio.X3DAudio17">
+            <summary>	
+            Functions	
+            </summary>	
+            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.X3DAudio.X3DAudio']/*"/>	
+        </member>
+        <member name="M:SharpDX.X3DAudio.X3DAudio17.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)">
             <summary>	
             <p>Calculates DSP settings with respect to 3D parameters.</p>	
             </summary>	
-            <param name="instance"><dd> <p>3D audio instance handle. Call <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)"/></strong> to get this handle.</p> </dd></param>	
+            <param name="instance"><dd> <p>3D audio instance handle. Call <strong><see cref="!:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize"/></strong> to get this handle.</p> </dd></param>	
             <param name="listenerRef"><dd> <p>Pointer to an <strong><see cref="T:SharpDX.X3DAudio.Listener"/></strong> representing the point of reception.</p> </dd></param>	
             <param name="emitterRef"><dd> <p>Pointer to an <strong><see cref="T:SharpDX.X3DAudio.Emitter"/></strong> representing the sound source.</p> </dd></param>	
             <param name="flags"><dd> <table> <tr><th>Value</th><th>Description</th></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Matrix"/></td><td>Enables matrix coefficient table calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Delay"/></td><td>Enables delay time array calculation (stereo only).?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.LpfDirect"/></td><td>Enables low pass filter (LPF) direct-path coefficient calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.LpfReverb"/></td><td>Enables LPF reverb-path coefficient calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Reverb"/></td><td>Enables reverb send level calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Doppler"/></td><td>Enables Doppler shift factor calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.EmitterAngle"/></td><td>Enables emitter-to-listener interior angle calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.ZeroCenter"/></td><td>Fills the center channel with silence. This flag allows you to keep a 6-channel matrix so you do not have to remap the channels,  but the center channel will be silent.  This flag is only valid if you also set <see cref="F:SharpDX.X3DAudio.CalculateFlags.Matrix"/>.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.RedirectToLfe"/></td><td> Applies an equal mix of all source channels to a low frequency effect (LFE) destination channel. It only applies to matrix calculations with a source that does not have an LFE channel and a destination that does have an LFE channel.  This flag is only valid  if you also set <see cref="F:SharpDX.X3DAudio.CalculateFlags.Matrix"/>.?</td></tr> </table> <p>?</p> </dd></param>	
             <param name="dSPSettingsRef"><dd> <p>Pointer to an <strong><see cref="T:SharpDX.X3DAudio.DspSettings"/></strong> structure that receives the calculation results.</p> </dd></param>	
             <remarks>	
-            <p>You typically call <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong> once for each pair of emitting objects and listeners in the scene. After each call, to apply the 3D effects, the app manually applies the calculation results at <em>pDSPSettings</em> to the XAUDIO2 graph. For more info, see How to: Integrate X3DAudio with XAudio2.</p><p><strong>Important</strong>?? The listener and emitter values must be valid. Floating-point specials (NaN, QNaN, +INF, -INF) can cause the entire audio output to go silent if introduced into a running audio graph.</p>	
+            <p>You typically call <strong><see cref="!:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate"/></strong> once for each pair of emitting objects and listeners in the scene. After each call, to apply the 3D effects, the app manually applies the calculation results at <em>pDSPSettings</em> to the XAUDIO2 graph. For more info, see How to: Integrate X3DAudio with XAudio2.</p><p><strong>Important</strong>?? The listener and emitter values must be valid. Floating-point specials (NaN, QNaN, +INF, -INF) can cause the entire audio output to go silent if introduced into a running audio graph.</p>	
             </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioCalculate']/*"/>	
+            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioCalculate']/*"/>	
             <msdn-id>microsoft.directx_sdk.x3daudio.x3daudiocalculate</msdn-id>	
             <unmanaged>void X3DAudioCalculate([In] const X3DAUDIOHANDLE* Instance,[In] const X3DAUDIO_LISTENER* pListener,[In] const X3DAUDIO_EMITTER* pEmitter,[In] X3DAudioCalculateFlags Flags,[In] void* pDSPSettings)</unmanaged>	
             <unmanaged-short>X3DAudioCalculate</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)">
+        <member name="M:SharpDX.X3DAudio.X3DAudio17.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)">
             <summary>	
             <p>Sets all global 3D audio constants.</p>	
             </summary>	
             <param name="speakerChannelMask"><dd> <p>Assignment of channels to speaker positions. This value must not be zero. The only permissible value on Xbox 360 is SPEAKER_XBOX.</p> </dd></param>	
             <param name="speedOfSound"><dd> <p>Speed of sound, in user-defined world units per second. Use this value only for doppler calculations. It must be greater than or equal to FLT_MIN.</p> </dd></param>	
-            <param name="instance"><dd> <p>3D audio instance handle. Use this handle when you call <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong>.</p> </dd></param>	
+            <param name="instance"><dd> <p>3D audio instance handle. Use this handle when you call <strong><see cref="!:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate"/></strong>.</p> </dd></param>	
             <returns><p>This function does not return a value.</p></returns>	
             <remarks>	
             <p><strong>X3DAUDIO_HANDLE</strong> is an opaque data structure. Because the operating system doesn't allocate any additional storage for the 3D audio instance handle, you don't need to free or close it.</p>	
             </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioInitialize']/*"/>	
+            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioInitialize']/*"/>	
             <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>	
             <unmanaged>HRESULT X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
             <unmanaged-short>X3DAudioInitialize</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.X3DAudio.X3DAudio.#ctor(SharpDX.Multimedia.Speakers)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.X3DAudio.X3DAudio"/> class.
-            </summary>
-            <param name="speakers">The speakers config.</param>
-            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>	
-            <unmanaged>void X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
-            <unmanaged-short>X3DAudioInitialize</unmanaged-short>	
+        <member name="T:SharpDX.X3DAudio.X3DAudio28">
+            <summary>	
+            Functions	
+            </summary>	
+            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.X3DAudio.X3DAudio']/*"/>	
         </member>
-        <member name="M:SharpDX.X3DAudio.X3DAudio.#ctor(SharpDX.Multimedia.Speakers,System.Single)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.X3DAudio.X3DAudio"/> class.
-            </summary>
-            <param name="speakers">The speakers config.</param>
-            <param name="speedOfSound">The speed of sound.</param>
-            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>	
-            <unmanaged>void X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
-            <unmanaged-short>X3DAudioInitialize</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.X3DAudio.X3DAudio.Calculate(SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.Int32,System.Int32)">
-            <summary>
-            Calculates DSP settings for the specified listener and emitter.
-            </summary>
-            <param name="listener">The listener.</param>
-            <param name="emitter">The emitter.</param>
-            <param name="flags">The flags.</param>
-            <param name="sourceChannelCount">The source channel count.</param>
-            <param name="destinationChannelCount">The destination channel count.</param>
-            <returns>DSP settings</returns>
-            <msdn-id>ee419052</msdn-id>	
+        <member name="M:SharpDX.X3DAudio.X3DAudio28.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)">
+            <summary>	
+            <p>Calculates DSP settings with respect to 3D parameters.</p>	
+            </summary>	
+            <param name="instance"><dd> <p>3D audio instance handle. Call <strong><see cref="!:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize"/></strong> to get this handle.</p> </dd></param>	
+            <param name="listenerRef"><dd> <p>Pointer to an <strong><see cref="T:SharpDX.X3DAudio.Listener"/></strong> representing the point of reception.</p> </dd></param>	
+            <param name="emitterRef"><dd> <p>Pointer to an <strong><see cref="T:SharpDX.X3DAudio.Emitter"/></strong> representing the sound source.</p> </dd></param>	
+            <param name="flags"><dd> <table> <tr><th>Value</th><th>Description</th></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Matrix"/></td><td>Enables matrix coefficient table calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Delay"/></td><td>Enables delay time array calculation (stereo only).?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.LpfDirect"/></td><td>Enables low pass filter (LPF) direct-path coefficient calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.LpfReverb"/></td><td>Enables LPF reverb-path coefficient calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Reverb"/></td><td>Enables reverb send level calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.Doppler"/></td><td>Enables Doppler shift factor calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.EmitterAngle"/></td><td>Enables emitter-to-listener interior angle calculation.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.ZeroCenter"/></td><td>Fills the center channel with silence. This flag allows you to keep a 6-channel matrix so you do not have to remap the channels,  but the center channel will be silent.  This flag is only valid if you also set <see cref="F:SharpDX.X3DAudio.CalculateFlags.Matrix"/>.?</td></tr> <tr><td><see cref="F:SharpDX.X3DAudio.CalculateFlags.RedirectToLfe"/></td><td> Applies an equal mix of all source channels to a low frequency effect (LFE) destination channel. It only applies to matrix calculations with a source that does not have an LFE channel and a destination that does have an LFE channel.  This flag is only valid  if you also set <see cref="F:SharpDX.X3DAudio.CalculateFlags.Matrix"/>.?</td></tr> </table> <p>?</p> </dd></param>	
+            <param name="dSPSettingsRef"><dd> <p>Pointer to an <strong><see cref="T:SharpDX.X3DAudio.DspSettings"/></strong> structure that receives the calculation results.</p> </dd></param>	
+            <remarks>	
+            <p>You typically call <strong><see cref="!:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate"/></strong> once for each pair of emitting objects and listeners in the scene. After each call, to apply the 3D effects, the app manually applies the calculation results at <em>pDSPSettings</em> to the XAUDIO2 graph. For more info, see How to: Integrate X3DAudio with XAudio2.</p><p><strong>Important</strong>?? The listener and emitter values must be valid. Floating-point specials (NaN, QNaN, +INF, -INF) can cause the entire audio output to go silent if introduced into a running audio graph.</p>	
+            </remarks>	
+            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioCalculate']/*"/>	
+            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudiocalculate</msdn-id>	
             <unmanaged>void X3DAudioCalculate([In] const X3DAUDIOHANDLE* Instance,[In] const X3DAUDIO_LISTENER* pListener,[In] const X3DAUDIO_EMITTER* pEmitter,[In] X3DAudioCalculateFlags Flags,[In] void* pDSPSettings)</unmanaged>	
             <unmanaged-short>X3DAudioCalculate</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.X3DAudio.X3DAudio.Calculate(SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,SharpDX.X3DAudio.DspSettings)">
-            <summary>
-            Calculates DSP settings for the specified listener and emitter. See remarks.
-            </summary>
-            <param name="listener">The listener.</param>
-            <param name="emitter">The emitter.</param>
-            <param name="flags">The flags.</param>
-            <param name="settings">The settings.</param>
-            <remarks>The source and destination channel count must be set on <see cref="T:SharpDX.X3DAudio.DspSettings"/> before calling this method.</remarks>
-            <msdn-id>ee419052</msdn-id>	
-            <unmanaged>void X3DAudioCalculate([In] const X3DAUDIOHANDLE* Instance,[In] const X3DAUDIO_LISTENER* pListener,[In] const X3DAUDIO_EMITTER* pEmitter,[In] X3DAudioCalculateFlags Flags,[In] void* pDSPSettings)</unmanaged>	
-            <unmanaged-short>X3DAudioCalculate</unmanaged-short>	
+        <member name="M:SharpDX.X3DAudio.X3DAudio28.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)">
+            <summary>	
+            <p>Sets all global 3D audio constants.</p>	
+            </summary>	
+            <param name="speakerChannelMask"><dd> <p>Assignment of channels to speaker positions. This value must not be zero. The only permissible value on Xbox 360 is SPEAKER_XBOX.</p> </dd></param>	
+            <param name="speedOfSound"><dd> <p>Speed of sound, in user-defined world units per second. Use this value only for doppler calculations. It must be greater than or equal to FLT_MIN.</p> </dd></param>	
+            <param name="instance"><dd> <p>3D audio instance handle. Use this handle when you call <strong><see cref="!:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate"/></strong>.</p> </dd></param>	
+            <returns><p>This function does not return a value.</p></returns>	
+            <remarks>	
+            <p><strong>X3DAUDIO_HANDLE</strong> is an opaque data structure. Because the operating system doesn't allocate any additional storage for the 3D audio instance handle, you don't need to free or close it.</p>	
+            </remarks>	
+            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioInitialize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>	
+            <unmanaged>HRESULT X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
+            <unmanaged-short>X3DAudioInitialize</unmanaged-short>	
         </member>
         <member name="T:SharpDX.X3DAudio.Cone">
             <summary>	
@@ -4364,10 +4316,10 @@
         </member>
         <member name="T:SharpDX.X3DAudio.DspSettings">
             <summary>	
-            <p>Receives the results from a call to <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong>.</p>	
+            <p>Receives the results from a call to <strong>X3DAudioCalculate</strong>.</p>	
             </summary>	
             <remarks>	
-            <p>The following members must be initialized before passing this structure to the <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong> function: </p><ul> <li><strong>pMatrixCoefficients </strong></li> <li><strong>pDelayTimes</strong></li> <li><strong>SrcChannelCount </strong></li> <li><strong>DstChannelCount</strong></li> </ul><p>The following members are returned by passing this structure to the <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong> function:</p><ul> <li><strong>pMatrixCoefficients </strong></li> <li><strong>pDelayTimes </strong></li> <li><strong>LPFDirectCoefficient </strong></li> <li><strong>LPFReverbCoefficient</strong></li> <li><strong>ReverbLevel </strong></li> <li><strong>DopplerFactor </strong></li> <li><strong>EmitterToListenerAngle</strong></li> <li><strong>EmitterToListenerDistance </strong></li> <li><strong>EmitterVelocityComponent </strong></li> <li><strong>ListenerVelocityComponent</strong></li> </ul><p><strong>Note</strong>??For <strong>pMatrixCoefficients</strong> and <strong>pDelayTimes</strong>, <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong> does not allocate additional memory. <strong><see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/></strong> merely modifies the values at the memory locations allocated for these references.</p>	
+            <p>The following members must be initialized before passing this structure to the <strong>X3DAudioCalculate</strong> function: </p><ul> <li><strong>pMatrixCoefficients </strong></li> <li><strong>pDelayTimes</strong></li> <li><strong>SrcChannelCount </strong></li> <li><strong>DstChannelCount</strong></li> </ul><p>The following members are returned by passing this structure to the <strong>X3DAudioCalculate</strong> function:</p><ul> <li><strong>pMatrixCoefficients </strong></li> <li><strong>pDelayTimes </strong></li> <li><strong>LPFDirectCoefficient </strong></li> <li><strong>LPFReverbCoefficient</strong></li> <li><strong>ReverbLevel </strong></li> <li><strong>DopplerFactor </strong></li> <li><strong>EmitterToListenerAngle</strong></li> <li><strong>EmitterToListenerDistance </strong></li> <li><strong>EmitterVelocityComponent </strong></li> <li><strong>ListenerVelocityComponent</strong></li> </ul><p><strong>Note</strong>??For <strong>pMatrixCoefficients</strong> and <strong>pDelayTimes</strong>, <strong>X3DAudioCalculate</strong> does not allocate additional memory. <strong>X3DAudioCalculate</strong> merely modifies the values at the memory locations allocated for these references.</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAUDIO_DSP_SETTINGS']/*"/>	
             <msdn-id>microsoft.directx_sdk.x3daudio.x3daudio_dsp_settings</msdn-id>	
@@ -4907,7 +4859,7 @@
             <summary>Constant DefaultFeedback.</summary>
             <unmanaged>FXECHO_DEFAULT_FEEDBACK</unmanaged>
         </member>
-        <member name="M:SharpDX.XAPO.Fx.Echo.#ctor">
+        <member name="M:SharpDX.XAPO.Fx.Echo.#ctor(SharpDX.XAudio2.XAudio2)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAPO.Fx.Echo"/> class.
             </summary>
@@ -4977,7 +4929,7 @@
             <summary>Constant MinimumFrequencyCenter.</summary>
             <unmanaged>FXEQ_MIN_FREQUENCY_CENTER</unmanaged>
         </member>
-        <member name="M:SharpDX.XAPO.Fx.Equalizer.#ctor">
+        <member name="M:SharpDX.XAPO.Fx.Equalizer.#ctor(SharpDX.XAudio2.XAudio2)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAPO.Fx.Equalizer"/> class.
             </summary>
@@ -5015,7 +4967,7 @@
             <summary>Constant DefaultRelease.</summary>
             <unmanaged>FXMASTERINGLIMITER_DEFAULT_RELEASE</unmanaged>
         </member>
-        <member name="M:SharpDX.XAPO.Fx.MasteringLimiter.#ctor">
+        <member name="M:SharpDX.XAPO.Fx.MasteringLimiter.#ctor(SharpDX.XAudio2.XAudio2)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAPO.Fx.MasteringLimiter"/> class.
             </summary>
@@ -5053,46 +5005,10 @@
             <summary>Constant DefaultDiffusion.</summary>
             <unmanaged>FXREVERB_DEFAULT_DIFFUSION</unmanaged>
         </member>
-        <member name="M:SharpDX.XAPO.Fx.Reverb.#ctor">
+        <member name="M:SharpDX.XAPO.Fx.Reverb.#ctor(SharpDX.XAudio2.XAudio2)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAPO.Fx.Reverb"/> class.
             </summary>
-        </member>
-        <member name="T:SharpDX.XAPO.Fx.XAPOFx">
-            <summary>	
-            Functions	
-            </summary>	
-            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAPO.Fx.XAPOFx']/*"/>	
-        </member>
-        <member name="M:SharpDX.XAPO.Fx.XAPOFx.CreateFX(System.Guid,SharpDX.ComObject,System.IntPtr,System.Int32)">
-            <summary>	
-            <p>Creates an instance of the requested XAPOFX effect.</p>	
-            </summary>	
-            <param name="clsid">No documentation.</param>	
-            <param name="effectRef">No documentation.</param>	
-            <param name="initDataRef">No documentation.</param>	
-            <param name="initDataByteSize">No documentation.</param>	
-            <returns><p>If this function succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
-            <remarks>	
-            <p>The created XAPO will have a reference count of 1. Client code must call <strong>IUnknown::Release</strong> after passing the XAPO to XAudio2 to allow XAudio2 to dispose of the XAPO when it is no longer needed. Use <strong> <see cref="M:SharpDX.XAudio2.XAudio2.CreateSourceVoice_(SharpDX.XAudio2.SourceVoice,System.IntPtr,SharpDX.XAudio2.VoiceFlags,System.Single,System.IntPtr,System.Nullable{SharpDX.XAudio2.VoiceSendDescriptors},System.Nullable{SharpDX.XAudio2.EffectChain})"/></strong> or <strong><see cref="M:SharpDX.XAudio2.Voice.SetEffectChain(System.Nullable{SharpDX.XAudio2.EffectChain})"/></strong> to pass an XAPO to XAudio2. </p><p><strong>Note</strong>??The DirectX SDK version of this function doesn't have the <em>pInitData</em> or <em>InitDataByteSize</em> parameters as it only takes the first 2 parameters. To set initial parameters for the XAPOFX effect that is  created with the DirectX SDK version of this function, you must bind that effect to a voice and use <strong><see cref="M:SharpDX.XAudio2.Voice.SetEffectParameters(System.Int32,System.IntPtr,System.Int32,System.Int32)"/></strong>.	
-            For info about how to do this, see How to: Use XAPOFX in XAudio2.</p>	
-            </remarks>	
-            <!-- Failed to insert some or all of included XML --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateFX']/*"/>	
-            <msdn-id>hh405044</msdn-id>	
-            <unmanaged>HRESULT CreateFX([In] const GUID&amp; clsid,[Out, Fast] IUnknown** pEffect,[In, Buffer, Optional] const void* pInitData,[In] unsigned int InitDataByteSize)</unmanaged>	
-            <unmanaged-short>CreateFX</unmanaged-short>	
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXEcho_15">
-            <summary>Constant None.</summary>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXEQ_15">
-            <summary>Constant None.</summary>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXMasteringLimiter_15">
-            <summary>Constant None.</summary>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.XAPOFx.CLSID_FXReverb_15">
-            <summary>Constant None.</summary>
         </member>
         <member name="T:SharpDX.XAPO.Fx.EchoInitdata">
             <summary>	
@@ -5582,6 +5498,109 @@
             <unmanaged>unsigned int MaxOutputBufferCount</unmanaged>	
             <unmanaged-short>unsigned int MaxOutputBufferCount</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.X3DAudio.X3DAudioVersion">
+            <summary>
+            An enum to select the XAudio version to load.
+            </summary>
+        </member>
+        <member name="F:SharpDX.X3DAudio.X3DAudioVersion.Default">
+            <summary>
+            The default version (X3DAudio1_7.dll if it is installed, otherwise XAudio2_8.dll or from XAudio2_9.dll)
+            </summary>
+        </member>
+        <member name="F:SharpDX.X3DAudio.X3DAudioVersion.Version17">
+            <summary>
+            The X3DAudio1.7 version (X3DAudio1_7.dll).
+            </summary>
+        </member>
+        <member name="F:SharpDX.X3DAudio.X3DAudioVersion.Version28">
+            <summary>
+            From the XAudio2.8 version (XAudio2_8.dll).
+            </summary>
+        </member>
+        <member name="F:SharpDX.X3DAudio.X3DAudioVersion.Version29">
+            <summary>
+            From the XAudio2.9 version (XAudio2_9.dll).
+            </summary>
+        </member>
+        <member name="T:SharpDX.XAudio2.XAudio28Functions">
+            <summary>	
+            Functions	
+            </summary>	
+            <!-- Failed to insert some or all of included XML --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAudio2.XAudio2Functions']/*"/>	
+        </member>
+        <member name="M:SharpDX.XAudio2.XAudio28Functions.XAudio2Create(SharpDX.XAudio2.XAudio2,System.Int32,System.Int32)">
+            <summary>	
+            <p>Creates a new <strong>XAudio2</strong> object and returns a reference to its <strong><see cref="T:SharpDX.XAudio2.XAudio2"/></strong> interface.</p>	
+            </summary>	
+            <param name="xAudio2Out">No documentation.</param>	
+            <param name="flags">No documentation.</param>	
+            <param name="xAudio2Processor">No documentation.</param>	
+            <returns><p>Returns <see cref="F:SharpDX.Result.Ok"/> if successful, an error code otherwise. See <strong>XAudio2 Error Codes</strong> for descriptions of XAudio2 specific error codes. </p></returns>	
+            <remarks>	
+            <p>The DirectX SDK versions of XAUDIO2 supported a flag <strong><see cref="F:SharpDX.XAudio2.XAudio2Flags.DebugEngine"/></strong> to select between the release and 'checked' version. This flag is not supported or defined in the Windows 8 version of XAUDIO2. </p><p><strong>Note</strong>??No versions of the DirectX SDK contain the xaudio2.lib import library. DirectX SDK versions use COM to create a new <strong>XAudio2</strong> object.</p>	
+            </remarks>	
+            <!-- Failed to insert some or all of included XML --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='XAudio2Create']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2create</msdn-id>	
+            <unmanaged>HRESULT XAudio2Create([Out, Fast] IXAudio2** ppXAudio2,[In] unsigned int Flags,[In] unsigned int XAudio2Processor)</unmanaged>	
+            <unmanaged-short>XAudio2Create</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.XAudio2.XAudio28Functions.CreateAudioReverb(SharpDX.ComObject)">
+            <summary>	
+            <p>Creates a new reverb audio processing object (APO), and returns a reference to it.</p>	
+            </summary>	
+            <param name="apoOut"><dd> <p>Contains a reference to the reverb APO that is created.</p> </dd></param>	
+            <returns><p>If this function succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <remarks>	
+            <p><strong>XAudio2CreateReverb</strong> creates an effect performing Princeton Digital Reverb. The XAPO effect library (XAPOFX) includes an alternate reverb effect. Use <strong>CreateFX</strong> to create this alternate effect. </p><p>The reverb APO supports has the following restrictions: </p><ul> <li>Input audio data must be FLOAT32. </li> <li>Framerate must be within XAUDIO2FX_REVERB_MIN_FRAMERATE (20,000 Hz) and XAUDIO2FX_REVERB_MAX_FRAMERATE (48,000 Hz). </li> <li>The input and output channels must be one of the following combinations.<ul> <li>Mono input and mono output </li> <li>Mono input and 5.1 output </li> <li>Stereo input and stereo output </li> <li>Stereo input and 5.1 output</li> </ul> </li> </ul>The reverb APO maintains internal state information between processing samples. You can only use an instance of the APO with one source of audio data at a time. Multiple voices that require reverb effects would each need to create a separate reverb effect with<strong>XAudio2CreateReverb</strong>.<p>For information about creating new effects for use with XAudio2, see the XAPO Overview. </p><table> <tr><th>Windows</th></tr> <tr><td> <p>Because <strong>XAudio2CreateReverb</strong> calls <strong>CoCreateInstance</strong> on Windows, the application must have called the <strong>CoInitializeEx</strong> method before calling <strong>XAudio2CreateReverb</strong>. <strong><see cref="!:SharpDX.XAudio2.XAudio2Functions.XAudio2Create"/></strong> has the same requirement, which means <strong>CoInitializeEx</strong> typically will be called long before <strong>XAudio2CreateReverb</strong> is called. </p> <p>A typical calling pattern on Windows would be as follows: </p>  <pre>#ifndef _XBOX	
+            CoInitializeEx(<c>null</c>, COINIT_MULTITHREADED);	
+            #endif	
+            <see cref="T:SharpDX.XAudio2.XAudio2"/>* pXAudio2 = <c>null</c>;	
+            <see cref="T:SharpDX.Result"/> hr;	
+            if ( FAILED(hr = <see cref="!:SharpDX.XAudio2.XAudio2Functions.XAudio2Create"/>( &amp;pXAudio2, 0, <see cref="F:SharpDX.XAudio2.ProcessorSpecifier.DefaultProcessor"/> ) ) ) return hr;	
+            ...	
+            <see cref="T:SharpDX.ComObject"/> * pReverbAPO;	
+            XAudio2CreateReverb(&amp;pReverbAPO);	
+            </pre>  </td></tr> </table><p>?</p><p>The xaudio2fx.h header defines the <strong>AudioReverb</strong> class <see cref="T:System.Guid"/> as   a cross-platform audio processing object (XAPO). </p><code> class __declspec(uuid("C2633B16-471B-4498-B8C5-4F0959E2EC09")) AudioReverb;	
+            </code><p><strong>XAudio2CreateReverb</strong> returns this object as a reference to a reference to <strong><see cref="T:SharpDX.ComObject"/></strong> in the <em>ppApo</em> parameter. Although you can query the <strong><see cref="T:SharpDX.XAPO.AudioProcessor"/></strong> and <strong><see cref="T:SharpDX.XAPO.ParameterProvider"/></strong> interfaces from this <strong><see cref="T:SharpDX.ComObject"/></strong>, you typically never use these interfaces directly. Instead, you use them when you create a voice to add them as part of the effects chain. </p><p>The reverb uses the <strong><see cref="T:SharpDX.XAudio2.Fx.ReverbParameters"/></strong> parameter structure that you access via the <strong><see cref="M:SharpDX.XAudio2.Voice.SetEffectParameters(System.Int32,System.IntPtr,System.Int32,System.Int32)"/></strong>. </p><p><strong>Note</strong>??<strong>XAudio2CreateReverb</strong> is an inline function in xaudio2fx.h that calls <strong>CreateAudioReverb</strong>: </p><code> XAUDIO2FX_STDAPI CreateAudioReverb(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo);	
+            __inline <see cref="T:SharpDX.Result"/> XAudio2CreateReverb(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo, UINT32 /*Flags*/ DEFAULT(0))	
+            { return CreateAudioReverb(ppApo);	
+            }	
+            </code>	
+            </remarks>	
+            <!-- Failed to insert some or all of included XML --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateAudioReverb']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2createreverb</msdn-id>	
+            <unmanaged>HRESULT CreateAudioReverb([Out, Fast] IUnknown** ppApo)</unmanaged>	
+            <unmanaged-short>CreateAudioReverb</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.XAudio2.XAudio28Functions.CreateAudioVolumeMeter(SharpDX.ComObject)">
+            <summary>	
+            <p>Creates a new volume meter audio processing object (APO) and returns a reference to it.</p>	
+            </summary>	
+            <param name="apoOut"><dd> <p>Contains the created volume meter APO.</p> </dd></param>	
+            <returns><p>If this function succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <remarks>	
+            <p>For information on creating new effects for use with XAudio2, see the XAPO Overview.</p><table> <tr><th>Windows</th></tr> <tr><td> <p>Because <strong>XAudio2CreateVolumeMeter</strong> calls <strong>CoCreateInstance</strong> on Windows, the application must have called the <strong>CoInitializeEx</strong> method before calling <strong>XAudio2CreateVolumeMeter</strong>. <strong><see cref="!:SharpDX.XAudio2.XAudio2Functions.XAudio2Create"/></strong> has the same requirement, which means <strong>CoInitializeEx</strong> typically will be called long before <strong>XAudio2CreateVolumeMeter</strong> is called. </p> <p>A typical calling pattern on Windows would be as follows: </p>  <pre>#ifndef _XBOX	
+            CoInitializeEx(<c>null</c>, COINIT_MULTITHREADED);	
+            #endif	
+            <see cref="T:SharpDX.XAudio2.XAudio2"/>* pXAudio2 = <c>null</c>;	
+            <see cref="T:SharpDX.Result"/> hr;	
+            if ( FAILED(hr = <see cref="!:SharpDX.XAudio2.XAudio2Functions.XAudio2Create"/>( &amp;pXAudio2, 0, <see cref="F:SharpDX.XAudio2.ProcessorSpecifier.DefaultProcessor"/> ) ) ) return hr;	
+            ...	
+            <see cref="T:SharpDX.ComObject"/> * pVolumeMeterAPO;	
+            XAudio2CreateVolumeMeter(&amp;pVolumeMeterAPO);	
+            </pre>  </td></tr> </table><p>?</p><p>The xaudio2fx.h header defines the <strong>AudioVolumeMeter</strong> class <see cref="T:System.Guid"/> as   a cross-platform audio processing object (XAPO). </p><code> class __declspec(uuid("4FC3B166-972A-40CF-BC37-7DB03DB2FBA3")) AudioVolumeMeter;	
+            </code><p><strong>XAudio2CreateVolumeMeter</strong> returns this object as a reference to a reference to <strong><see cref="T:SharpDX.ComObject"/></strong> in the <em>ppApo</em> parameter. Although you can query the <strong><see cref="T:SharpDX.XAPO.AudioProcessor"/></strong> and <strong><see cref="T:SharpDX.XAPO.ParameterProvider"/></strong> interfaces from this <strong><see cref="T:SharpDX.ComObject"/></strong>, you typically never use these interfaces directly. Instead, you use them when you create a voice to add them as part of the effects chain. </p><p>The volume meter uses the <strong><see cref="T:SharpDX.XAudio2.Fx.VolumeMeterLevels"/></strong> parameter structure that you access via the <strong><see cref="M:SharpDX.XAudio2.Voice.GetEffectParameters(System.Int32,System.IntPtr,System.Int32)"/></strong> method when the XAPO is bound to the audio graph.</p><p><strong>Note</strong>??<strong>XAudio2CreateVolumeMeter</strong> is an inline function in xaudio2fx.h that calls <strong>CreateAudioVolumeMeter</strong>: </p><code> XAUDIO2FX_STDAPI CreateAudioVolumeMeter(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo);	
+            __inline <see cref="T:SharpDX.Result"/> XAudio2CreateVolumeMeter(_Outptr_ <see cref="T:SharpDX.ComObject"/>** ppApo, UINT32 /*Flags*/ DEFAULT(0))	
+            { return CreateAudioVolumeMeter(ppApo);	
+            }	
+            </code>	
+            </remarks>	
+            <!-- Failed to insert some or all of included XML --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CreateAudioVolumeMeter']/*"/>	
+            <msdn-id>microsoft.directx_sdk.xaudio2.xaudio2createvolumemeter</msdn-id>	
+            <unmanaged>HRESULT CreateAudioVolumeMeter([Out, Fast] IUnknown** ppApo)</unmanaged>	
+            <unmanaged-short>CreateAudioVolumeMeter</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.XAudio2.ModuleInit">
             <summary>
             Internal class used to initialize this assembly.
@@ -5644,6 +5663,77 @@
             <msdn-id>ee415714</msdn-id>
             <unmanaged>X3DAudio</unmanaged>	
             <unmanaged-short>X3DAudio</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.X3DAudio.X3DAudio.SpeedOfSound">
+            <summary>
+            Speed of sound in the air.
+            </summary>
+        </member>
+        <member name="M:SharpDX.X3DAudio.X3DAudio.#ctor(SharpDX.Multimedia.Speakers)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.X3DAudio.X3DAudio"/> class.
+            </summary>
+            <param name="speakers">The speakers config.</param>
+            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>
+            <unmanaged>void X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>
+            <unmanaged-short>X3DAudioInitialize</unmanaged-short>
+        </member>
+        <member name="M:SharpDX.X3DAudio.X3DAudio.#ctor(SharpDX.Multimedia.Speakers,SharpDX.X3DAudio.X3DAudioVersion)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.X3DAudio.X3DAudio"/> class.
+            </summary>
+            <param name="speakers">The speakers config.</param>
+            <param name="requestVersion">The requestVersion.</param>
+            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>
+            <unmanaged>void X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>
+            <unmanaged-short>X3DAudioInitialize</unmanaged-short>
+        </member>
+        <member name="M:SharpDX.X3DAudio.X3DAudio.#ctor(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioVersion)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.X3DAudio.X3DAudio"/> class.
+            </summary>
+            <param name="speakers">The speakers config.</param>
+            <param name="speedOfSound">The speed of sound.</param>
+            <param name="requestVersion">The request requestVersion.</param>
+            
+            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>
+            
+            <unmanaged>void X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>
+            
+            <unmanaged-short>X3DAudioInitialize</unmanaged-short>
+        </member>
+        <member name="M:SharpDX.X3DAudio.X3DAudio.Calculate(SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.Int32,System.Int32)">
+            <summary>
+            Calculates DSP settings for the specified listener and emitter.
+            </summary>
+            <param name="listener">The listener.</param>
+            <param name="emitter">The emitter.</param>
+            <param name="flags">The flags.</param>
+            <param name="sourceChannelCount">The source channel count.</param>
+            <param name="destinationChannelCount">The destination channel count.</param>
+            <returns>DSP settings</returns>
+            <msdn-id>ee419052</msdn-id>	
+            <unmanaged>void X3DAudioCalculate([In] const X3DAUDIOHANDLE* Instance,[In] const X3DAUDIO_LISTENER* pListener,[In] const X3DAUDIO_EMITTER* pEmitter,[In] X3DAudioCalculateFlags Flags,[In] void* pDSPSettings)</unmanaged>	
+            <unmanaged-short>X3DAudioCalculate</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.X3DAudio.X3DAudio.Calculate(SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,SharpDX.X3DAudio.DspSettings)">
+            <summary>
+            Calculates DSP settings for the specified listener and emitter. See remarks.
+            </summary>
+            <param name="listener">The listener.</param>
+            <param name="emitter">The emitter.</param>
+            <param name="flags">The flags.</param>
+            <param name="settings">The settings.</param>
+            <remarks>The source and destination channel count must be set on <see cref="T:SharpDX.X3DAudio.DspSettings"/> before calling this method.</remarks>
+            <msdn-id>ee419052</msdn-id>	
+            <unmanaged>void X3DAudioCalculate([In] const X3DAUDIOHANDLE* Instance,[In] const X3DAUDIO_LISTENER* pListener,[In] const X3DAUDIO_EMITTER* pEmitter,[In] X3DAudioCalculateFlags Flags,[In] void* pDSPSettings)</unmanaged>	
+            <unmanaged-short>X3DAudioCalculate</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.X3DAudio.X3DAudio.Version">
+            <summary>
+            Gets the requestVersion of X3DAudio used.
+            </summary>
+            <value>The requestVersion.</value>
         </member>
         <member name="T:SharpDX.XAPO.AudioProcessorBase`1">
             <summary>
@@ -5865,15 +5955,19 @@
             A VolumeMeter XAudio2 AudioProcessor.
             </summary>
         </member>
-        <member name="M:SharpDX.XAudio2.Fx.VolumeMeter.#ctor">
+        <member name="M:SharpDX.XAudio2.Fx.VolumeMeter.#ctor(SharpDX.XAudio2.XAudio2)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAudio2.Fx.VolumeMeter"/> class.
             </summary>
+            <param name="device">The device.</param>
         </member>
-        <member name="M:SharpDX.XAudio2.Fx.VolumeMeter.#ctor(System.Boolean)">
+        <member name="M:SharpDX.XAudio2.Fx.VolumeMeter.#ctor(SharpDX.XAudio2.XAudio2,System.Boolean)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpDX.XAudio2.Fx.VolumeMeter"/> class.
             </summary>
+            <param name="device">The device.</param>
+            <param name="isUsingDebug">if set to <c>true</c> [is using debug].</param>
+            <exception cref="T:System.InvalidOperationException">XAudio2 must be initialized before calling this constructor</exception>
         </member>
         <member name="T:SharpDX.XAudio2.XAudio2Version">
             <summary>
@@ -5882,7 +5976,7 @@
         </member>
         <member name="F:SharpDX.XAudio2.XAudio2Version.Default">
             <summary>
-            The default version (2.7 if it is installed, otherwise 2.8)
+            The default version (2.7 if it is installed, otherwise 2.8 or 2.9)
             </summary>
         </member>
         <member name="F:SharpDX.XAudio2.XAudio2Version.Version27">
@@ -5893,6 +5987,11 @@
         <member name="F:SharpDX.XAudio2.XAudio2Version.Version28">
             <summary>
             The XAudio2.8 version.
+            </summary>
+        </member>
+        <member name="F:SharpDX.XAudio2.XAudio2Version.Version29">
+            <summary>
+            The XAudio2.9 version.
             </summary>
         </member>
     </members>

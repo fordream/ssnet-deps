@@ -296,6 +296,32 @@
             <unmanaged>DXGI</unmanaged>	
             <unmanaged-short>DXGI</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.DXGI.Factory4">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory4']/*"/>	
+            <unmanaged>IDXGIFactory4</unmanaged>	
+            <unmanaged-short>IDXGIFactory4</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.DXGI.Factory3">
+            <summary>	
+            <p>An <strong><see cref="T:SharpDX.DXGI.Factory"/></strong> interface implements methods for generating DXGI objects (which handle full screen transitions).</p>	
+            </summary>	
+            <remarks>	
+            <p>Create a factory by calling <strong>CreateDXGIFactory</strong>.</p><p>Because you can create a Direct3D device without creating a swap chain, you might need to retrieve the factory that is used to create the device in order to create a swap chain.	
+            You can request the <strong><see cref="T:SharpDX.DXGI.Device"/></strong> interface from the Direct3D device and then use the <strong><see cref="M:SharpDX.DXGI.DXGIObject.GetParent(System.Guid,System.IntPtr@)"/></strong> method to locate 	
+            the factory.  The following code shows how.</p><pre><see cref="T:SharpDX.DXGI.Device"/> * pDXGIDevice;	
+            hr = g_pd3dDevice-&gt;QueryInterface(__uuidof(<see cref="T:SharpDX.DXGI.Device"/>), (void **)&amp;pDXGIDevice); <see cref="T:SharpDX.DXGI.Adapter"/> * pDXGIAdapter;	
+            hr = pDXGIDevice-&gt;GetParent(__uuidof(<see cref="T:SharpDX.DXGI.Adapter"/>), (void **)&amp;pDXGIAdapter); <see cref="T:SharpDX.DXGI.Factory"/> * pIDXGIFactory;	
+            pDXGIAdapter-&gt;GetParent(__uuidof(<see cref="T:SharpDX.DXGI.Factory"/>), (void **)&amp;pIDXGIFactory);	
+            </pre><p><strong>Windows?Phone?8:</strong> This API is supported.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory3']/*"/>	
+            <msdn-id>bb174535</msdn-id>	
+            <unmanaged>IDXGIFactory3</unmanaged>	
+            <unmanaged-short>IDXGIFactory3</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.Factory2">
             <summary>	
             <p>The <strong><see cref="T:SharpDX.DXGI.Factory2"/></strong> interface includes methods to create a newer version swap chain with more features than <strong><see cref="T:SharpDX.DXGI.SwapChain"/></strong> and to monitor stereoscopic 3D capabilities.</p>	
@@ -756,6 +782,96 @@
             <unmanaged>IsWindowedStereoEnabled</unmanaged>	
             <unmanaged-short>IsWindowedStereoEnabled</unmanaged-short>	
             <unmanaged>BOOL IDXGIFactory2::IsWindowedStereoEnabled()</unmanaged>
+        </member>
+        <member name="M:SharpDX.DXGI.Factory3.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.DXGI.Factory3"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.DXGI.Factory3.op_Explicit(System.IntPtr)~SharpDX.DXGI.Factory3">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.Factory3"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.DXGI.Factory3.GetCreationFlags">
+            <summary>	
+            <p>Gets the flags that were used when a Microsoft DirectX Graphics Infrastructure (DXGI) object was created.</p>	
+            </summary>	
+            <returns><p>The creation flags.</p></returns>	
+            <remarks>	
+            <p>The <strong>GetCreationFlags</strong> method returns flags that were passed to the  <strong>CreateDXGIFactory2</strong> function, or were implicitly constructed by <strong>CreateDXGIFactory</strong>, <strong>CreateDXGIFactory1</strong>,  <strong><see cref="!:SharpDX.Direct3D11.D3D11.CreateDevice"/></strong>, or <strong>D3D11CreateDeviceAndSwapChain</strong>.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory3::GetCreationFlags']/*"/>	
+            <msdn-id>dn457943</msdn-id>	
+            <unmanaged>unsigned int IDXGIFactory3::GetCreationFlags()</unmanaged>	
+            <unmanaged-short>IDXGIFactory3::GetCreationFlags</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.Factory3.CreationFlags">
+            <summary>	
+            <p>Gets the flags that were used when a Microsoft DirectX Graphics Infrastructure (DXGI) object was created.</p>	
+            </summary>	
+            <remarks>	
+            <p>The <strong>GetCreationFlags</strong> method returns flags that were passed to the  <strong>CreateDXGIFactory2</strong> function, or were implicitly constructed by <strong>CreateDXGIFactory</strong>, <strong>CreateDXGIFactory1</strong>,  <strong><see cref="!:SharpDX.Direct3D11.D3D11.CreateDevice"/></strong>, or <strong>D3D11CreateDeviceAndSwapChain</strong>.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory3::GetCreationFlags']/*"/>	
+            <msdn-id>dn457943</msdn-id>	
+            <unmanaged>GetCreationFlags</unmanaged>	
+            <unmanaged-short>GetCreationFlags</unmanaged-short>	
+            <unmanaged>unsigned int IDXGIFactory3::GetCreationFlags()</unmanaged>
+        </member>
+        <member name="M:SharpDX.DXGI.Factory4.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:SharpDX.DXGI.Factory4"/> class.
+            </summary>
+        </member>
+        <member name="M:SharpDX.DXGI.Factory4.GetWarpAdapter">
+            <summary>
+            Gets the default warp adapter.
+            </summary>
+            <returns>The warp adapter.</returns>
+        </member>
+        <member name="M:SharpDX.DXGI.Factory4.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.DXGI.Factory4"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.DXGI.Factory4.op_Explicit(System.IntPtr)~SharpDX.DXGI.Factory4">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.Factory4"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.DXGI.Factory4.EnumAdapterByLuid(System.Int64,System.Guid,System.IntPtr@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="adapterLuid">No documentation.</param>	
+            <param name="riid">No documentation.</param>	
+            <param name="vAdapterOut">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory4::EnumAdapterByLuid']/*"/>	
+            <unmanaged>HRESULT IDXGIFactory4::EnumAdapterByLuid([In] LUID AdapterLuid,[In] const GUID&amp; riid,[Out] void** ppvAdapter)</unmanaged>	
+            <unmanaged-short>IDXGIFactory4::EnumAdapterByLuid</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Factory4.EnumWarpAdapter(System.Guid,System.IntPtr@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="riid">No documentation.</param>	
+            <param name="vAdapterOut">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory4::EnumWarpAdapter']/*"/>	
+            <unmanaged>HRESULT IDXGIFactory4::EnumWarpAdapter([In] const GUID&amp; riid,[Out] void** ppvAdapter)</unmanaged>	
+            <unmanaged-short>IDXGIFactory4::EnumWarpAdapter</unmanaged-short>	
         </member>
         <member name="T:SharpDX.DXGI.Output1">
             <summary>	
@@ -1564,7 +1680,7 @@
             <unmanaged>HRESULT IDXGIResource::GetSharedHandle([Out] void** pSharedHandle)</unmanaged>	
             <unmanaged-short>IDXGIResource::GetSharedHandle</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.DXGI.Resource.GetUsage(System.Int32@)">
+        <member name="M:SharpDX.DXGI.Resource.GetUsage(System.Int32)">
             <summary>	
             <p>Get the expected resource usage.</p>	
             </summary>	
@@ -1575,7 +1691,7 @@
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIResource::GetUsage']/*"/>	
             <msdn-id>bb174563</msdn-id>	
-            <unmanaged>HRESULT IDXGIResource::GetUsage([Out] unsigned int* pUsage)</unmanaged>	
+            <unmanaged>HRESULT IDXGIResource::GetUsage([In] unsigned int* pUsage)</unmanaged>	
             <unmanaged-short>IDXGIResource::GetUsage</unmanaged-short>	
         </member>
         <member name="M:SharpDX.DXGI.Resource.SetEvictionPriority(System.Int32)">
@@ -1618,19 +1734,6 @@
             <unmanaged>GetSharedHandle</unmanaged>	
             <unmanaged-short>GetSharedHandle</unmanaged-short>	
             <unmanaged>HRESULT IDXGIResource::GetSharedHandle([Out] void** pSharedHandle)</unmanaged>
-        </member>
-        <member name="P:SharpDX.DXGI.Resource.Usage">
-            <summary>	
-            <p>Get the expected resource usage.</p>	
-            </summary>	
-            <remarks>	
-            <p><strong>Windows?Phone?8:</strong> This API is supported.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIResource::GetUsage']/*"/>	
-            <msdn-id>bb174563</msdn-id>	
-            <unmanaged>GetUsage</unmanaged>	
-            <unmanaged-short>GetUsage</unmanaged-short>	
-            <unmanaged>HRESULT IDXGIResource::GetUsage([Out] unsigned int* pUsage)</unmanaged>
         </member>
         <member name="P:SharpDX.DXGI.Resource.EvictionPriority">
             <summary>	
@@ -2269,6 +2372,118 @@
             <unmanaged>DXGI_ALPHA_MODE_IGNORE</unmanaged>	
             <unmanaged-short>DXGI_ALPHA_MODE_IGNORE</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.DXGI.ColorSpaceType">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_TYPE']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_TYPE</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_TYPE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.RgbFullG22NoneP709">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.RgbFullG10NoneP709">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_RGB_FULL_G10_NONE_P709']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_RGB_FULL_G10_NONE_P709</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_RGB_FULL_G10_NONE_P709</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.RgbStudioG22NoneP709">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.RgbStudioG22NoneP2020">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.Reserved">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_RESERVED']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_RESERVED</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_RESERVED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.YcbcrFullG22NoneP709X601">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.YcbcrStudioG22LeftP601">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.YcbcrFullG22LeftP601">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.YcbcrStudioG22LeftP709">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.YcbcrFullG22LeftP709">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.YcbcrStudioG22LeftP2020">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.YcbcrFullG22LeftP2020">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.ColorSpaceType.Custom">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_COLOR_SPACE_CUSTOM']/*"/>	
+            <unmanaged>DXGI_COLOR_SPACE_CUSTOM</unmanaged>	
+            <unmanaged-short>DXGI_COLOR_SPACE_CUSTOM</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.ComputePreemptionGranularity">
             <summary>	
             <p>Identifies the granularity at which the graphics processing unit (GPU) can be preempted from performing its current compute task.</p>	
@@ -2604,6 +2819,15 @@
             <msdn-id>cc308061</msdn-id>	
             <unmanaged>DXGI_STATUS_DDA_WAS_STILL_DRAWING</unmanaged>	
             <unmanaged-short>DXGI_STATUS_DDA_WAS_STILL_DRAWING</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.DXGIStatus.PresentRequired">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_STATUS_PRESENT_REQUIRED']/*"/>	
+            <msdn-id>cc308061</msdn-id>	
+            <unmanaged>DXGI_STATUS_PRESENT_REQUIRED</unmanaged>	
+            <unmanaged-short>DXGI_STATUS_PRESENT_REQUIRED</unmanaged-short>	
         </member>
         <member name="T:SharpDX.DXGI.Format">
             <summary>	
@@ -3688,6 +3912,33 @@
             <unmanaged>DXGI_FORMAT_B4G4R4A4_UNORM</unmanaged>	
             <unmanaged-short>DXGI_FORMAT_B4G4R4A4_UNORM</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.DXGI.Format.P208">
+            <summary>	
+            <dd> <p>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a  size other than 32 bits. This value is not used.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_FORMAT_P208']/*"/>	
+            <msdn-id>bb173059</msdn-id>	
+            <unmanaged>DXGI_FORMAT_P208</unmanaged>	
+            <unmanaged-short>DXGI_FORMAT_P208</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.Format.V208">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_FORMAT_V208']/*"/>	
+            <msdn-id>bb173059</msdn-id>	
+            <unmanaged>DXGI_FORMAT_V208</unmanaged>	
+            <unmanaged-short>DXGI_FORMAT_V208</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.Format.V408">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_FORMAT_V408']/*"/>	
+            <msdn-id>bb173059</msdn-id>	
+            <unmanaged>DXGI_FORMAT_V408</unmanaged>	
+            <unmanaged-short>DXGI_FORMAT_V408</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.GraphicsPreemptionGranularity">
             <summary>	
             <p>Identifies the granularity at which the graphics processing unit (GPU) can be preempted from performing its current graphics rendering task.</p>	
@@ -3781,6 +4032,30 @@
             <unmanaged>DXGI_MAP_DISCARD</unmanaged>	
             <unmanaged-short>DXGI_MAP_DISCARD</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.DXGI.MemorySegmentGroup">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_MEMORY_SEGMENT_GROUP']/*"/>	
+            <unmanaged>DXGI_MEMORY_SEGMENT_GROUP</unmanaged>	
+            <unmanaged-short>DXGI_MEMORY_SEGMENT_GROUP</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.MemorySegmentGroup.Local">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_MEMORY_SEGMENT_GROUP_LOCAL']/*"/>	
+            <unmanaged>DXGI_MEMORY_SEGMENT_GROUP_LOCAL</unmanaged>	
+            <unmanaged-short>DXGI_MEMORY_SEGMENT_GROUP_LOCAL</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.MemorySegmentGroup.NonLocal">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_MEMORY_SEGMENT_GROUP_NON_LOCAL']/*"/>	
+            <unmanaged>DXGI_MEMORY_SEGMENT_GROUP_NON_LOCAL</unmanaged>	
+            <unmanaged-short>DXGI_MEMORY_SEGMENT_GROUP_NON_LOCAL</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.OfferResourcePriority">
             <summary>	
             <p>Identifies the importance of a resource?s content when you call the  <strong><see cref="M:SharpDX.DXGI.Device2.OfferResources(System.Int32,SharpDX.DXGI.Resource[],SharpDX.DXGI.OfferResourcePriority)"/></strong> method to offer the resource.</p>	
@@ -3819,6 +4094,30 @@
             <msdn-id>hh404509</msdn-id>	
             <unmanaged>DXGI_OFFER_RESOURCE_PRIORITY_HIGH</unmanaged>	
             <unmanaged-short>DXGI_OFFER_RESOURCE_PRIORITY_HIGH</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.DXGI.OverlayColorSpaceSupportFlags">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG']/*"/>	
+            <unmanaged>DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG</unmanaged>	
+            <unmanaged-short>DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.OverlayColorSpaceSupportFlags.Present">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG_PRESENT']/*"/>	
+            <unmanaged>DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG_PRESENT</unmanaged>	
+            <unmanaged-short>DXGI_OVERLAY_COLOR_SPACE_SUPPORT_FLAG_PRESENT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.OverlayColorSpaceSupportFlags.None">
+            <summary>	
+            None.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='']/*"/>	
+            <unmanaged>None</unmanaged>	
+            <unmanaged-short>None</unmanaged-short>	
         </member>
         <member name="T:SharpDX.DXGI.PresentFlags">
             <summary>	
@@ -4079,6 +4378,38 @@
             <unmanaged>None</unmanaged>	
             <unmanaged-short>None</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.DXGI.SwapChainColorSpaceSupportFlags">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG']/*"/>	
+            <unmanaged>DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG</unmanaged>	
+            <unmanaged-short>DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.SwapChainColorSpaceSupportFlags.Present">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_PRESENT']/*"/>	
+            <unmanaged>DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_PRESENT</unmanaged>	
+            <unmanaged-short>DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_PRESENT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.SwapChainColorSpaceSupportFlags.OverlayPresent">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_OVERLAY_PRESENT']/*"/>	
+            <unmanaged>DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_OVERLAY_PRESENT</unmanaged>	
+            <unmanaged-short>DXGI_SWAP_CHAIN_COLOR_SPACE_SUPPORT_FLAG_OVERLAY_PRESENT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.SwapChainColorSpaceSupportFlags.None">
+            <summary>	
+            None.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='']/*"/>	
+            <unmanaged>None</unmanaged>	
+            <unmanaged-short>None</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.SwapChainFlags">
             <summary>	
             <p>Options for swap-chain behavior.</p>	
@@ -4182,6 +4513,15 @@
             <unmanaged>DXGI_SWAP_CHAIN_FLAG_YUV_VIDEO</unmanaged>	
             <unmanaged-short>DXGI_SWAP_CHAIN_FLAG_YUV_VIDEO</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.DXGI.SwapChainFlags.HwProtected">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED']/*"/>	
+            <msdn-id>bb173076</msdn-id>	
+            <unmanaged>DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED</unmanaged>	
+            <unmanaged-short>DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.DXGI.SwapChainFlags.None">
             <summary>	
             None.	
@@ -4231,6 +4571,15 @@
             <unmanaged>DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL</unmanaged>	
             <unmanaged-short>DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.DXGI.SwapEffect.FlipDiscard">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_SWAP_EFFECT_FLIP_DISCARD']/*"/>	
+            <msdn-id>bb173077</msdn-id>	
+            <unmanaged>DXGI_SWAP_EFFECT_FLIP_DISCARD</unmanaged>	
+            <unmanaged-short>DXGI_SWAP_EFFECT_FLIP_DISCARD</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.Usage">
             <summary>	
             <p>Flags for surface and resource creation options.</p><p></p>	
@@ -4248,7 +4597,7 @@
             #define <see cref="F:SharpDX.DXGI.Usage.ReadOnly"/>                ( 1L &lt;&lt; (4 + 4) )	
             #define <see cref="F:SharpDX.DXGI.Usage.DiscardOnPresent"/>       ( 1L &lt;&lt; (5 + 4) )	
             #define <see cref="F:SharpDX.DXGI.Usage.UnorderedAccess"/>         ( 1L &lt;&lt; (6 + 4) )	
-            typedef UINT DXGI_USAGE;</code><p>These flag options are used in a call to the <strong><see cref="M:SharpDX.DXGI.Factory.CreateSwapChain(SharpDX.ComObject,SharpDX.DXGI.SwapChainDescription@,SharpDX.DXGI.SwapChain)"/></strong>, <strong><see cref="M:SharpDX.DXGI.Factory2.CreateSwapChainForHwnd(SharpDX.ComObject,System.IntPtr,SharpDX.DXGI.SwapChainDescription1@,System.Nullable{SharpDX.DXGI.SwapChainFullScreenDescription},SharpDX.DXGI.Output,SharpDX.DXGI.SwapChain1)"/></strong>, <strong><see cref="M:SharpDX.DXGI.Factory2.CreateSwapChainForCoreWindow(SharpDX.ComObject,SharpDX.ComObject,SharpDX.DXGI.SwapChainDescription1@,SharpDX.DXGI.Output,SharpDX.DXGI.SwapChain1)"/></strong>, or  <strong><see cref="M:SharpDX.DXGI.Factory2.CreateSwapChainForComposition(SharpDX.ComObject,SharpDX.DXGI.SwapChainDescription1@,SharpDX.DXGI.Output,SharpDX.DXGI.SwapChain1)"/></strong> method to describe the surface usage and CPU access options for the back buffer of a swap chain. You can't use the <strong><see cref="F:SharpDX.DXGI.Usage.Shared"/></strong>, <strong><see cref="F:SharpDX.DXGI.Usage.DiscardOnPresent"/></strong>, and <strong><see cref="F:SharpDX.DXGI.Usage.ReadOnly"/></strong> values as input to create a swap chain. However, DXGI can set <strong><see cref="F:SharpDX.DXGI.Usage.DiscardOnPresent"/></strong> and <strong><see cref="F:SharpDX.DXGI.Usage.ReadOnly"/></strong> for some of the swap chain's back buffers on the application's behalf. You can call the <strong><see cref="M:SharpDX.DXGI.Resource.GetUsage(System.Int32@)"/></strong> method to retrieve the usage of these back buffers.	
+            typedef UINT DXGI_USAGE;</code><p>These flag options are used in a call to the <strong><see cref="M:SharpDX.DXGI.Factory.CreateSwapChain(SharpDX.ComObject,SharpDX.DXGI.SwapChainDescription@,SharpDX.DXGI.SwapChain)"/></strong>, <strong><see cref="M:SharpDX.DXGI.Factory2.CreateSwapChainForHwnd(SharpDX.ComObject,System.IntPtr,SharpDX.DXGI.SwapChainDescription1@,System.Nullable{SharpDX.DXGI.SwapChainFullScreenDescription},SharpDX.DXGI.Output,SharpDX.DXGI.SwapChain1)"/></strong>, <strong><see cref="M:SharpDX.DXGI.Factory2.CreateSwapChainForCoreWindow(SharpDX.ComObject,SharpDX.ComObject,SharpDX.DXGI.SwapChainDescription1@,SharpDX.DXGI.Output,SharpDX.DXGI.SwapChain1)"/></strong>, or  <strong><see cref="M:SharpDX.DXGI.Factory2.CreateSwapChainForComposition(SharpDX.ComObject,SharpDX.DXGI.SwapChainDescription1@,SharpDX.DXGI.Output,SharpDX.DXGI.SwapChain1)"/></strong> method to describe the surface usage and CPU access options for the back buffer of a swap chain. You can't use the <strong><see cref="F:SharpDX.DXGI.Usage.Shared"/></strong>, <strong><see cref="F:SharpDX.DXGI.Usage.DiscardOnPresent"/></strong>, and <strong><see cref="F:SharpDX.DXGI.Usage.ReadOnly"/></strong> values as input to create a swap chain. However, DXGI can set <strong><see cref="F:SharpDX.DXGI.Usage.DiscardOnPresent"/></strong> and <strong><see cref="F:SharpDX.DXGI.Usage.ReadOnly"/></strong> for some of the swap chain's back buffers on the application's behalf. You can call the <strong><see cref="M:SharpDX.DXGI.Resource.GetUsage(System.Int32)"/></strong> method to retrieve the usage of these back buffers.	
             Swap chain's only support the <strong>DXGI_CPU_ACCESS_NONE</strong> value in the <strong>DXGI_CPU_ACCESS_FIELD</strong> part of <strong>DXGI_USAGE</strong>.</p><p>These flag options are also used by the <strong><see cref="M:SharpDX.DXGI.Device.CreateSurface(SharpDX.DXGI.SurfaceDescription@,System.Int32,System.Int32,System.Nullable{SharpDX.DXGI.SharedResource},SharpDX.DXGI.Surface@)"/></strong> method.</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_USAGE_ENUM']/*"/>	
@@ -4443,9 +4792,13 @@
             <summary>Constant SessionDisconnected.</summary>
             <unmanaged>DXGI_ERROR_SESSION_DISCONNECTED</unmanaged>
         </member>
-        <member name="F:SharpDX.DXGI.ResultCode.Unsupported">
-            <summary>Constant Unsupported.</summary>
-            <unmanaged>DXGI_ERROR_UNSUPPORTED</unmanaged>
+        <member name="F:SharpDX.DXGI.ResultCode.HwProtectionOufOfMemory">
+            <summary>Constant HwProtectionOufOfMemory.</summary>
+            <unmanaged>DXGI_ERROR_HW_PROTECTION_OUTOFMEMORY</unmanaged>
+        </member>
+        <member name="F:SharpDX.DXGI.ResultCode.NotCurrent">
+            <summary>Constant NotCurrent.</summary>
+            <unmanaged>DXGI_ERROR_NOT_CURRENT</unmanaged>
         </member>
         <member name="F:SharpDX.DXGI.ResultCode.RestrictToOutputStale">
             <summary>Constant RestrictToOutputStale.</summary>
@@ -4474,6 +4827,10 @@
         <member name="F:SharpDX.DXGI.ResultCode.NameAlreadyExists">
             <summary>Constant NameAlreadyExists.</summary>
             <unmanaged>DXGI_ERROR_NAME_ALREADY_EXISTS</unmanaged>
+        </member>
+        <member name="F:SharpDX.DXGI.ResultCode.Unsupported">
+            <summary>Constant Unsupported.</summary>
+            <unmanaged>DXGI_ERROR_UNSUPPORTED</unmanaged>
         </member>
         <member name="F:SharpDX.DXGI.ResultCode.RemoteClientDisconnected">
             <summary>Constant RemoteClientDisconnected.</summary>
@@ -4626,6 +4983,93 @@
             <unmanaged>GetDesc2</unmanaged>	
             <unmanaged-short>GetDesc2</unmanaged-short>	
             <unmanaged>HRESULT IDXGIAdapter2::GetDesc2([Out] DXGI_ADAPTER_DESC2* pDesc)</unmanaged>
+        </member>
+        <member name="T:SharpDX.DXGI.Adapter3">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIAdapter3']/*"/>	
+            <unmanaged>IDXGIAdapter3</unmanaged>	
+            <unmanaged-short>IDXGIAdapter3</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.DXGI.Adapter3"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.op_Explicit(System.IntPtr)~SharpDX.DXGI.Adapter3">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.Adapter3"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.RegisterHardwareContentProtectionTeardownStatusEvent(System.IntPtr,System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="hEvent">No documentation.</param>	
+            <param name="dwCookieRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIAdapter3::RegisterHardwareContentProtectionTeardownStatusEvent']/*"/>	
+            <unmanaged>HRESULT IDXGIAdapter3::RegisterHardwareContentProtectionTeardownStatusEvent([In] void* hEvent,[Out] unsigned int* pdwCookie)</unmanaged>	
+            <unmanaged-short>IDXGIAdapter3::RegisterHardwareContentProtectionTeardownStatusEvent</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.UnregisterHardwareContentProtectionTeardownStatus(System.Int32)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="dwCookie">No documentation.</param>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIAdapter3::UnregisterHardwareContentProtectionTeardownStatus']/*"/>	
+            <unmanaged>void IDXGIAdapter3::UnregisterHardwareContentProtectionTeardownStatus([In] unsigned int dwCookie)</unmanaged>	
+            <unmanaged-short>IDXGIAdapter3::UnregisterHardwareContentProtectionTeardownStatus</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.QueryVideoMemoryInfo(System.Int32,SharpDX.DXGI.MemorySegmentGroup,SharpDX.DXGI.QueryVideoMemoryInformation@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="nodeIndex">No documentation.</param>	
+            <param name="memorySegmentGroup">No documentation.</param>	
+            <param name="videoMemoryInfoRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIAdapter3::QueryVideoMemoryInfo']/*"/>	
+            <unmanaged>HRESULT IDXGIAdapter3::QueryVideoMemoryInfo([In] unsigned int NodeIndex,[In] DXGI_MEMORY_SEGMENT_GROUP MemorySegmentGroup,[Out] DXGI_QUERY_VIDEO_MEMORY_INFO* pVideoMemoryInfo)</unmanaged>	
+            <unmanaged-short>IDXGIAdapter3::QueryVideoMemoryInfo</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.SetVideoMemoryReservation(System.Int32,SharpDX.DXGI.MemorySegmentGroup,System.Int64)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="nodeIndex">No documentation.</param>	
+            <param name="memorySegmentGroup">No documentation.</param>	
+            <param name="reservation">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIAdapter3::SetVideoMemoryReservation']/*"/>	
+            <unmanaged>HRESULT IDXGIAdapter3::SetVideoMemoryReservation([In] unsigned int NodeIndex,[In] DXGI_MEMORY_SEGMENT_GROUP MemorySegmentGroup,[In] unsigned longlong Reservation)</unmanaged>	
+            <unmanaged-short>IDXGIAdapter3::SetVideoMemoryReservation</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.RegisterVideoMemoryBudgetChangeNotificationEvent(System.IntPtr,System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="hEvent">No documentation.</param>	
+            <param name="dwCookieRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIAdapter3::RegisterVideoMemoryBudgetChangeNotificationEvent']/*"/>	
+            <unmanaged>HRESULT IDXGIAdapter3::RegisterVideoMemoryBudgetChangeNotificationEvent([In] void* hEvent,[Out] unsigned int* pdwCookie)</unmanaged>	
+            <unmanaged-short>IDXGIAdapter3::RegisterVideoMemoryBudgetChangeNotificationEvent</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Adapter3.UnregisterVideoMemoryBudgetChangeNotification(System.Int32)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="dwCookie">No documentation.</param>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIAdapter3::UnregisterVideoMemoryBudgetChangeNotification']/*"/>	
+            <unmanaged>void IDXGIAdapter3::UnregisterVideoMemoryBudgetChangeNotification([In] unsigned int dwCookie)</unmanaged>	
+            <unmanaged-short>IDXGIAdapter3::UnregisterVideoMemoryBudgetChangeNotification</unmanaged-short>	
         </member>
         <member name="T:SharpDX.DXGI.Device1">
             <summary>	
@@ -4875,65 +5319,6 @@
             <unmanaged>void IDXGIDevice3::Trim()</unmanaged>	
             <unmanaged-short>IDXGIDevice3::Trim</unmanaged-short>	
         </member>
-        <member name="T:SharpDX.DXGI.Factory3">
-            <summary>	
-            <p>An <strong><see cref="T:SharpDX.DXGI.Factory"/></strong> interface implements methods for generating DXGI objects (which handle full screen transitions).</p>	
-            </summary>	
-            <remarks>	
-            <p>Create a factory by calling <strong>CreateDXGIFactory</strong>.</p><p>Because you can create a Direct3D device without creating a swap chain, you might need to retrieve the factory that is used to create the device in order to create a swap chain.	
-            You can request the <strong><see cref="T:SharpDX.DXGI.Device"/></strong> interface from the Direct3D device and then use the <strong><see cref="M:SharpDX.DXGI.DXGIObject.GetParent(System.Guid,System.IntPtr@)"/></strong> method to locate 	
-            the factory.  The following code shows how.</p><pre><see cref="T:SharpDX.DXGI.Device"/> * pDXGIDevice;	
-            hr = g_pd3dDevice-&gt;QueryInterface(__uuidof(<see cref="T:SharpDX.DXGI.Device"/>), (void **)&amp;pDXGIDevice); <see cref="T:SharpDX.DXGI.Adapter"/> * pDXGIAdapter;	
-            hr = pDXGIDevice-&gt;GetParent(__uuidof(<see cref="T:SharpDX.DXGI.Adapter"/>), (void **)&amp;pDXGIAdapter); <see cref="T:SharpDX.DXGI.Factory"/> * pIDXGIFactory;	
-            pDXGIAdapter-&gt;GetParent(__uuidof(<see cref="T:SharpDX.DXGI.Factory"/>), (void **)&amp;pIDXGIFactory);	
-            </pre><p><strong>Windows?Phone?8:</strong> This API is supported.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory3']/*"/>	
-            <msdn-id>bb174535</msdn-id>	
-            <unmanaged>IDXGIFactory3</unmanaged>	
-            <unmanaged-short>IDXGIFactory3</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.DXGI.Factory3.#ctor(System.IntPtr)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SharpDX.DXGI.Factory3"/> class.
-            </summary>
-            <param name="nativePtr">The native pointer.</param>	
-        </member>
-        <member name="M:SharpDX.DXGI.Factory3.op_Explicit(System.IntPtr)~SharpDX.DXGI.Factory3">
-            <summary>
-            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.Factory3"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
-            </summary>
-            <param name="nativePointer">The native pointer.</param>
-            <returns>
-            The result of the conversion.
-            </returns>
-        </member>
-        <member name="M:SharpDX.DXGI.Factory3.GetCreationFlags">
-            <summary>	
-            <p>Gets the flags that were used when a Microsoft DirectX Graphics Infrastructure (DXGI) object was created.</p>	
-            </summary>	
-            <returns><p>The creation flags.</p></returns>	
-            <remarks>	
-            <p>The <strong>GetCreationFlags</strong> method returns flags that were passed to the  <strong>CreateDXGIFactory2</strong> function, or were implicitly constructed by <strong>CreateDXGIFactory</strong>, <strong>CreateDXGIFactory1</strong>,  <strong><see cref="!:SharpDX.Direct3D11.D3D11.CreateDevice"/></strong>, or <strong>D3D11CreateDeviceAndSwapChain</strong>.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory3::GetCreationFlags']/*"/>	
-            <msdn-id>dn457943</msdn-id>	
-            <unmanaged>unsigned int IDXGIFactory3::GetCreationFlags()</unmanaged>	
-            <unmanaged-short>IDXGIFactory3::GetCreationFlags</unmanaged-short>	
-        </member>
-        <member name="P:SharpDX.DXGI.Factory3.CreationFlags">
-            <summary>	
-            <p>Gets the flags that were used when a Microsoft DirectX Graphics Infrastructure (DXGI) object was created.</p>	
-            </summary>	
-            <remarks>	
-            <p>The <strong>GetCreationFlags</strong> method returns flags that were passed to the  <strong>CreateDXGIFactory2</strong> function, or were implicitly constructed by <strong>CreateDXGIFactory</strong>, <strong>CreateDXGIFactory1</strong>,  <strong><see cref="!:SharpDX.Direct3D11.D3D11.CreateDevice"/></strong>, or <strong>D3D11CreateDeviceAndSwapChain</strong>.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIFactory3::GetCreationFlags']/*"/>	
-            <msdn-id>dn457943</msdn-id>	
-            <unmanaged>GetCreationFlags</unmanaged>	
-            <unmanaged-short>GetCreationFlags</unmanaged-short>	
-            <unmanaged>unsigned int IDXGIFactory3::GetCreationFlags()</unmanaged>
-        </member>
         <member name="T:SharpDX.DXGI.ISurfaceImageSourceManagerNative">
             <summary>	
             <p>Enables performing bulk operations across all <strong>SurfaceImageSource</strong> objects created in the same process.</p>	
@@ -5172,6 +5557,48 @@
             <unmanaged-short>SetSwapChain</unmanaged-short>	
             <unmanaged>HRESULT ISwapChainPanelNative::SetSwapChain([In] IDXGISwapChain* swapChain)</unmanaged>
         </member>
+        <member name="T:SharpDX.DXGI.ISwapChainPanelNative2">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ISwapChainPanelNative2']/*"/>	
+            <unmanaged>ISwapChainPanelNative2</unmanaged>	
+            <unmanaged-short>ISwapChainPanelNative2</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.ISwapChainPanelNative2.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.DXGI.ISwapChainPanelNative2"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.DXGI.ISwapChainPanelNative2.op_Explicit(System.IntPtr)~SharpDX.DXGI.ISwapChainPanelNative2">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.ISwapChainPanelNative2"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.DXGI.ISwapChainPanelNative2.SetSwapChainHandle(System.IntPtr)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="swapChainHandle">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ISwapChainPanelNative2::SetSwapChainHandle']/*"/>	
+            <unmanaged>HRESULT ISwapChainPanelNative2::SetSwapChainHandle([In] void* swapChainHandle)</unmanaged>	
+            <unmanaged-short>ISwapChainPanelNative2::SetSwapChainHandle</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.ISwapChainPanelNative2.SwapChainHandle">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ISwapChainPanelNative2::SetSwapChainHandle']/*"/>	
+            <unmanaged>SetSwapChainHandle</unmanaged>	
+            <unmanaged-short>SetSwapChainHandle</unmanaged-short>	
+            <unmanaged>HRESULT ISwapChainPanelNative2::SetSwapChainHandle([In] void* swapChainHandle)</unmanaged>
+        </member>
         <member name="T:SharpDX.DXGI.IVirtualSurfaceUpdatesCallbackNativeNative">
             <summary>	
             <p>Provides an interface for the implementation of drawing behaviors when a <strong>VirtualSurfaceImageSource</strong> requests an update. </p>	
@@ -5268,6 +5695,81 @@
             <unmanaged>HRESULT IDXGIKeyedMutex::ReleaseSync([In] unsigned longlong Key)</unmanaged>	
             <unmanaged-short>IDXGIKeyedMutex::ReleaseSync</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.DXGI.Output3">
+            <summary>	
+            <p>An <strong><see cref="T:SharpDX.DXGI.Output"/></strong> interface represents an adapter output (such as a monitor).</p>	
+            </summary>	
+            <remarks>	
+            <p>To see the outputs available, use <strong><see cref="M:SharpDX.DXGI.Adapter.GetOutput(System.Int32)"/></strong>. To see the specific output that the swap chain will update, use <strong><see cref="M:SharpDX.DXGI.SwapChain.GetContainingOutput(SharpDX.DXGI.Output@)"/></strong>.</p><p><strong>Windows?Phone?8:</strong> This API is supported.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIOutput3']/*"/>	
+            <msdn-id>bb174546</msdn-id>	
+            <unmanaged>IDXGIOutput3</unmanaged>	
+            <unmanaged-short>IDXGIOutput3</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Output3.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.DXGI.Output3"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.DXGI.Output3.op_Explicit(System.IntPtr)~SharpDX.DXGI.Output3">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.Output3"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.DXGI.Output3.CheckOverlaySupport(SharpDX.DXGI.Format,SharpDX.ComObject,System.Int32@)">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <param name="enumFormat">No documentation.</param>	
+            <param name="concernedDeviceRef">No documentation.</param>	
+            <param name="flagsRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIOutput3::CheckOverlaySupport']/*"/>	
+            <unmanaged>HRESULT IDXGIOutput3::CheckOverlaySupport([In] DXGI_FORMAT EnumFormat,[In] IUnknown* pConcernedDevice,[Out] unsigned int* pFlags)</unmanaged>	
+            <unmanaged-short>IDXGIOutput3::CheckOverlaySupport</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.DXGI.Output4">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIOutput4']/*"/>	
+            <unmanaged>IDXGIOutput4</unmanaged>	
+            <unmanaged-short>IDXGIOutput4</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.Output4.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.DXGI.Output4"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.DXGI.Output4.op_Explicit(System.IntPtr)~SharpDX.DXGI.Output4">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.Output4"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.DXGI.Output4.CheckOverlayColorSpaceSupport(SharpDX.DXGI.Format,SharpDX.DXGI.ColorSpaceType,SharpDX.ComObject,System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="format">No documentation.</param>	
+            <param name="colorSpace">No documentation.</param>	
+            <param name="concernedDeviceRef">No documentation.</param>	
+            <param name="flagsRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGIOutput4::CheckOverlayColorSpaceSupport']/*"/>	
+            <unmanaged>HRESULT IDXGIOutput4::CheckOverlayColorSpaceSupport([In] DXGI_FORMAT Format,[In] DXGI_COLOR_SPACE_TYPE ColorSpace,[In] IUnknown* pConcernedDevice,[Out] unsigned int* pFlags)</unmanaged>	
+            <unmanaged-short>IDXGIOutput4::CheckOverlayColorSpaceSupport</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.SwapChain">
             <summary>	
             <p>An <strong><see cref="T:SharpDX.DXGI.SwapChain"/></strong> interface implements one or more <strong>surfaces</strong> for storing rendered data before presenting it to an output.</p>	
@@ -5315,7 +5817,7 @@
             <summary>	
             <p>Accesses one of the swap-chain's back buffers.</p>	
             </summary>	
-            <param name="buffer"><dd>  <p>A zero-based buffer index. </p> <p>If the swap chain's swap effect is <strong><see cref="F:SharpDX.DXGI.SwapEffect.Discard"/></strong>, this method can only access the first buffer; for this situation, set the index to zero.</p> <p>If the swap chain's swap effect is either <strong><see cref="F:SharpDX.DXGI.SwapEffect.Sequential"/></strong> or <strong><see cref="F:SharpDX.DXGI.SwapEffect.FlipSequential"/></strong>, only the swap chain's zero-index buffer can be read from and written to. The swap chain's buffers with indexes greater than zero can only be read from; so if you call the <strong><see cref="M:SharpDX.DXGI.Resource.GetUsage(System.Int32@)"/></strong> method for such buffers, they have the <strong><see cref="F:SharpDX.DXGI.Usage.ReadOnly"/></strong> flag set.</p> </dd></param>	
+            <param name="buffer"><dd>  <p>A zero-based buffer index. </p> <p>If the swap chain's swap effect is <strong><see cref="F:SharpDX.DXGI.SwapEffect.Discard"/></strong>, this method can only access the first buffer; for this situation, set the index to zero.</p> <p>If the swap chain's swap effect is either <strong><see cref="F:SharpDX.DXGI.SwapEffect.Sequential"/></strong> or <strong><see cref="F:SharpDX.DXGI.SwapEffect.FlipSequential"/></strong>, only the swap chain's zero-index buffer can be read from and written to. The swap chain's buffers with indexes greater than zero can only be read from; so if you call the <strong><see cref="M:SharpDX.DXGI.Resource.GetUsage(System.Int32)"/></strong> method for such buffers, they have the <strong><see cref="F:SharpDX.DXGI.Usage.ReadOnly"/></strong> flag set.</p> </dd></param>	
             <param name="riid"><dd>  <p>The type of interface used to manipulate the buffer.</p> </dd></param>	
             <param name="surfaceOut"><dd>  <p>A reference to a back-buffer interface.</p> </dd></param>	
             <returns><p>Returns one of the following DXGI_ERROR.</p></returns>	
@@ -5998,6 +6500,125 @@
             <unmanaged>HRESULT IDXGISwapChain2::GetSourceSize([Out] unsigned int* pWidth,[Out] unsigned int* pHeight)</unmanaged>	
             <unmanaged-short>IDXGISwapChain2::GetSourceSize</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.DXGI.SwapChain3">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3']/*"/>	
+            <unmanaged>IDXGISwapChain3</unmanaged>	
+            <unmanaged-short>IDXGISwapChain3</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.DXGI.SwapChain3"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.op_Explicit(System.IntPtr)~SharpDX.DXGI.SwapChain3">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.DXGI.SwapChain3"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.GetCurrentBackBufferIndex">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::GetCurrentBackBufferIndex']/*"/>	
+            <unmanaged>unsigned int IDXGISwapChain3::GetCurrentBackBufferIndex()</unmanaged>	
+            <unmanaged-short>IDXGISwapChain3::GetCurrentBackBufferIndex</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.CheckColorSpaceSupport(SharpDX.DXGI.ColorSpaceType,System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="colorSpace">No documentation.</param>	
+            <param name="colorSpaceSupportRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::CheckColorSpaceSupport']/*"/>	
+            <unmanaged>HRESULT IDXGISwapChain3::CheckColorSpaceSupport([In] DXGI_COLOR_SPACE_TYPE ColorSpace,[Out] unsigned int* pColorSpaceSupport)</unmanaged>	
+            <unmanaged-short>IDXGISwapChain3::CheckColorSpaceSupport</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.SetColorSpace1(SharpDX.DXGI.ColorSpaceType)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="colorSpace">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::SetColorSpace1']/*"/>	
+            <unmanaged>HRESULT IDXGISwapChain3::SetColorSpace1([In] DXGI_COLOR_SPACE_TYPE ColorSpace)</unmanaged>	
+            <unmanaged-short>IDXGISwapChain3::SetColorSpace1</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.ResizeBuffers1(System.Int32,System.Int32,System.Int32,SharpDX.DXGI.Format,System.Int32,System.Int32[],SharpDX.ComObject[])">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="bufferCount">No documentation.</param>	
+            <param name="width">No documentation.</param>	
+            <param name="height">No documentation.</param>	
+            <param name="format">No documentation.</param>	
+            <param name="swapChainFlags">No documentation.</param>	
+            <param name="creationNodeMaskRef">No documentation.</param>	
+            <param name="presentQueueOut">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::ResizeBuffers1']/*"/>	
+            <unmanaged>HRESULT IDXGISwapChain3::ResizeBuffers1([In] unsigned int BufferCount,[In] unsigned int Width,[In] unsigned int Height,[In] DXGI_FORMAT Format,[In] unsigned int SwapChainFlags,[In, Buffer] const unsigned int* pCreationNodeMask,[In, Buffer] const IUnknown** ppPresentQueue)</unmanaged>	
+            <unmanaged-short>IDXGISwapChain3::ResizeBuffers1</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.ResizeBuffers1(System.Int32,System.Int32,System.Int32,SharpDX.DXGI.Format,System.Int32,System.Int32[],SharpDX.ComArray{SharpDX.ComObject})">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="bufferCount">No documentation.</param>	
+            <param name="width">No documentation.</param>	
+            <param name="height">No documentation.</param>	
+            <param name="format">No documentation.</param>	
+            <param name="swapChainFlags">No documentation.</param>	
+            <param name="creationNodeMaskRef">No documentation.</param>	
+            <param name="presentQueueOut">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::ResizeBuffers1']/*"/>	
+            <unmanaged>HRESULT IDXGISwapChain3::ResizeBuffers1([In] unsigned int BufferCount,[In] unsigned int Width,[In] unsigned int Height,[In] DXGI_FORMAT Format,[In] unsigned int SwapChainFlags,[In, Buffer] const unsigned int* pCreationNodeMask,[In, Buffer] const IUnknown** ppPresentQueue)</unmanaged>	
+            <unmanaged-short>IDXGISwapChain3::ResizeBuffers1</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DXGI.SwapChain3.ResizeBuffers1(System.Int32,System.Int32,System.Int32,SharpDX.DXGI.Format,System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="bufferCount">No documentation.</param>	
+            <param name="width">No documentation.</param>	
+            <param name="height">No documentation.</param>	
+            <param name="format">No documentation.</param>	
+            <param name="swapChainFlags">No documentation.</param>	
+            <param name="creationNodeMaskRef">No documentation.</param>	
+            <param name="presentQueueOut">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::ResizeBuffers1']/*"/>	
+            <unmanaged>HRESULT IDXGISwapChain3::ResizeBuffers1([In] unsigned int BufferCount,[In] unsigned int Width,[In] unsigned int Height,[In] DXGI_FORMAT Format,[In] unsigned int SwapChainFlags,[In, Buffer] const unsigned int* pCreationNodeMask,[In, Buffer] const IUnknown** ppPresentQueue)</unmanaged>	
+            <unmanaged-short>IDXGISwapChain3::ResizeBuffers1</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.SwapChain3.CurrentBackBufferIndex">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::GetCurrentBackBufferIndex']/*"/>	
+            <unmanaged>GetCurrentBackBufferIndex</unmanaged>	
+            <unmanaged-short>GetCurrentBackBufferIndex</unmanaged-short>	
+            <unmanaged>unsigned int IDXGISwapChain3::GetCurrentBackBufferIndex()</unmanaged>
+        </member>
+        <member name="P:SharpDX.DXGI.SwapChain3.ColorSpace1">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDXGISwapChain3::SetColorSpace1']/*"/>	
+            <unmanaged>SetColorSpace1</unmanaged>	
+            <unmanaged-short>SetColorSpace1</unmanaged-short>	
+            <unmanaged>HRESULT IDXGISwapChain3::SetColorSpace1([In] DXGI_COLOR_SPACE_TYPE ColorSpace)</unmanaged>
+        </member>
         <member name="T:SharpDX.DXGI.AdapterDescription">
             <summary>	
             <p>Describes an adapter (or video card) by using DXGI 1.0.</p>	
@@ -6467,6 +7088,70 @@
             <unmanaged>float ControlPointPositions[1025]</unmanaged>	
             <unmanaged-short>float ControlPointPositions</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.DXGI.JpegAcHuffmanTable">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_AC_HUFFMAN_TABLE']/*"/>	
+            <unmanaged>DXGI_JPEG_AC_HUFFMAN_TABLE</unmanaged>	
+            <unmanaged-short>DXGI_JPEG_AC_HUFFMAN_TABLE</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.JpegAcHuffmanTable.CodeCounts">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_AC_HUFFMAN_TABLE::CodeCounts']/*"/>	
+            <unmanaged>unsigned char CodeCounts[16]</unmanaged>	
+            <unmanaged-short>unsigned char CodeCounts</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.JpegAcHuffmanTable.CodeValues">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_AC_HUFFMAN_TABLE::CodeValues']/*"/>	
+            <unmanaged>unsigned char CodeValues[162]</unmanaged>	
+            <unmanaged-short>unsigned char CodeValues</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.DXGI.JpegDeviceContextHuffmanTable">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_DC_HUFFMAN_TABLE']/*"/>	
+            <unmanaged>DXGI_JPEG_DC_HUFFMAN_TABLE</unmanaged>	
+            <unmanaged-short>DXGI_JPEG_DC_HUFFMAN_TABLE</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.JpegDeviceContextHuffmanTable.CodeCounts">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_DC_HUFFMAN_TABLE::CodeCounts']/*"/>	
+            <unmanaged>unsigned char CodeCounts[12]</unmanaged>	
+            <unmanaged-short>unsigned char CodeCounts</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.JpegDeviceContextHuffmanTable.CodeValues">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_DC_HUFFMAN_TABLE::CodeValues']/*"/>	
+            <unmanaged>unsigned char CodeValues[12]</unmanaged>	
+            <unmanaged-short>unsigned char CodeValues</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.DXGI.JpegQuantizationTable">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_QUANTIZATION_TABLE']/*"/>	
+            <unmanaged>DXGI_JPEG_QUANTIZATION_TABLE</unmanaged>	
+            <unmanaged-short>DXGI_JPEG_QUANTIZATION_TABLE</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.DXGI.JpegQuantizationTable.Elements">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_JPEG_QUANTIZATION_TABLE::Elements']/*"/>	
+            <unmanaged>unsigned char Elements[64]</unmanaged>	
+            <unmanaged-short>unsigned char Elements</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DXGI.MappedRectangle">
             <summary>	
             <p>Describes a mapped rectangle that is used to access a surface.</p>	
@@ -6784,6 +7469,46 @@
             <para>A reference to the offset of the scrolled area that goes from the source rectangle (of previous frame) to the destination rectangle (of current frame). You can set this member to <c>null</c> to indicate no offset.</para>	
             </summary>	
             <unmanaged>POINT* pScrollOffset</unmanaged>	
+        </member>
+        <member name="T:SharpDX.DXGI.QueryVideoMemoryInformation">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_QUERY_VIDEO_MEMORY_INFO']/*"/>	
+            <unmanaged>DXGI_QUERY_VIDEO_MEMORY_INFO</unmanaged>	
+            <unmanaged-short>DXGI_QUERY_VIDEO_MEMORY_INFO</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.QueryVideoMemoryInformation.Budget">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_QUERY_VIDEO_MEMORY_INFO::Budget']/*"/>	
+            <unmanaged>unsigned longlong Budget</unmanaged>	
+            <unmanaged-short>unsigned longlong Budget</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.QueryVideoMemoryInformation.CurrentUsage">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_QUERY_VIDEO_MEMORY_INFO::CurrentUsage']/*"/>	
+            <unmanaged>unsigned longlong CurrentUsage</unmanaged>	
+            <unmanaged-short>unsigned longlong CurrentUsage</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.QueryVideoMemoryInformation.AvailableForReservation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_QUERY_VIDEO_MEMORY_INFO::AvailableForReservation']/*"/>	
+            <unmanaged>unsigned longlong AvailableForReservation</unmanaged>	
+            <unmanaged-short>unsigned longlong AvailableForReservation</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DXGI.QueryVideoMemoryInformation.CurrentReservation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DXGI_QUERY_VIDEO_MEMORY_INFO::CurrentReservation']/*"/>	
+            <unmanaged>unsigned longlong CurrentReservation</unmanaged>	
+            <unmanaged-short>unsigned longlong CurrentReservation</unmanaged-short>	
         </member>
         <member name="T:SharpDX.DXGI.Rational">
             <summary>	

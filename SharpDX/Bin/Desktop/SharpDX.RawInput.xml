@@ -574,6 +574,15 @@
             <unmanaged>RI_MOUSE_WHEEL</unmanaged>	
             <unmanaged-short>RI_MOUSE_WHEEL</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.RawInput.MouseButtonFlags.Hwheel">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='RI_MOUSE_HWHEEL']/*"/>	
+            <msdn-id>ms645543</msdn-id>	
+            <unmanaged>RI_MOUSE_HWHEEL</unmanaged>	
+            <unmanaged-short>RI_MOUSE_HWHEEL</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.RawInput.MouseButtonFlags.None">
             <summary>	
             None.	

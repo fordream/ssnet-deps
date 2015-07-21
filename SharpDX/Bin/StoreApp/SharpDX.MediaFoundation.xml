@@ -4805,6 +4805,33 @@
             <unmanaged>MF_MEDIA_ENGINE_EVENT_OPMINFO</unmanaged>	
             <unmanaged-short>MF_MEDIA_ENGINE_EVENT_OPMINFO</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEngineEvent.ResourceLost">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_MEDIA_ENGINE_EVENT_RESOURCELOST']/*"/>	
+            <msdn-id>hh162842</msdn-id>	
+            <unmanaged>MF_MEDIA_ENGINE_EVENT_RESOURCELOST</unmanaged>	
+            <unmanaged-short>MF_MEDIA_ENGINE_EVENT_RESOURCELOST</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEngineEvent.DelayloadeventChanged">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_MEDIA_ENGINE_EVENT_DELAYLOADEVENT_CHANGED']/*"/>	
+            <msdn-id>hh162842</msdn-id>	
+            <unmanaged>MF_MEDIA_ENGINE_EVENT_DELAYLOADEVENT_CHANGED</unmanaged>	
+            <unmanaged-short>MF_MEDIA_ENGINE_EVENT_DELAYLOADEVENT_CHANGED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEngineEvent.StreamRenderingerror">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_MEDIA_ENGINE_EVENT_STREAMRENDERINGERROR']/*"/>	
+            <msdn-id>hh162842</msdn-id>	
+            <unmanaged>MF_MEDIA_ENGINE_EVENT_STREAMRENDERINGERROR</unmanaged>	
+            <unmanaged-short>MF_MEDIA_ENGINE_EVENT_STREAMRENDERINGERROR</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.MediaFoundation.MediaEngineExtensionType">
             <summary>	
             <p>Specifies media engine extension types.</p>	
@@ -5225,6 +5252,38 @@
             <msdn-id>hh162855</msdn-id>	
             <unmanaged>MF_MEDIA_ENGINE_STATISTIC_TOTAL_FRAME_DELAY</unmanaged>	
             <unmanaged-short>MF_MEDIA_ENGINE_STATISTIC_TOTAL_FRAME_DELAY</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.MediaEngineStreamTypeFailed">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_MEDIA_ENGINE_STREAMTYPE_FAILED']/*"/>	
+            <unmanaged>MF_MEDIA_ENGINE_STREAMTYPE_FAILED</unmanaged>	
+            <unmanaged-short>MF_MEDIA_ENGINE_STREAMTYPE_FAILED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEngineStreamTypeFailed.Unknown">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_MEDIA_ENGINE_STREAMTYPE_FAILED_UNKNOWN']/*"/>	
+            <unmanaged>MF_MEDIA_ENGINE_STREAMTYPE_FAILED_UNKNOWN</unmanaged>	
+            <unmanaged-short>MF_MEDIA_ENGINE_STREAMTYPE_FAILED_UNKNOWN</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEngineStreamTypeFailed.Audio">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_MEDIA_ENGINE_STREAMTYPE_FAILED_AUDIO']/*"/>	
+            <unmanaged>MF_MEDIA_ENGINE_STREAMTYPE_FAILED_AUDIO</unmanaged>	
+            <unmanaged-short>MF_MEDIA_ENGINE_STREAMTYPE_FAILED_AUDIO</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEngineStreamTypeFailed.Video">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_MEDIA_ENGINE_STREAMTYPE_FAILED_VIDEO']/*"/>	
+            <unmanaged>MF_MEDIA_ENGINE_STREAMTYPE_FAILED_VIDEO</unmanaged>	
+            <unmanaged-short>MF_MEDIA_ENGINE_STREAMTYPE_FAILED_VIDEO</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.MediaEventTypes">
             <summary>	
@@ -6122,6 +6181,14 @@
             <unmanaged>METransformMarker</unmanaged>	
             <unmanaged-short>METransformMarker</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEventTypes.TransformInputStreamStateChanged">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='METransformInputStreamStateChanged']/*"/>	
+            <unmanaged>METransformInputStreamStateChanged</unmanaged>	
+            <unmanaged-short>METransformInputStreamStateChanged</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.MediaFoundation.MediaEventTypes.ByteStreamCharacteristicsChanged">
             <summary>	
             No documentation.	
@@ -6169,6 +6236,14 @@
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MEContentProtectionMetadata']/*"/>	
             <unmanaged>MEContentProtectionMetadata</unmanaged>	
             <unmanaged-short>MEContentProtectionMetadata</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MediaEventTypes.DeviceThermalStateChanged">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MEDeviceThermalStateChanged']/*"/>	
+            <unmanaged>MEDeviceThermalStateChanged</unmanaged>	
+            <unmanaged-short>MEDeviceThermalStateChanged</unmanaged-short>	
         </member>
         <member name="F:SharpDX.MediaFoundation.MediaEventTypes.ReservedMax">
             <summary>	
@@ -7580,6 +7655,15 @@
             <unmanaged>SAMPLE_PROTECTION_VERSION_RC4</unmanaged>	
             <unmanaged-short>SAMPLE_PROTECTION_VERSION_RC4</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.SampleProtectionVersion.Aes128ctr">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SAMPLE_PROTECTION_VERSION_AES128CTR']/*"/>	
+            <msdn-id>ms697061</msdn-id>	
+            <unmanaged>SAMPLE_PROTECTION_VERSION_AES128CTR</unmanaged>	
+            <unmanaged-short>SAMPLE_PROTECTION_VERSION_AES128CTR</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.MediaFoundation.ShutdownStatus">
             <summary>	
             <p> Describes the current status of a call to the <strong><see cref="M:SharpDX.MediaFoundation.Shutdownable.Shutdown"/></strong> method.</p>	
@@ -7609,11 +7693,11 @@
         </member>
         <member name="T:SharpDX.MediaFoundation.SinkWriterIndex">
             <summary>	
-            No documentation.	
+            No documentation for Direct3D12	
             </summary>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='__MIDL___MIDL_itf_mfreadwrite_0000_0004_0001']/*"/>	
-            <unmanaged>__MIDL___MIDL_itf_mfreadwrite_0000_0004_0001</unmanaged>	
-            <unmanaged-short>__MIDL___MIDL_itf_mfreadwrite_0000_0004_0001</unmanaged-short>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='__MIDL___MIDL_itf_mfreadwrite_0000_0005_0001']/*"/>	
+            <unmanaged>__MIDL___MIDL_itf_mfreadwrite_0000_0005_0001</unmanaged>	
+            <unmanaged-short>__MIDL___MIDL_itf_mfreadwrite_0000_0005_0001</unmanaged-short>	
         </member>
         <member name="F:SharpDX.MediaFoundation.SinkWriterIndex.InvalidStreamIndex">
             <summary>	
@@ -7872,6 +7956,14 @@
             <unmanaged>MF_RESOLUTION_PLUGIN_CONTROL_POLICY_WEB_ONLY</unmanaged>	
             <unmanaged-short>MF_RESOLUTION_PLUGIN_CONTROL_POLICY_WEB_ONLY</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.SourceResolverFlags.PluginControlPolicyWebOnlyEdgemode">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_RESOLUTION_PLUGIN_CONTROL_POLICY_WEB_ONLY_EDGEMODE']/*"/>	
+            <unmanaged>MF_RESOLUTION_PLUGIN_CONTROL_POLICY_WEB_ONLY_EDGEMODE</unmanaged>	
+            <unmanaged-short>MF_RESOLUTION_PLUGIN_CONTROL_POLICY_WEB_ONLY_EDGEMODE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.MediaFoundation.SourceResolverFlags.Read">
             <summary>	
             No documentation.	
@@ -8037,6 +8129,24 @@
             <unmanaged>MFT_MESSAGE_NOTIFY_START_OF_STREAM</unmanaged>	
             <unmanaged-short>MFT_MESSAGE_NOTIFY_START_OF_STREAM</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.TMessageType.NotifyReleaseResources">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFT_MESSAGE_NOTIFY_RELEASE_RESOURCES']/*"/>	
+            <msdn-id>ms697223</msdn-id>	
+            <unmanaged>MFT_MESSAGE_NOTIFY_RELEASE_RESOURCES</unmanaged>	
+            <unmanaged-short>MFT_MESSAGE_NOTIFY_RELEASE_RESOURCES</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.TMessageType.NotifyReacquireResources">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFT_MESSAGE_NOTIFY_REACQUIRE_RESOURCES']/*"/>	
+            <msdn-id>ms697223</msdn-id>	
+            <unmanaged>MFT_MESSAGE_NOTIFY_REACQUIRE_RESOURCES</unmanaged>	
+            <unmanaged-short>MFT_MESSAGE_NOTIFY_REACQUIRE_RESOURCES</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.MediaFoundation.TMessageType.CommandMarker">
             <summary>	
             No documentation.	
@@ -8045,6 +8155,46 @@
             <msdn-id>ms697223</msdn-id>	
             <unmanaged>MFT_MESSAGE_COMMAND_MARKER</unmanaged>	
             <unmanaged-short>MFT_MESSAGE_COMMAND_MARKER</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.TransferVideoFrameFlags">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_TRANSFER_VIDEO_FRAME_FLAGS']/*"/>	
+            <unmanaged>MF_TRANSFER_VIDEO_FRAME_FLAGS</unmanaged>	
+            <unmanaged-short>MF_TRANSFER_VIDEO_FRAME_FLAGS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.TransferVideoFrameFlags.Default">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_TRANSFER_VIDEO_FRAME_DEFAULT']/*"/>	
+            <unmanaged>MF_TRANSFER_VIDEO_FRAME_DEFAULT</unmanaged>	
+            <unmanaged-short>MF_TRANSFER_VIDEO_FRAME_DEFAULT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.TransferVideoFrameFlags.Stretch">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_TRANSFER_VIDEO_FRAME_STRETCH']/*"/>	
+            <unmanaged>MF_TRANSFER_VIDEO_FRAME_STRETCH</unmanaged>	
+            <unmanaged-short>MF_TRANSFER_VIDEO_FRAME_STRETCH</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.TransferVideoFrameFlags.IgnorePar">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_TRANSFER_VIDEO_FRAME_IGNORE_PAR']/*"/>	
+            <unmanaged>MF_TRANSFER_VIDEO_FRAME_IGNORE_PAR</unmanaged>	
+            <unmanaged-short>MF_TRANSFER_VIDEO_FRAME_IGNORE_PAR</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.TransferVideoFrameFlags.None">
+            <summary>	
+            None.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='']/*"/>	
+            <unmanaged>None</unmanaged>	
+            <unmanaged-short>None</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.TransformProcessOutputFlags">
             <summary>	
@@ -8660,6 +8810,24 @@
             <unmanaged>MFVideoPrimaries_SMPTE_C</unmanaged>	
             <unmanaged-short>MFVideoPrimaries_SMPTE_C</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.VideoPrimaries.Bt2020">
+            <summary>	
+            <dd> <p> Reserved. </p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFVideoPrimaries_BT2020']/*"/>	
+            <msdn-id>ms701628</msdn-id>	
+            <unmanaged>MFVideoPrimaries_BT2020</unmanaged>	
+            <unmanaged-short>MFVideoPrimaries_BT2020</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoPrimaries.Xyz">
+            <summary>	
+            <dd> <p> Reserved. This member forces the enumeration type to compile as a <strong>DWORD</strong> value. </p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFVideoPrimaries_XYZ']/*"/>	
+            <msdn-id>ms701628</msdn-id>	
+            <unmanaged>MFVideoPrimaries_XYZ</unmanaged>	
+            <unmanaged-short>MFVideoPrimaries_XYZ</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.MediaFoundation.VideoPrimaries.Last">
             <summary>	
             <dd> <p> Reserved. </p> </dd>	
@@ -8677,6 +8845,69 @@
             <msdn-id>ms701628</msdn-id>	
             <unmanaged>MFVideoPrimaries_ForceDWORD</unmanaged>	
             <unmanaged-short>MFVideoPrimaries_ForceDWORD</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.VideoProcessorMirror">
+            <summary>	
+            <p>Specifies how to flip a video image.</p>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_VIDEO_PROCESSOR_MIRROR']/*"/>	
+            <msdn-id>hh162904</msdn-id>	
+            <unmanaged>MF_VIDEO_PROCESSOR_MIRROR</unmanaged>	
+            <unmanaged-short>MF_VIDEO_PROCESSOR_MIRROR</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoProcessorMirror.MirrorNone">
+            <summary>	
+            <dd> <p>Do not flip the image.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MIRROR_NONE']/*"/>	
+            <msdn-id>hh162904</msdn-id>	
+            <unmanaged>MIRROR_NONE</unmanaged>	
+            <unmanaged-short>MIRROR_NONE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoProcessorMirror.MirrorHorizontal">
+            <summary>	
+            <dd> <p>Flip the image horizontally.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MIRROR_HORIZONTAL']/*"/>	
+            <msdn-id>hh162904</msdn-id>	
+            <unmanaged>MIRROR_HORIZONTAL</unmanaged>	
+            <unmanaged-short>MIRROR_HORIZONTAL</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoProcessorMirror.MirrorVertical">
+            <summary>	
+            <dd> <p>Flip the image vertically.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MIRROR_VERTICAL']/*"/>	
+            <msdn-id>hh162904</msdn-id>	
+            <unmanaged>MIRROR_VERTICAL</unmanaged>	
+            <unmanaged-short>MIRROR_VERTICAL</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.VideoProcessorRotation">
+            <summary>	
+            <p>Specifies how to rotate a video image.</p>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MF_VIDEO_PROCESSOR_ROTATION']/*"/>	
+            <msdn-id>hh162905</msdn-id>	
+            <unmanaged>MF_VIDEO_PROCESSOR_ROTATION</unmanaged>	
+            <unmanaged-short>MF_VIDEO_PROCESSOR_ROTATION</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoProcessorRotation.RotationNone">
+            <summary>	
+            <dd> <p>Do not rotate the image.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ROTATION_NONE']/*"/>	
+            <msdn-id>hh162905</msdn-id>	
+            <unmanaged>ROTATION_NONE</unmanaged>	
+            <unmanaged-short>ROTATION_NONE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoProcessorRotation.RotationNormal">
+            <summary>	
+            <dd> <p>Rotate the image to the correct viewing orientation.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ROTATION_NORMAL']/*"/>	
+            <msdn-id>hh162905</msdn-id>	
+            <unmanaged>ROTATION_NORMAL</unmanaged>	
+            <unmanaged-short>ROTATION_NORMAL</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.VideoRotationFormat">
             <summary>	
@@ -8885,6 +9116,33 @@
             <unmanaged>MFVideoTransFunc_709_sym</unmanaged>	
             <unmanaged-short>MFVideoTransFunc_709_sym</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.VideoTransferFunction.Func2020Const">
+            <summary>	
+            <dd> <p> Reserved. </p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFVideoTransFunc_2020_const']/*"/>	
+            <msdn-id>ms705629</msdn-id>	
+            <unmanaged>MFVideoTransFunc_2020_const</unmanaged>	
+            <unmanaged-short>MFVideoTransFunc_2020_const</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoTransferFunction.Func2020">
+            <summary>	
+            <dd> <p> Reserved. This member forces the enumeration type to compile as a <strong>DWORD</strong> value. </p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFVideoTransFunc_2020']/*"/>	
+            <msdn-id>ms705629</msdn-id>	
+            <unmanaged>MFVideoTransFunc_2020</unmanaged>	
+            <unmanaged-short>MFVideoTransFunc_2020</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoTransferFunction.Func26">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFVideoTransFunc_26']/*"/>	
+            <msdn-id>ms705629</msdn-id>	
+            <unmanaged>MFVideoTransFunc_26</unmanaged>	
+            <unmanaged-short>MFVideoTransFunc_26</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.MediaFoundation.VideoTransferFunction.FuncLast">
             <summary>	
             <dd> <p> Reserved. </p> </dd>	
@@ -8950,6 +9208,24 @@
             <msdn-id>ms694036</msdn-id>	
             <unmanaged>MFVideoTransferMatrix_SMPTE240M</unmanaged>	
             <unmanaged-short>MFVideoTransferMatrix_SMPTE240M</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoTransferMatrix.Bt202010">
+            <summary>	
+            <dd> <p>Reserved.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFVideoTransferMatrix_BT2020_10']/*"/>	
+            <msdn-id>ms694036</msdn-id>	
+            <unmanaged>MFVideoTransferMatrix_BT2020_10</unmanaged>	
+            <unmanaged-short>MFVideoTransferMatrix_BT2020_10</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoTransferMatrix.Bt202012">
+            <summary>	
+            <dd> <p>Reserved. This member forces the enumeration type to compile as a <strong>DWORD</strong> value.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFVideoTransferMatrix_BT2020_12']/*"/>	
+            <msdn-id>ms694036</msdn-id>	
+            <unmanaged>MFVideoTransferMatrix_BT2020_12</unmanaged>	
+            <unmanaged-short>MFVideoTransferMatrix_BT2020_12</unmanaged-short>	
         </member>
         <member name="F:SharpDX.MediaFoundation.VideoTransferMatrix.Last">
             <summary>	
@@ -9122,13 +9398,25 @@
             <summary>Constant Dts.</summary>
             <unmanaged>MFAudioFormat_DTS</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.Vorbis">
+            <summary>Constant Vorbis.</summary>
+            <unmanaged>MFAudioFormat_Vorbis</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.DolbyDDPlus">
             <summary>Constant DolbyDDPlus.</summary>
             <unmanaged>MFAudioFormat_Dolby_DDPlus</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.DolbyAc3Hdcp">
+            <summary>Constant DolbyAc3Hdcp.</summary>
+            <unmanaged>MFAudioFormat_Dolby_AC3_HDCP</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.DolbyAc3Spdif">
             <summary>Constant DolbyAc3Spdif.</summary>
             <unmanaged>MFAudioFormat_Dolby_AC3_SPDIF</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.Alac">
+            <summary>Constant Alac.</summary>
+            <unmanaged>MFAudioFormat_ALAC</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.Wmaspdif">
             <summary>Constant Wmaspdif.</summary>
@@ -9154,9 +9442,33 @@
             <summary>Constant Base.</summary>
             <unmanaged>MFAudioFormat_Base</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.Lpcm">
+            <summary>Constant Lpcm.</summary>
+            <unmanaged>MFAudioFormat_LPCM</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.AacHdcp">
+            <summary>Constant AacHdcp.</summary>
+            <unmanaged>MFAudioFormat_AAC_HDCP</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.DolbyAc3">
             <summary>Constant DolbyAc3.</summary>
             <unmanaged>MFAudioFormat_Dolby_AC3</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.Flac">
+            <summary>Constant Flac.</summary>
+            <unmanaged>MFAudioFormat_FLAC</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.PcmHdcp">
+            <summary>Constant PcmHdcp.</summary>
+            <unmanaged>MFAudioFormat_PCM_HDCP</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.BaseHdcp">
+            <summary>Constant BaseHdcp.</summary>
+            <unmanaged>MFAudioFormat_Base_HDCP</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.AdtsHdcp">
+            <summary>Constant AdtsHdcp.</summary>
+            <unmanaged>MFAudioFormat_ADTS_HDCP</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.AudioFormatGuids.Mpeg">
             <summary>Constant Mpeg.</summary>
@@ -9398,21 +9710,6 @@
             <unmanaged>HRESULT MFCancelWorkItem([In] unsigned longlong Key)</unmanaged>	
             <unmanaged-short>MFCancelWorkItem</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateAttributes(SharpDX.MediaFoundation.MediaAttributes,System.Int32)">
-            <summary>	
-            <p> Creates an empty attribute store. </p>	
-            </summary>	
-            <param name="mFAttributesOut"><dd> <p>Receives a reference to the <strong><see cref="T:SharpDX.MediaFoundation.MediaAttributes"/></strong> interface. The caller must release the interface. </p> </dd></param>	
-            <param name="cInitialSize"><dd> <p>The initial number of elements allocated for the attribute store. The attribute store grows as needed. </p> </dd></param>	
-            <returns><p>If this function succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
-            <remarks>	
-            <p>Attributes are used throughout Microsoft Media Foundation to configure objects, describe media formats, query object properties, and other purposes. For more information, see Attributes in Media Foundation.</p><p>For a complete list of all the defined attribute GUIDs in Media Foundation, see Media Foundation Attributes.</p><p><strong>Windows?Phone?8:</strong> This API is supported.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCreateAttributes']/*"/>	
-            <msdn-id>ms701878</msdn-id>	
-            <unmanaged>HRESULT MFCreateAttributes([Out, Fast] IMFAttributes** ppMFAttributes,[In] unsigned int cInitialSize)</unmanaged>	
-            <unmanaged-short>MFCreateAttributes</unmanaged-short>	
-        </member>
         <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateWaveFormatExFromMFMediaType(SharpDX.MediaFoundation.MediaType,System.IntPtr@,System.Int32@,System.Int32)">
             <summary>	
             <p> </p><p>Converts a Media Foundation audio media type to a <strong><see cref="T:SharpDX.Multimedia.WaveFormat"/></strong> structure.</p>	
@@ -9480,6 +9777,22 @@
             <unmanaged>HRESULT MFUnwrapMediaType([In] IMFMediaType* pWrap,[Out] IMFMediaType** ppOrig)</unmanaged>	
             <unmanaged-short>MFUnwrapMediaType</unmanaged-short>	
         </member>
+        <member name="M:SharpDX.MediaFoundation.MediaFactory.GetAttributesAsBlob(SharpDX.MediaFoundation.MediaAttributes,System.Byte[],System.Int32)">
+            <summary>	
+            <p> </p><p>Converts the contents of an attribute store to a byte array.</p>	
+            </summary>	
+            <param name="attributesRef"><dd> <p>Pointer to the <strong><see cref="T:SharpDX.MediaFoundation.MediaAttributes"/></strong> interface of the attribute store.</p> </dd></param>	
+            <param name="bufRef"><dd> <p>Pointer to an array that receives the attribute data.</p> </dd></param>	
+            <param name="cbBufSize"><dd> <p>Size of the <em>pBuf</em> array, in bytes. To get the required size of the buffer, call <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.GetAttributesAsBlobSize(SharpDX.MediaFoundation.MediaAttributes,System.Int32@)"/></strong>.</p> </dd></param>	
+            <returns><p>The function returns an <strong><see cref="T:SharpDX.Result"/></strong>. Possible values include, but are not limited to, those in the following table.</p><table> <tr><th>Return code</th><th>Description</th></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.Result.Ok"/></strong></dt> </dl> </td><td> <p>The function succeeded.</p> </td></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.MediaFoundation.ResultCode.BufferTooSmall"/></strong></dt> </dl> </td><td> <p>The buffer given in <em>pBuf</em> is too small.</p> </td></tr> </table><p>?</p></returns>	
+            <remarks>	
+            <p>The function skips any attributes with <strong><see cref="T:SharpDX.ComObject"/></strong> reference values (<see cref="F:SharpDX.MediaFoundation.AttributeType.IUnknown"/>); they are not stored in the array.</p><p>To convert the byte array back into an attribute store, call <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.InitAttributesFromBlob(SharpDX.MediaFoundation.MediaAttributes,System.Byte[],System.Int32)"/></strong>.</p><p>To write an attribute store to a stream, call the <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.SerializeAttributesToStream(SharpDX.MediaFoundation.MediaAttributes,System.Int32,System.IntPtr)"/></strong> function.</p><p><strong>Windows?Phone?8:</strong> This API is supported.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFGetAttributesAsBlob']/*"/>	
+            <msdn-id>ms694877</msdn-id>	
+            <unmanaged>HRESULT MFGetAttributesAsBlob([In] IMFAttributes* pAttributes,[Out, Buffer] unsigned char* pBuf,[In] unsigned int cbBufSize)</unmanaged>	
+            <unmanaged-short>MFGetAttributesAsBlob</unmanaged-short>	
+        </member>
         <member name="M:SharpDX.MediaFoundation.MediaFactory.LlMulDiv(System.Int64,System.Int64,System.Int64,System.Int64)">
             <summary>	
             <p>Calculates ((a * b) + d) / c, where each term is a 64-bit signed value.</p>	
@@ -9546,6 +9859,23 @@
             <msdn-id>aa367740</msdn-id>	
             <unmanaged>HRESULT MFLockWorkQueue([In] unsigned int dwWorkQueue)</unmanaged>	
             <unmanaged-short>MFLockWorkQueue</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateAsyncResult(SharpDX.ComObject,System.IntPtr,SharpDX.ComObject,SharpDX.MediaFoundation.AsyncResult@)">
+            <summary>	
+            <p> </p><p>Creates an asynchronous result object. Use this function if you are implementing an asynchronous method.</p>	
+            </summary>	
+            <param name="unkObjectRef"><dd> <p>Pointer to the object stored in the asynchronous result. This reference is returned by the <strong><see cref="M:SharpDX.MediaFoundation.AsyncResult.GetObject(SharpDX.ComObject@)"/></strong> method. This parameter can be <strong><c>null</c></strong>.</p> </dd></param>	
+            <param name="callbackRef"><dd> <p>Pointer to the <strong><see cref="T:SharpDX.MediaFoundation.IAsyncCallback"/></strong> interface. This interface is implemented by the caller of the asynchronous method.</p> </dd></param>	
+            <param name="unkStateRef"><dd> <p>Pointer to the <strong><see cref="T:SharpDX.ComObject"/></strong> interface of a state object. This value is provided by the caller of the asynchronous method. This parameter can be <strong><c>null</c></strong>.</p> </dd></param>	
+            <param name="asyncResultOut"><dd> <p>Receives a reference to the <strong><see cref="T:SharpDX.MediaFoundation.AsyncResult"/></strong> interface. The caller must release the interface.</p> </dd></param>	
+            <returns><p>The function returns an <strong><see cref="T:SharpDX.Result"/></strong>. Possible values include, but are not limited to, those in the following table.</p><table> <tr><th>Return code</th><th>Description</th></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.Result.Ok"/></strong></dt> </dl> </td><td> <p>The function succeeded.</p> </td></tr> </table><p>?</p></returns>	
+            <remarks>	
+            <p>To invoke the callback specified in <em>pCallback</em>, call the <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.InvokeCallback(SharpDX.MediaFoundation.AsyncResult)"/></strong> function.</p><p><strong>Windows?Phone?8:</strong> This API is supported.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCreateAsyncResult']/*"/>	
+            <msdn-id>ms698952</msdn-id>	
+            <unmanaged>HRESULT MFCreateAsyncResult([In] IUnknown* punkObject,[In] IMFAsyncCallback* pCallback,[In] IUnknown* punkState,[Out] IMFAsyncResult** ppAsyncResult)</unmanaged>	
+            <unmanaged-short>MFCreateAsyncResult</unmanaged-short>	
         </member>
         <member name="M:SharpDX.MediaFoundation.MediaFactory.InitMediaTypeFromWaveFormatEx(SharpDX.MediaFoundation.MediaType,SharpDX.Multimedia.WaveFormat[],System.Int32)">
             <summary>	
@@ -9639,23 +9969,6 @@
             <unmanaged>HRESULT MFUnlockDXGIDeviceManager()</unmanaged>	
             <unmanaged-short>MFUnlockDXGIDeviceManager</unmanaged-short>	
         </member>
-        <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateAsyncResult(SharpDX.ComObject,System.IntPtr,SharpDX.ComObject,SharpDX.MediaFoundation.AsyncResult@)">
-            <summary>	
-            <p> </p><p>Creates an asynchronous result object. Use this function if you are implementing an asynchronous method.</p>	
-            </summary>	
-            <param name="unkObjectRef"><dd> <p>Pointer to the object stored in the asynchronous result. This reference is returned by the <strong><see cref="M:SharpDX.MediaFoundation.AsyncResult.GetObject(SharpDX.ComObject@)"/></strong> method. This parameter can be <strong><c>null</c></strong>.</p> </dd></param>	
-            <param name="callbackRef"><dd> <p>Pointer to the <strong><see cref="T:SharpDX.MediaFoundation.IAsyncCallback"/></strong> interface. This interface is implemented by the caller of the asynchronous method.</p> </dd></param>	
-            <param name="unkStateRef"><dd> <p>Pointer to the <strong><see cref="T:SharpDX.ComObject"/></strong> interface of a state object. This value is provided by the caller of the asynchronous method. This parameter can be <strong><c>null</c></strong>.</p> </dd></param>	
-            <param name="asyncResultOut"><dd> <p>Receives a reference to the <strong><see cref="T:SharpDX.MediaFoundation.AsyncResult"/></strong> interface. The caller must release the interface.</p> </dd></param>	
-            <returns><p>The function returns an <strong><see cref="T:SharpDX.Result"/></strong>. Possible values include, but are not limited to, those in the following table.</p><table> <tr><th>Return code</th><th>Description</th></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.Result.Ok"/></strong></dt> </dl> </td><td> <p>The function succeeded.</p> </td></tr> </table><p>?</p></returns>	
-            <remarks>	
-            <p>To invoke the callback specified in <em>pCallback</em>, call the <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.InvokeCallback(SharpDX.MediaFoundation.AsyncResult)"/></strong> function.</p><p><strong>Windows?Phone?8:</strong> This API is supported.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCreateAsyncResult']/*"/>	
-            <msdn-id>ms698952</msdn-id>	
-            <unmanaged>HRESULT MFCreateAsyncResult([In] IUnknown* punkObject,[In] IMFAsyncCallback* pCallback,[In] IUnknown* punkState,[Out] IMFAsyncResult** ppAsyncResult)</unmanaged>	
-            <unmanaged-short>MFCreateAsyncResult</unmanaged-short>	
-        </member>
         <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateDXGIDeviceManager(System.Int32@,SharpDX.MediaFoundation.DXGIDeviceManager)">
             <summary>	
             <p>Creates an instance of the Microsoft DirectX Graphics Infrastructure (DXGI) Device Manager.</p>	
@@ -9727,6 +10040,21 @@
             <msdn-id>ms702276</msdn-id>	
             <unmanaged>HRESULT MFCreateSample([Out] IMFSample** ppIMFSample)</unmanaged>	
             <unmanaged-short>MFCreateSample</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateAttributes(SharpDX.MediaFoundation.MediaAttributes,System.Int32)">
+            <summary>	
+            <p> Creates an empty attribute store. </p>	
+            </summary>	
+            <param name="mFAttributesOut"><dd> <p>Receives a reference to the <strong><see cref="T:SharpDX.MediaFoundation.MediaAttributes"/></strong> interface. The caller must release the interface. </p> </dd></param>	
+            <param name="cInitialSize"><dd> <p>The initial number of elements allocated for the attribute store. The attribute store grows as needed. </p> </dd></param>	
+            <returns><p>If this function succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <remarks>	
+            <p>Attributes are used throughout Microsoft Media Foundation to configure objects, describe media formats, query object properties, and other purposes. For more information, see Attributes in Media Foundation.</p><p>For a complete list of all the defined attribute GUIDs in Media Foundation, see Media Foundation Attributes.</p><p><strong>Windows?Phone?8:</strong> This API is supported.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCreateAttributes']/*"/>	
+            <msdn-id>ms701878</msdn-id>	
+            <unmanaged>HRESULT MFCreateAttributes([Out, Fast] IMFAttributes** ppMFAttributes,[In] unsigned int cInitialSize)</unmanaged>	
+            <unmanaged-short>MFCreateAttributes</unmanaged-short>	
         </member>
         <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateCollection(SharpDX.MediaFoundation.Collection@)">
             <summary>	
@@ -9872,22 +10200,6 @@
             <msdn-id>ms695212</msdn-id>	
             <unmanaged>HRESULT MFCreateMemoryBuffer([In] unsigned int cbMaxLength,[Out] IMFMediaBuffer** ppBuffer)</unmanaged>	
             <unmanaged-short>MFCreateMemoryBuffer</unmanaged-short>	
-        </member>
-        <member name="M:SharpDX.MediaFoundation.MediaFactory.GetAttributesAsBlob(SharpDX.MediaFoundation.MediaAttributes,System.Byte[],System.Int32)">
-            <summary>	
-            <p> </p><p>Converts the contents of an attribute store to a byte array.</p>	
-            </summary>	
-            <param name="attributesRef"><dd> <p>Pointer to the <strong><see cref="T:SharpDX.MediaFoundation.MediaAttributes"/></strong> interface of the attribute store.</p> </dd></param>	
-            <param name="bufRef"><dd> <p>Pointer to an array that receives the attribute data.</p> </dd></param>	
-            <param name="cbBufSize"><dd> <p>Size of the <em>pBuf</em> array, in bytes. To get the required size of the buffer, call <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.GetAttributesAsBlobSize(SharpDX.MediaFoundation.MediaAttributes,System.Int32@)"/></strong>.</p> </dd></param>	
-            <returns><p>The function returns an <strong><see cref="T:SharpDX.Result"/></strong>. Possible values include, but are not limited to, those in the following table.</p><table> <tr><th>Return code</th><th>Description</th></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.Result.Ok"/></strong></dt> </dl> </td><td> <p>The function succeeded.</p> </td></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.MediaFoundation.ResultCode.BufferTooSmall"/></strong></dt> </dl> </td><td> <p>The buffer given in <em>pBuf</em> is too small.</p> </td></tr> </table><p>?</p></returns>	
-            <remarks>	
-            <p>The function skips any attributes with <strong><see cref="T:SharpDX.ComObject"/></strong> reference values (<see cref="F:SharpDX.MediaFoundation.AttributeType.IUnknown"/>); they are not stored in the array.</p><p>To convert the byte array back into an attribute store, call <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.InitAttributesFromBlob(SharpDX.MediaFoundation.MediaAttributes,System.Byte[],System.Int32)"/></strong>.</p><p>To write an attribute store to a stream, call the <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.SerializeAttributesToStream(SharpDX.MediaFoundation.MediaAttributes,System.Int32,System.IntPtr)"/></strong> function.</p><p><strong>Windows?Phone?8:</strong> This API is supported.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
-            </remarks>	
-            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFGetAttributesAsBlob']/*"/>	
-            <msdn-id>ms694877</msdn-id>	
-            <unmanaged>HRESULT MFGetAttributesAsBlob([In] IMFAttributes* pAttributes,[Out, Buffer] unsigned char* pBuf,[In] unsigned int cbBufSize)</unmanaged>	
-            <unmanaged-short>MFGetAttributesAsBlob</unmanaged-short>	
         </member>
         <member name="M:SharpDX.MediaFoundation.MediaFactory.CreateMediaBufferFromMediaType(SharpDX.MediaFoundation.MediaType,System.Int64,System.Int32,System.Int32,SharpDX.MediaFoundation.MediaBuffer@)">
             <summary>	
@@ -10257,7 +10569,7 @@
             <param name="attributesRef"><dd> <p>Pointer to the <strong><see cref="T:SharpDX.MediaFoundation.MediaAttributes"/></strong> interface. You can use this parameter to configure the sink writer. For more information, see Sink Writer Attributes. This parameter can be <strong><c>null</c></strong>. </p> </dd></param>	
             <returns><dd> <p>Receives a reference to the <strong><see cref="T:SharpDX.MediaFoundation.SinkWriter"/></strong> interface. The caller must release the interface.</p> </dd></returns>	
             <remarks>	
-            <p>Call <strong>CoInitialize(Ex)</strong> and <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.Startup(System.Int32,System.Int32)"/></strong> before calling this function.</p><p>The first three parameters to this function can be <strong><c>null</c></strong>; however, only certain combinations are valid:</p><p> </p><table> <tr><th>Description</th><th><em>pwszOutputURL</em></th><th><em>pByteStream</em></th><th><em>pAttributes</em></th></tr> <tr><td>Specify a byte stream, with no URL.</td><td><strong><c>null</c></strong></td><td>non-<strong><c>null</c></strong></td><td>Required (must not be <strong><c>null</c></strong>).</td></tr> <tr><td>Specify a URL, with no byte stream.</td><td>not <strong><c>null</c></strong></td><td><strong><c>null</c></strong></td><td>Optional (may be <strong><c>null</c></strong>).</td></tr> <tr><td>Specify both a URL and a byte stream.</td><td>non-<strong><c>null</c></strong></td><td>non-<strong><c>null</c></strong></td><td>Optional (may be <strong><c>null</c></strong>).</td></tr> </table><p>?</p><p>The <em>pAttributes</em> parameter is required in the first case and optional in the others.</p><ul> <li>Case 1: Specify a byte stream without a URL. The <em>pAttributes</em> parameter must point to an attribute store that contains the MF_TRANSCODE_CONTAINERTYPE attribute. The sink writer uses the  MF_TRANSCODE_CONTAINERTYPE attribute to determine the type of file container to write, such as ASF or MP4.</li> <li>Case 2: Specify a URL without a byte stream. The sink writer creates a new file named <em>pwszOutputURL</em>. If <em>pAttributes</em> specifies an attribute store with the MF_TRANSCODE_CONTAINERTYPE attribute, the sink writer uses that attribute to determine the type of file container. Otherwise, if the MF_TRANSCODE_CONTAINERTYPE attribute is absent or <em>pAttributes</em> is <strong><c>null</c></strong>, the sink writer uses the file name extension to select the container type; for example, ".asf" for an ASF file.</li> <li>Case 3: Specify both a URL and a byte stream. The sink writer writes to the byte stream. The URL provided in <em>pwszOutputURL</em> is informational only; the sink writer does not create a new file. If <em>pAttributes</em> specifies an attribute store with the MF_TRANSCODE_CONTAINERTYPE attribute, the sink writer uses that attribute to determine the type of file container. Otherwise, the sink writer uses the file name extension to select the container type. The MF_TRANSCODE_CONTAINERTYPE attribute overrides the URL file name extension in this case.</li> </ul><p>This function is available on Windows?Vista if Platform Update Supplement for Windows?Vista is installed.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
+            <p>Call <strong>CoInitialize(Ex)</strong> and <strong><see cref="M:SharpDX.MediaFoundation.MediaFactory.Startup(System.Int32,System.Int32)"/></strong> before calling this function.</p><p>The first three parameters to this function can be <strong><c>null</c></strong>; however, only certain combinations are valid:</p><p> </p><table> <tr><th>Description</th><th><em>pwszOutputURL</em></th><th><em>pByteStream</em></th><th><em>pAttributes</em></th></tr> <tr><td>Specify a byte stream, with no URL.</td><td><strong><c>null</c></strong></td><td>non-<strong><c>null</c></strong></td><td>Required (must not be <strong><c>null</c></strong>).</td></tr> <tr><td>Specify a URL, with no byte stream.</td><td>not <strong><c>null</c></strong></td><td><strong><c>null</c></strong></td><td>Optional (may be <strong><c>null</c></strong>).</td></tr> <tr><td>Specify both a URL and a byte stream.</td><td>non-<strong><c>null</c></strong></td><td>non-<strong><c>null</c></strong></td><td>Optional (may be <strong><c>null</c></strong>).</td></tr> </table><p>?</p><p>The <em>pAttributes</em> parameter is required in the first case and optional in the others.</p><ul> <li>Case 1: Specify a byte stream without a URL. The <em>pAttributes</em> parameter must point to an attribute store that contains the <see cref="F:SharpDX.MediaFoundation.TranscodeAttributeKeys.TranscodeContainertype"/> attribute. The sink writer uses the  <see cref="F:SharpDX.MediaFoundation.TranscodeAttributeKeys.TranscodeContainertype"/> attribute to determine the type of file container to write, such as ASF or MP4.</li> <li>Case 2: Specify a URL without a byte stream. The sink writer creates a new file named <em>pwszOutputURL</em>. If <em>pAttributes</em> specifies an attribute store with the <see cref="F:SharpDX.MediaFoundation.TranscodeAttributeKeys.TranscodeContainertype"/> attribute, the sink writer uses that attribute to determine the type of file container. Otherwise, if the <see cref="F:SharpDX.MediaFoundation.TranscodeAttributeKeys.TranscodeContainertype"/> attribute is absent or <em>pAttributes</em> is <strong><c>null</c></strong>, the sink writer uses the file name extension to select the container type; for example, ".asf" for an ASF file.</li> <li>Case 3: Specify both a URL and a byte stream. The sink writer writes to the byte stream. The URL provided in <em>pwszOutputURL</em> is informational only; the sink writer does not create a new file. If <em>pAttributes</em> specifies an attribute store with the <see cref="F:SharpDX.MediaFoundation.TranscodeAttributeKeys.TranscodeContainertype"/> attribute, the sink writer uses that attribute to determine the type of file container. Otherwise, the sink writer uses the file name extension to select the container type. The <see cref="F:SharpDX.MediaFoundation.TranscodeAttributeKeys.TranscodeContainertype"/> attribute overrides the URL file name extension in this case.</li> </ul><p>This function is available on Windows?Vista if Platform Update Supplement for Windows?Vista is installed.</p><p><strong>Windows Phone 8.1:</strong> This API is supported.</p>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCreateSinkWriterFromURL']/*"/>	
             <msdn-id>dd388105</msdn-id>	
@@ -10870,6 +11182,10 @@
             <summary>Constant InvalidPosition.</summary>
             <unmanaged>MF_E_INVALID_POSITION</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.RtUnavailable">
+            <summary>Constant RtUnavailable.</summary>
+            <unmanaged>MF_E_RT_UNAVAILABLE</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.PolicyMgrActionOufOfBounds">
             <summary>Constant PolicyMgrActionOufOfBounds.</summary>
             <unmanaged>MF_E_POLICY_MGR_ACTION_OUTOFBOUNDS</unmanaged>
@@ -10922,6 +11238,10 @@
             <summary>Constant NetStreamGroupsNotSupported.</summary>
             <unmanaged>MF_E_NET_STREAMGROUPS_NOT_SUPPORTED</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NetTooManyRedirects">
+            <summary>Constant NetTooManyRedirects.</summary>
+            <unmanaged>MF_E_NET_TOO_MANY_REDIRECTS</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.AsfParsingincomplete">
             <summary>Constant AsfParsingincomplete.</summary>
             <unmanaged>MF_E_ASF_PARSINGINCOMPLETE</unmanaged>
@@ -10966,6 +11286,10 @@
             <summary>Constant TransformNeedMoreInput.</summary>
             <unmanaged>MF_E_TRANSFORM_NEED_MORE_INPUT</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidStateTransition">
+            <summary>Constant InvalidStateTransition.</summary>
+            <unmanaged>MF_E_INVALID_STATE_TRANSITION</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.NetRequireInput">
             <summary>Constant NetRequireInput.</summary>
             <unmanaged>MF_E_NET_REQUIRE_INPUT</unmanaged>
@@ -10989,14 +11313,6 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.AsfNoindex">
             <summary>Constant AsfNoindex.</summary>
             <unmanaged>MF_E_ASF_NOINDEX</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.AsfIndexNotLoaded">
-            <summary>Constant AsfIndexNotLoaded.</summary>
-            <unmanaged>MF_E_ASF_INDEXNOTLOADED</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NotAccepting">
-            <summary>Constant NotAccepting.</summary>
-            <unmanaged>MF_E_NOTACCEPTING</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.ItaUnrecognizedDigitalVideoOutput">
             <summary>Constant ItaUnrecognizedDigitalVideoOutput.</summary>
@@ -11026,17 +11342,9 @@
             <summary>Constant NetInvalidPushTemplate.</summary>
             <unmanaged>MF_E_NET_INVALID_PUSH_TEMPLATE</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.RtUnavailable">
-            <summary>Constant RtUnavailable.</summary>
-            <unmanaged>MF_E_RT_UNAVAILABLE</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidFileFormat">
             <summary>Constant InvalidFileFormat.</summary>
             <unmanaged>MF_E_INVALID_FILE_FORMAT</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.StreamError">
-            <summary>Constant StreamError.</summary>
-            <unmanaged>MF_E_STREAM_ERROR</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.AllOcatorNotCommited">
             <summary>Constant AllOcatorNotCommited.</summary>
@@ -11046,9 +11354,9 @@
             <summary>Constant WmdrmotaDrmHeaderNotAvailable.</summary>
             <unmanaged>MF_E_WMDRMOTA_DRM_HEADER_NOT_AVAILABLE</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.MultipleBegin">
-            <summary>Constant MultipleBegin.</summary>
-            <unmanaged>MF_E_MULTIPLE_BEGIN</unmanaged>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NetNoconnection">
+            <summary>Constant NetNoconnection.</summary>
+            <unmanaged>MF_E_NET_NOCONNECTION</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.InsufficientBuffer">
             <summary>Constant InsufficientBuffer.</summary>
@@ -11058,21 +11366,25 @@
             <summary>Constant NetTooMuchData.</summary>
             <unmanaged>MF_E_NET_TOO_MUCH_DATA</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.TopoMissingStreamDescriptor">
-            <summary>Constant TopoMissingStreamDescriptor.</summary>
-            <unmanaged>MF_E_TOPO_MISSING_STREAM_DESCRIPTOR</unmanaged>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.RtWouldblock">
+            <summary>Constant RtWouldblock.</summary>
+            <unmanaged>MF_E_RT_WOULDBLOCK</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.AsfOpaquePacket">
+            <summary>Constant AsfOpaquePacket.</summary>
+            <unmanaged>MF_E_ASF_OPAQUEPACKET</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.UnsupportedRate">
             <summary>Constant UnsupportedRate.</summary>
             <unmanaged>MF_E_UNSUPPORTED_RATE</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NoSampleTimestamp">
-            <summary>Constant NoSampleTimestamp.</summary>
-            <unmanaged>MF_E_NO_SAMPLE_TIMESTAMP</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.RebootRequired">
             <summary>Constant RebootRequired.</summary>
             <unmanaged>MF_E_REBOOT_REQUIRED</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.TransformProfileInvalidOrCorrupt">
+            <summary>Constant TransformProfileInvalidOrCorrupt.</summary>
+            <unmanaged>MF_E_TRANSFORM_PROFILE_INVALID_OR_CORRUPT</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidIndex">
             <summary>Constant InvalidIndex.</summary>
@@ -11098,13 +11410,21 @@
             <summary>Constant ComponentRevoked.</summary>
             <unmanaged>MF_E_COMPONENT_REVOKED</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.Shutdown">
-            <summary>Constant Shutdown.</summary>
-            <unmanaged>MF_E_SHUTDOWN</unmanaged>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.AsfIndexNotLoaded">
+            <summary>Constant AsfIndexNotLoaded.</summary>
+            <unmanaged>MF_E_ASF_INDEXNOTLOADED</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.MediaSourceNotStarted">
             <summary>Constant MediaSourceNotStarted.</summary>
             <unmanaged>MF_E_MEDIA_SOURCE_NOT_STARTED</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.TopoMissingStreamDescriptor">
+            <summary>Constant TopoMissingStreamDescriptor.</summary>
+            <unmanaged>MF_E_TOPO_MISSING_STREAM_DESCRIPTOR</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NoSampleTimestamp">
+            <summary>Constant NoSampleTimestamp.</summary>
+            <unmanaged>MF_E_NO_SAMPLE_TIMESTAMP</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.TopoStreamDescriptorNotSelected">
             <summary>Constant TopoStreamDescriptorNotSelected.</summary>
@@ -11117,10 +11437,6 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.SinkHeadersNotFound">
             <summary>Constant SinkHeadersNotFound.</summary>
             <unmanaged>MF_E_SINK_HEADERS_NOT_FOUND</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.TransformNotPossibleForCurrentMediaTypeCombination">
-            <summary>Constant TransformNotPossibleForCurrentMediaTypeCombination.</summary>
-            <unmanaged>MF_E_TRANSFORM_NOT_POSSIBLE_FOR_CURRENT_MEDIATYPE_COMBINATION</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidStreamNumber">
             <summary>Constant InvalidStreamNumber.</summary>
@@ -11154,17 +11470,21 @@
             <summary>Constant CaptureSinkRotateError.</summary>
             <unmanaged>MF_E_CAPTURE_SINK_ROTATE_ERROR</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NetBusy">
+            <summary>Constant NetBusy.</summary>
+            <unmanaged>MF_E_NET_BUSY</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.TopologyVerificationFailed">
             <summary>Constant TopologyVerificationFailed.</summary>
             <unmanaged>MF_E_TOPOLOGY_VERIFICATION_FAILED</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NetNoconnection">
-            <summary>Constant NetNoconnection.</summary>
-            <unmanaged>MF_E_NET_NOCONNECTION</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.UnsupportedRepresentation">
             <summary>Constant UnsupportedRepresentation.</summary>
             <unmanaged>MF_E_UNSUPPORTED_REPRESENTATION</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NotAccepting">
+            <summary>Constant NotAccepting.</summary>
+            <unmanaged>MF_E_NOTACCEPTING</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidStreamState">
             <summary>Constant InvalidStreamState.</summary>
@@ -11193,6 +11513,10 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.StreamsInkExists">
             <summary>Constant StreamsInkExists.</summary>
             <unmanaged>MF_E_STREAMSINK_EXISTS</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.AsfInvalidData">
+            <summary>Constant AsfInvalidData.</summary>
+            <unmanaged>MF_E_ASF_INVALIDDATA</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.VideoRenNoProcampHw">
             <summary>Constant VideoRenNoProcampHw.</summary>
@@ -11246,9 +11570,13 @@
             <summary>Constant NoMoreDropModes.</summary>
             <unmanaged>MF_E_NO_MORE_DROP_MODES</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.RtWouldblock">
-            <summary>Constant RtWouldblock.</summary>
-            <unmanaged>MF_E_RT_WOULDBLOCK</unmanaged>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NetCompanionDriverDisconnect">
+            <summary>Constant NetCompanionDriverDisconnect.</summary>
+            <unmanaged>MF_E_NET_COMPANION_DRIVER_DISCONNECT</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.PolicyUnsupported">
+            <summary>Constant PolicyUnsupported.</summary>
+            <unmanaged>MF_E_POLICY_UNSUPPORTED</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.NoContentProtectionManager">
             <summary>Constant NoContentProtectionManager.</summary>
@@ -11266,9 +11594,21 @@
             <summary>Constant DebuggingNotAllowEd.</summary>
             <unmanaged>MF_E_DEBUGGING_NOT_ALLOWED</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NoEventsAvailable">
+            <summary>Constant NoEventsAvailable.</summary>
+            <unmanaged>MF_E_NO_EVENTS_AVAILABLE</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.NoBitpump">
             <summary>Constant NoBitpump.</summary>
             <unmanaged>MF_E_NO_BITPUMP</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.StreamError">
+            <summary>Constant StreamError.</summary>
+            <unmanaged>MF_E_STREAM_ERROR</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.MultipleBegin">
+            <summary>Constant MultipleBegin.</summary>
+            <unmanaged>MF_E_MULTIPLE_BEGIN</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.ByteStreamUnknownLength">
             <summary>Constant ByteStreamUnknownLength.</summary>
@@ -11330,6 +11670,10 @@
             <summary>Constant LicenseIncorrectRights.</summary>
             <unmanaged>MF_E_LICENSE_INCORRECT_RIGHTS</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NoVideoSampleAvailable">
+            <summary>Constant NoVideoSampleAvailable.</summary>
+            <unmanaged>MF_E_NO_VIDEO_SAMPLE_AVAILABLE</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.VideoDeviceLocked">
             <summary>Constant VideoDeviceLocked.</summary>
             <unmanaged>MF_E_VIDEO_DEVICE_LOCKED</unmanaged>
@@ -11341,10 +11685,6 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.UnsupportedRateTransition">
             <summary>Constant UnsupportedRateTransition.</summary>
             <unmanaged>MF_E_UNSUPPORTED_RATE_TRANSITION</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.TransformProfileInvalidOrCorrupt">
-            <summary>Constant TransformProfileInvalidOrCorrupt.</summary>
-            <unmanaged>MF_E_TRANSFORM_PROFILE_INVALID_OR_CORRUPT</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.PeauthNotStarted">
             <summary>Constant PeauthNotStarted.</summary>
@@ -11362,10 +11702,6 @@
             <summary>Constant NetTimeout.</summary>
             <unmanaged>MF_E_NET_TIMEOUT</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.PolicyUnsupported">
-            <summary>Constant PolicyUnsupported.</summary>
-            <unmanaged>MF_E_POLICY_UNSUPPORTED</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.StreamsInkRemoved">
             <summary>Constant StreamsInkRemoved.</summary>
             <unmanaged>MF_E_STREAMSINK_REMOVED</unmanaged>
@@ -11382,13 +11718,13 @@
             <summary>Constant NetUnsafeUrl.</summary>
             <unmanaged>MF_E_NET_UNSAFE_URL</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.AsfOpaquePacket">
-            <summary>Constant AsfOpaquePacket.</summary>
-            <unmanaged>MF_E_ASF_OPAQUEPACKET</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.RtOufOfMemory">
             <summary>Constant RtOufOfMemory.</summary>
             <unmanaged>MF_E_RT_OUTOFMEMORY</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.Shutdown">
+            <summary>Constant Shutdown.</summary>
+            <unmanaged>MF_E_SHUTDOWN</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.NetUnsupportedConfiguration">
             <summary>Constant NetUnsupportedConfiguration.</summary>
@@ -11494,6 +11830,10 @@
             <summary>Constant PropertyTypeNotAllowEd.</summary>
             <unmanaged>MF_E_PROPERTY_TYPE_NOT_ALLOWED</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.TransformNotPossibleForCurrentMediaTypeCombination">
+            <summary>Constant TransformNotPossibleForCurrentMediaTypeCombination.</summary>
+            <unmanaged>MF_E_TRANSFORM_NOT_POSSIBLE_FOR_CURRENT_MEDIATYPE_COMBINATION</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.BadStartupVersion">
             <summary>Constant BadStartupVersion.</summary>
             <unmanaged>MF_E_BAD_STARTUP_VERSION</unmanaged>
@@ -11530,10 +11870,6 @@
             <summary>Constant TranscodeNoContainertype.</summary>
             <unmanaged>MF_E_TRANSCODE_NO_CONTAINERTYPE</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NoEventsAvailable">
-            <summary>Constant NoEventsAvailable.</summary>
-            <unmanaged>MF_E_NO_EVENTS_AVAILABLE</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.AsfUnsupportedStreamType">
             <summary>Constant AsfUnsupportedStreamType.</summary>
             <unmanaged>MF_E_ASF_UNSUPPORTED_STREAM_TYPE</unmanaged>
@@ -11545,10 +11881,6 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.OutOfRange">
             <summary>Constant OutOfRange.</summary>
             <unmanaged>MF_E_OUT_OF_RANGE</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.CannotFindKeyframeSample">
-            <summary>Constant CannotFindKeyframeSample.</summary>
-            <unmanaged>MF_E_CANNOT_FIND_KEYFRAME_SAMPLE</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.WmdrmotaActionAlreadySet">
             <summary>Constant WmdrmotaActionAlreadySet.</summary>
@@ -11574,9 +11906,9 @@
             <summary>Constant PropertyVectorRequired.</summary>
             <unmanaged>MF_E_PROPERTY_VECTOR_REQUIRED</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NetTooManyRedirects">
-            <summary>Constant NetTooManyRedirects.</summary>
-            <unmanaged>MF_E_NET_TOO_MANY_REDIRECTS</unmanaged>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.NetProtocolDisabled">
+            <summary>Constant NetProtocolDisabled.</summary>
+            <unmanaged>MF_E_NET_PROTOCOL_DISABLED</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.SinkNoStreams">
             <summary>Constant SinkNoStreams.</summary>
@@ -11674,10 +12006,6 @@
             <summary>Constant UnsupportedTimeFormat.</summary>
             <unmanaged>MF_E_UNSUPPORTED_TIME_FORMAT</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NoVideoSampleAvailable">
-            <summary>Constant NoVideoSampleAvailable.</summary>
-            <unmanaged>MF_E_NO_VIDEO_SAMPLE_AVAILABLE</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.TopoInvalidTimeAttributes">
             <summary>Constant TopoInvalidTimeAttributes.</summary>
             <unmanaged>MF_E_TOPO_INVALID_TIME_ATTRIBUTES</unmanaged>
@@ -11754,10 +12082,6 @@
             <summary>Constant CannotIndexInPlace.</summary>
             <unmanaged>MF_E_CANNOT_INDEX_IN_PLACE</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NetProtocolDisabled">
-            <summary>Constant NetProtocolDisabled.</summary>
-            <unmanaged>MF_E_NET_PROTOCOL_DISABLED</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.ItaOperationLDataNotInitializeD">
             <summary>Constant ItaOperationLDataNotInitializeD.</summary>
             <unmanaged>MF_E_ITA_OPL_DATA_NOT_INITIALIZED</unmanaged>
@@ -11769,6 +12093,10 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.IncompatibleSampleProtection">
             <summary>Constant IncompatibleSampleProtection.</summary>
             <unmanaged>MF_E_INCOMPATIBLE_SAMPLE_PROTECTION</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.HardwareDrmUnsupported">
+            <summary>Constant HardwareDrmUnsupported.</summary>
+            <unmanaged>MF_E_HARDWARE_DRM_UNSUPPORTED</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.OfflineMode">
             <summary>Constant OfflineMode.</summary>
@@ -11793,6 +12121,10 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.CaptureSinkOutputNotSet">
             <summary>Constant CaptureSinkOutputNotSet.</summary>
             <unmanaged>MF_E_CAPTURE_SINK_OUTPUT_NOT_SET</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidAsfStreamId">
+            <summary>Constant InvalidAsfStreamId.</summary>
+            <unmanaged>MF_E_INVALID_ASF_STREAMID</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.TopoSinkActivatesUnsupported">
             <summary>Constant TopoSinkActivatesUnsupported.</summary>
@@ -11829,10 +12161,6 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.VideoRecordingDeviceInvalidated">
             <summary>Constant VideoRecordingDeviceInvalidated.</summary>
             <unmanaged>MF_E_VIDEO_RECORDING_DEVICE_INVALIDATED</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidStateTransition">
-            <summary>Constant InvalidStateTransition.</summary>
-            <unmanaged>MF_E_INVALID_STATE_TRANSITION</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.OperationInProgress">
             <summary>Constant OperationInProgress.</summary>
@@ -11878,10 +12206,6 @@
             <summary>Constant StreamsInksFixed.</summary>
             <unmanaged>MF_E_STREAMSINKS_FIXED</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.DxgiVideoDeviceLocked">
-            <summary>Constant DxgiVideoDeviceLocked.</summary>
-            <unmanaged>MF_E_DXGI_VIDEO_DEVICE_LOCKED</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.VideoRecordingDevicePreempted">
             <summary>Constant VideoRecordingDevicePreempted.</summary>
             <unmanaged>MF_E_VIDEO_RECORDING_DEVICE_PREEMPTED</unmanaged>
@@ -11897,10 +12221,6 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.SinkNoSamplesProcessed">
             <summary>Constant SinkNoSamplesProcessed.</summary>
             <unmanaged>MF_E_SINK_NO_SAMPLES_PROCESSED</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.AsfInvalidData">
-            <summary>Constant AsfInvalidData.</summary>
-            <unmanaged>MF_E_ASF_INVALIDDATA</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.SessionPausewhilestopped">
             <summary>Constant SessionPausewhilestopped.</summary>
@@ -11921,6 +12241,10 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.TransformProfileMissing">
             <summary>Constant TransformProfileMissing.</summary>
             <unmanaged>MF_E_TRANSFORM_PROFILE_MISSING</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.DxgiVideoDeviceLocked">
+            <summary>Constant DxgiVideoDeviceLocked.</summary>
+            <unmanaged>MF_E_DXGI_VIDEO_DEVICE_LOCKED</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.NoCaptureDevicesAvailable">
             <summary>Constant NoCaptureDevicesAvailable.</summary>
@@ -11978,10 +12302,6 @@
             <summary>Constant NetBwlevelNotSupported.</summary>
             <unmanaged>MF_E_NET_BWLEVEL_NOT_SUPPORTED</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.NetBusy">
-            <summary>Constant NetBusy.</summary>
-            <unmanaged>MF_E_NET_BUSY</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.Unauthorized">
             <summary>Constant Unauthorized.</summary>
             <unmanaged>MF_E_UNAUTHORIZED</unmanaged>
@@ -11990,9 +12310,9 @@
             <summary>Constant CannotParseByteStream.</summary>
             <unmanaged>MF_E_CANNOT_PARSE_BYTESTREAM</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidAsfStreamId">
-            <summary>Constant InvalidAsfStreamId.</summary>
-            <unmanaged>MF_E_INVALID_ASF_STREAMID</unmanaged>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.CannotFindKeyframeSample">
+            <summary>Constant CannotFindKeyframeSample.</summary>
+            <unmanaged>MF_E_CANNOT_FIND_KEYFRAME_SAMPLE</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.UnsupportedScheme">
             <summary>Constant UnsupportedScheme.</summary>
@@ -12026,6 +12346,10 @@
             <summary>Constant StreamsInksOutOfSync.</summary>
             <unmanaged>MF_E_STREAMSINKS_OUT_OF_SYNC</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.HdcpAuthenticationFailure">
+            <summary>Constant HdcpAuthenticationFailure.</summary>
+            <unmanaged>MF_E_HDCP_AUTHENTICATION_FAILURE</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.InvalidStreamData">
             <summary>Constant InvalidStreamData.</summary>
             <unmanaged>MF_E_INVALID_STREAM_DATA</unmanaged>
@@ -12033,6 +12357,10 @@
         <member name="F:SharpDX.MediaFoundation.ResultCode.PropertyVectorNotAllowEd">
             <summary>Constant PropertyVectorNotAllowEd.</summary>
             <unmanaged>MF_E_PROPERTY_VECTOR_NOT_ALLOWED</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ResultCode.HdcpLinkFailure">
+            <summary>Constant HdcpLinkFailure.</summary>
+            <unmanaged>MF_E_HDCP_LINK_FAILURE</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.ResultCode.NoIndex">
             <summary>Constant NoIndex.</summary>
@@ -12346,6 +12674,10 @@
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.MediaFoundation.TranscodeAttributeKeys']/*"/>	
         </member>
+        <member name="F:SharpDX.MediaFoundation.TranscodeAttributeKeys.TranscodeContainertype">
+            <summary>Constant TranscodeContainertype.</summary>
+            <unmanaged>MF_TRANSCODE_CONTAINERTYPE</unmanaged>
+        </member>
         <member name="T:SharpDX.MediaFoundation.TransformAttributeKeys">
             <summary>	
             Functions	
@@ -12584,9 +12916,17 @@
             <summary>Constant H264.</summary>
             <unmanaged>MFVideoFormat_H264</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.H265">
+            <summary>Constant H265.</summary>
+            <unmanaged>MFVideoFormat_H265</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Rgb32">
             <summary>Constant Rgb32.</summary>
             <unmanaged>MFVideoFormat_RGB32</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.BaseHdcp">
+            <summary>Constant BaseHdcp.</summary>
+            <unmanaged>MFVideoFormat_Base_HDCP</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Dv50">
             <summary>Constant Dv50.</summary>
@@ -12620,6 +12960,14 @@
             <summary>Constant Yvyu.</summary>
             <unmanaged>MFVideoFormat_YVYU</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Rgb24">
+            <summary>Constant Rgb24.</summary>
+            <unmanaged>MFVideoFormat_RGB24</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Vp80">
+            <summary>Constant Vp80.</summary>
+            <unmanaged>MFVideoFormat_VP80</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Yv12">
             <summary>Constant Yv12.</summary>
             <unmanaged>MFVideoFormat_YV12</unmanaged>
@@ -12631,10 +12979,6 @@
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.P016">
             <summary>Constant P016.</summary>
             <unmanaged>MFVideoFormat_P016</unmanaged>
-        </member>
-        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Y41P">
-            <summary>Constant Y41P.</summary>
-            <unmanaged>MFVideoFormat_Y41P</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Mjpg">
             <summary>Constant Mjpg.</summary>
@@ -12668,10 +13012,6 @@
             <summary>Constant Mpg1.</summary>
             <unmanaged>MFVideoFormat_MPG1</unmanaged>
         </member>
-        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Rgb24">
-            <summary>Constant Rgb24.</summary>
-            <unmanaged>MFVideoFormat_RGB24</unmanaged>
-        </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.MultisampledS1">
             <summary>Constant MultisampledS1.</summary>
             <unmanaged>MFVideoFormat_MSS1</unmanaged>
@@ -12687,6 +13027,10 @@
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Argb32">
             <summary>Constant Argb32.</summary>
             <unmanaged>MFVideoFormat_ARGB32</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.H264Hdcp">
+            <summary>Constant H264Hdcp.</summary>
+            <unmanaged>MFVideoFormat_H264_HDCP</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Hevc">
             <summary>Constant Hevc.</summary>
@@ -12716,6 +13060,10 @@
             <summary>Constant Y416.</summary>
             <unmanaged>MFVideoFormat_Y416</unmanaged>
         </member>
+        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Y41P">
+            <summary>Constant Y41P.</summary>
+            <unmanaged>MFVideoFormat_Y41P</unmanaged>
+        </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Y41T">
             <summary>Constant Y41T.</summary>
             <unmanaged>MFVideoFormat_Y41T</unmanaged>
@@ -12723,6 +13071,10 @@
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Y42T">
             <summary>Constant Y42T.</summary>
             <unmanaged>MFVideoFormat_Y42T</unmanaged>
+        </member>
+        <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Vp90">
+            <summary>Constant Vp90.</summary>
+            <unmanaged>MFVideoFormat_VP90</unmanaged>
         </member>
         <member name="F:SharpDX.MediaFoundation.VideoFormatGuids.Uyvy">
             <summary>Constant Uyvy.</summary>
@@ -13565,6 +13917,89 @@
             <unmanaged>GetElementCount</unmanaged>	
             <unmanaged-short>GetElementCount</unmanaged-short>	
             <unmanaged>HRESULT IMFCollection::GetElementCount([Out] unsigned int* pcElements)</unmanaged>
+        </member>
+        <member name="T:SharpDX.MediaFoundation.ContentDecryptorContext">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFContentDecryptorContext']/*"/>	
+            <unmanaged>IMFContentDecryptorContext</unmanaged>	
+            <unmanaged-short>IMFContentDecryptorContext</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.ContentDecryptorContext.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.ContentDecryptorContext"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.ContentDecryptorContext.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.ContentDecryptorContext">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.ContentDecryptorContext"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.ContentDecryptorContext.InitializeHardwareKey(System.Int32,System.IntPtr,System.Int64@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="inputPrivateDataByteCount">No documentation.</param>	
+            <param name="inputPrivateData">No documentation.</param>	
+            <param name="outputPrivateData">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFContentDecryptorContext::InitializeHardwareKey']/*"/>	
+            <unmanaged>HRESULT IMFContentDecryptorContext::InitializeHardwareKey([In] unsigned int InputPrivateDataByteCount,[In, Buffer, Optional] const void* InputPrivateData,[Out] unsigned longlong* OutputPrivateData)</unmanaged>	
+            <unmanaged-short>IMFContentDecryptorContext::InitializeHardwareKey</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.ContentProtectionDevice">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFContentProtectionDevice']/*"/>	
+            <unmanaged>IMFContentProtectionDevice</unmanaged>	
+            <unmanaged-short>IMFContentProtectionDevice</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.ContentProtectionDevice.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.ContentProtectionDevice"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.ContentProtectionDevice.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.ContentProtectionDevice">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.ContentProtectionDevice"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.ContentProtectionDevice.InvokeFunction(System.Int32,System.Int32,System.Byte[],System.Int32@,System.Byte[])">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="functionId">No documentation.</param>	
+            <param name="inputBufferByteCount">No documentation.</param>	
+            <param name="inputBuffer">No documentation.</param>	
+            <param name="outputBufferByteCount">No documentation.</param>	
+            <param name="outputBuffer">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFContentProtectionDevice::InvokeFunction']/*"/>	
+            <unmanaged>HRESULT IMFContentProtectionDevice::InvokeFunction([In] unsigned int FunctionId,[In] unsigned int InputBufferByteCount,[In, Buffer] const unsigned char* InputBuffer,[InOut] unsigned int* OutputBufferByteCount,[Out, Buffer] unsigned char* OutputBuffer)</unmanaged>	
+            <unmanaged-short>IMFContentProtectionDevice::InvokeFunction</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.ContentProtectionDevice.GetPrivateDataByteCount(System.Int32@,System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="privateInputByteCount">No documentation.</param>	
+            <param name="privateOutputByteCount">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFContentProtectionDevice::GetPrivateDataByteCount']/*"/>	
+            <unmanaged>HRESULT IMFContentProtectionDevice::GetPrivateDataByteCount([Out] unsigned int* PrivateInputByteCount,[Out] unsigned int* PrivateOutputByteCount)</unmanaged>	
+            <unmanaged-short>IMFContentProtectionDevice::GetPrivateDataByteCount</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.DXGIBuffer">
             <summary>	
@@ -17742,6 +18177,50 @@
             <unmanaged>HRESULT IMFSchemeHandler::CancelObjectCreation([In] IUnknown* pIUnknownCancelCookie)</unmanaged>	
             <unmanaged-short>IMFSchemeHandler::CancelObjectCreation</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.MediaFoundation.SeekInfo">
+            <summary>	
+            <p>For a particular seek position, gets the two nearest key frames.</p>	
+            </summary>	
+            <remarks>	
+            <p>If an application seeks to a non?key frame, the decoder must start decoding from the previous key frame. This can increase latency, because several frames might get decoded before the requested frame is reached. To reduce latency, an application can call this method to find the two key frames that are closest to the desired time, and then seek to one of those key frames. </p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSeekInfo']/*"/>	
+            <msdn-id>hh448055</msdn-id>	
+            <unmanaged>IMFSeekInfo</unmanaged>	
+            <unmanaged-short>IMFSeekInfo</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SeekInfo.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.SeekInfo"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SeekInfo.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.SeekInfo">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.SeekInfo"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SeekInfo.GetNearestKeyFrames(System.Guid,SharpDX.Win32.Variant,SharpDX.Win32.Variant@,SharpDX.Win32.Variant@)">
+            <summary>	
+            <p>For a particular seek position, gets the two nearest key frames.</p>	
+            </summary>	
+            <param name="guidTimeFormatRef"><dd> <p>A reference to a <see cref="T:System.Guid"/> that specifies the time format. The time format defines the units for the other parameters of this method. If the value is <strong>GUID_NULL</strong>, the time format is 100-nanosecond units. Some media sources might support additional time format GUIDs. </p> </dd></param>	
+            <param name="varStartPositionRef"><dd> <p>The seek position. The units for this parameter are specified by <em>pguidTimeFormat</em>.</p> </dd></param>	
+            <param name="varPreviousKeyFrameRef"><dd> <p>Receives the position of the nearest key frame that appears earlier than <em>pvarStartPosition</em>. The units for this parameter are specified by <em>pguidTimeFormat</em>.</p> </dd></param>	
+            <param name="varNextKeyFrameRef"><dd> <p>Receives the position of the nearest key frame that appears earlier than <em>pvarStartPosition</em>. The units for this parameter are specified by <em>pguidTimeFormat</em>.</p> </dd></param>	
+            <returns><p>This method can return one of these values.</p><table> <tr><th>Return code</th><th>Description</th></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.Result.Ok"/></strong></dt> </dl> </td><td> <p>The method succeeded.</p> </td></tr> <tr><td> <dl> <dt><strong><see cref="F:SharpDX.MediaFoundation.ResultCode.UnsupportedTimeFormat"/></strong></dt> </dl> </td><td> <p>The time format specified in <em>pguidTimeFormat</em> is not supported.</p> </td></tr> </table><p>?</p></returns>	
+            <remarks>	
+            <p>If an application seeks to a non?key frame, the decoder must start decoding from the previous key frame. This can increase latency, because several frames might get decoded before the requested frame is reached. To reduce latency, an application can call this method to find the two key frames that are closest to the desired time, and then seek to one of those key frames. </p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSeekInfo::GetNearestKeyFrames']/*"/>	
+            <msdn-id>hh448055</msdn-id>	
+            <unmanaged>HRESULT IMFSeekInfo::GetNearestKeyFrames([In] const GUID* pguidTimeFormat,[In] const PROPVARIANT* pvarStartPosition,[Out] PROPVARIANT* pvarPreviousKeyFrame,[Out] PROPVARIANT* pvarNextKeyFrame)</unmanaged>	
+            <unmanaged-short>IMFSeekInfo::GetNearestKeyFrames</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.MediaFoundation.ServiceProvider">
             <summary>	
             <p> Queries an object for a specified service interface. </p>	
@@ -18146,6 +18625,49 @@
             <msdn-id>dd374645</msdn-id>	
             <unmanaged>HRESULT IMFSinkWriterCallback::OnMarker([In] unsigned int dwStreamIndex,[In] void* pvContext)</unmanaged>	
             <unmanaged-short>IMFSinkWriterCallback::OnMarker</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.SinkWriterCallback2">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSinkWriterCallback2']/*"/>	
+            <unmanaged>IMFSinkWriterCallback2</unmanaged>	
+            <unmanaged-short>IMFSinkWriterCallback2</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SinkWriterCallback2.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.SinkWriterCallback2"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SinkWriterCallback2.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.SinkWriterCallback2">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.SinkWriterCallback2"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SinkWriterCallback2.OnTransformChange">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSinkWriterCallback2::OnTransformChange']/*"/>	
+            <unmanaged>HRESULT IMFSinkWriterCallback2::OnTransformChange()</unmanaged>	
+            <unmanaged-short>IMFSinkWriterCallback2::OnTransformChange</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SinkWriterCallback2.OnStreamError(System.Int32,SharpDX.Result)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="dwStreamIndex">No documentation.</param>	
+            <param name="hrStatus">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSinkWriterCallback2::OnStreamError']/*"/>	
+            <unmanaged>HRESULT IMFSinkWriterCallback2::OnStreamError([In] unsigned int dwStreamIndex,[In] HRESULT hrStatus)</unmanaged>	
+            <unmanaged-short>IMFSinkWriterCallback2::OnStreamError</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.SinkWriterEncoderConfig">
             <summary>	
@@ -18718,6 +19240,49 @@
             <msdn-id>dd743367</msdn-id>	
             <unmanaged>HRESULT IMFSourceReaderCallback::OnEvent([In] unsigned int dwStreamIndex,[In] IMFMediaEvent* pEvent)</unmanaged>	
             <unmanaged-short>IMFSourceReaderCallback::OnEvent</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.SourceReaderCallback2">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSourceReaderCallback2']/*"/>	
+            <unmanaged>IMFSourceReaderCallback2</unmanaged>	
+            <unmanaged-short>IMFSourceReaderCallback2</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SourceReaderCallback2.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.SourceReaderCallback2"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SourceReaderCallback2.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.SourceReaderCallback2">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.SourceReaderCallback2"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SourceReaderCallback2.OnTransformChange">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSourceReaderCallback2::OnTransformChange']/*"/>	
+            <unmanaged>HRESULT IMFSourceReaderCallback2::OnTransformChange()</unmanaged>	
+            <unmanaged-short>IMFSourceReaderCallback2::OnTransformChange</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.SourceReaderCallback2.OnStreamError(System.Int32,SharpDX.Result)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="dwStreamIndex">No documentation.</param>	
+            <param name="hrStatus">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFSourceReaderCallback2::OnStreamError']/*"/>	
+            <unmanaged>HRESULT IMFSourceReaderCallback2::OnStreamError([In] unsigned int dwStreamIndex,[In] HRESULT hrStatus)</unmanaged>	
+            <unmanaged-short>IMFSourceReaderCallback2::OnStreamError</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.SourceReaderEx">
             <summary>	
@@ -19973,6 +20538,248 @@
             <unmanaged-short>IsFinal</unmanaged-short>	
             <unmanaged>HRESULT IMFTrustedOutput::IsFinal([Out] BOOL* pfIsFinal)</unmanaged>
         </member>
+        <member name="T:SharpDX.MediaFoundation.VideoProcessorControl">
+            <summary>	
+            <p>Configures the <strong>Video Processor MFT</strong>.</p>	
+            </summary>	
+            <remarks>	
+            <p>This interface controls how the <strong>Video Processor MFT</strong> generates output frames.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl']/*"/>	
+            <msdn-id>hh448069</msdn-id>	
+            <unmanaged>IMFVideoProcessorControl</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.VideoProcessorControl"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.VideoProcessorControl">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.VideoProcessorControl"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.SetBorderColor(System.Nullable{SharpDX.Mathematics.Interop.RawColorBGRA})">
+            <summary>	
+            <p>Sets the border color.</p>	
+            </summary>	
+            <param name="borderColorRef"><dd> <p>A reference to an <strong><see cref="T:SharpDX.Mathematics.Interop.RawColorBGRA"/></strong> structure that specifies the border color as an ARGB (alpha, red, green, blue) value.</p> </dd></param>	
+            <returns><p>If this method succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetBorderColor']/*"/>	
+            <msdn-id>hh448070</msdn-id>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetBorderColor([In, Optional] MFARGB* pBorderColor)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl::SetBorderColor</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.SetSourceRectangle(System.Nullable{SharpDX.Mathematics.Interop.RawRectangle})">
+            <summary>	
+            <p>Sets the source rectangle. The source rectangle is the portion of the input frame that is blitted to the destination surface.</p>	
+            </summary>	
+            <param name="srcRectRef"><dd> <p>A reference to a <strong><see cref="T:SharpDX.Mathematics.Interop.RawRectangle"/></strong> structure that specifies the source rectangle.</p> </dd></param>	
+            <returns><p>If this method succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <remarks>	
+            <p>See <strong>Video Processor MFT</strong> for info regarding source and destination rectangles in the <strong>Video Processor MFT</strong>.   </p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetSourceRectangle']/*"/>	
+            <msdn-id>hh448075</msdn-id>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetSourceRectangle([In, Optional] RECT* pSrcRect)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl::SetSourceRectangle</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.SetDestinationRectangle(System.Nullable{SharpDX.Mathematics.Interop.RawRectangle})">
+            <summary>	
+            <p>Sets the destination rectangle. The destination rectangle is the portion of the output surface where the source rectangle is blitted.</p>	
+            </summary>	
+            <param name="dstRectRef"><dd> <p>A reference to a <strong><see cref="T:SharpDX.Mathematics.Interop.RawRectangle"/></strong> structure that specifies the destination rectangle.</p> </dd></param>	
+            <returns><p>If this method succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <remarks>	
+            <p>See <strong>Video Processor MFT</strong> for info regarding source and destination rectangles in the <strong>Video Processor MFT</strong>.   </p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetDestinationRectangle']/*"/>	
+            <msdn-id>hh448072</msdn-id>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetDestinationRectangle([In, Optional] RECT* pDstRect)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl::SetDestinationRectangle</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.SetMirror(SharpDX.MediaFoundation.VideoProcessorMirror)">
+            <summary>	
+            <p>Specifies whether to flip the video image.</p>	
+            </summary>	
+            <param name="eMirror"><dd> <p>An <strong><see cref="T:SharpDX.MediaFoundation.VideoProcessorMirror"/></strong> value that specifies whether to flip the video image, either horizontally or vertically.</p> </dd></param>	
+            <returns><p>If this method succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetMirror']/*"/>	
+            <msdn-id>hh448073</msdn-id>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetMirror([In] MF_VIDEO_PROCESSOR_MIRROR eMirror)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl::SetMirror</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.SetRotation(SharpDX.MediaFoundation.VideoProcessorRotation)">
+            <summary>	
+            <p>Specifies whether to rotate the video to the correct orientation.</p>	
+            </summary>	
+            <param name="eRotation"><dd> <p>A <strong><see cref="T:SharpDX.MediaFoundation.VideoProcessorRotation"/></strong> value that specifies whether to rotate the image.</p> </dd></param>	
+            <returns><p>If this method succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <remarks>	
+            <p>The original orientation of the video is specified by the <see cref="F:SharpDX.MediaFoundation.MediaTypeAttributeKeys.VideoRotation"/> attribute of the input media type.</p><p> If <em>eRotation</em> is <strong><see cref="F:SharpDX.MediaFoundation.VideoProcessorRotation.RotationNone"/></strong>, the video processor does not correct the orientation of the output video. If the original video is rotated, and <em>eRotation</em> is <strong><see cref="F:SharpDX.MediaFoundation.VideoProcessorRotation.RotationNormal"/></strong>, the video processor corrects the orientation, so that the ouput video is not rotated. The video processor letterboxes the output as needed.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetRotation']/*"/>	
+            <msdn-id>hh448074</msdn-id>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetRotation([In] MF_VIDEO_PROCESSOR_ROTATION eRotation)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl::SetRotation</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl.SetConstrictionSize(System.Nullable{SharpDX.Size2})">
+            <summary>	
+            <p>Specifies the amount of downsampling to perform on the output.</p>	
+            </summary>	
+            <param name="constrictionSizeRef"><dd> <p>The sampling size. To disable constriction, set this parameter to <strong><c>null</c></strong>.</p> </dd></param>	
+            <returns><p>If this method succeeds, it returns <strong><see cref="F:SharpDX.Result.Ok"/></strong>. Otherwise, it returns an <strong><see cref="T:SharpDX.Result"/></strong> error code.</p></returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetConstrictionSize']/*"/>	
+            <msdn-id>hh448071</msdn-id>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetConstrictionSize([In, Optional] SIZE* pConstrictionSize)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl::SetConstrictionSize</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl.BorderColor">
+            <summary>	
+            <p>Sets the border color.</p>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetBorderColor']/*"/>	
+            <msdn-id>hh448070</msdn-id>	
+            <unmanaged>SetBorderColor</unmanaged>	
+            <unmanaged-short>SetBorderColor</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetBorderColor([In, Optional] MFARGB* pBorderColor)</unmanaged>
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl.SourceRectangle">
+            <summary>	
+            <p>Sets the source rectangle. The source rectangle is the portion of the input frame that is blitted to the destination surface.</p>	
+            </summary>	
+            <remarks>	
+            <p>See <strong>Video Processor MFT</strong> for info regarding source and destination rectangles in the <strong>Video Processor MFT</strong>.   </p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetSourceRectangle']/*"/>	
+            <msdn-id>hh448075</msdn-id>	
+            <unmanaged>SetSourceRectangle</unmanaged>	
+            <unmanaged-short>SetSourceRectangle</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetSourceRectangle([In, Optional] RECT* pSrcRect)</unmanaged>
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl.DestinationRectangle">
+            <summary>	
+            <p>Sets the destination rectangle. The destination rectangle is the portion of the output surface where the source rectangle is blitted.</p>	
+            </summary>	
+            <remarks>	
+            <p>See <strong>Video Processor MFT</strong> for info regarding source and destination rectangles in the <strong>Video Processor MFT</strong>.   </p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetDestinationRectangle']/*"/>	
+            <msdn-id>hh448072</msdn-id>	
+            <unmanaged>SetDestinationRectangle</unmanaged>	
+            <unmanaged-short>SetDestinationRectangle</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetDestinationRectangle([In, Optional] RECT* pDstRect)</unmanaged>
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl.Mirror">
+            <summary>	
+            <p>Specifies whether to flip the video image.</p>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetMirror']/*"/>	
+            <msdn-id>hh448073</msdn-id>	
+            <unmanaged>SetMirror</unmanaged>	
+            <unmanaged-short>SetMirror</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetMirror([In] MF_VIDEO_PROCESSOR_MIRROR eMirror)</unmanaged>
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl.Rotation">
+            <summary>	
+            <p>Specifies whether to rotate the video to the correct orientation.</p>	
+            </summary>	
+            <remarks>	
+            <p>The original orientation of the video is specified by the <see cref="F:SharpDX.MediaFoundation.MediaTypeAttributeKeys.VideoRotation"/> attribute of the input media type.</p><p> If <em>eRotation</em> is <strong><see cref="F:SharpDX.MediaFoundation.VideoProcessorRotation.RotationNone"/></strong>, the video processor does not correct the orientation of the output video. If the original video is rotated, and <em>eRotation</em> is <strong><see cref="F:SharpDX.MediaFoundation.VideoProcessorRotation.RotationNormal"/></strong>, the video processor corrects the orientation, so that the ouput video is not rotated. The video processor letterboxes the output as needed.</p>	
+            </remarks>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetRotation']/*"/>	
+            <msdn-id>hh448074</msdn-id>	
+            <unmanaged>SetRotation</unmanaged>	
+            <unmanaged-short>SetRotation</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetRotation([In] MF_VIDEO_PROCESSOR_ROTATION eRotation)</unmanaged>
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl.ConstrictionSize">
+            <summary>	
+            <p>Specifies the amount of downsampling to perform on the output.</p>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl::SetConstrictionSize']/*"/>	
+            <msdn-id>hh448071</msdn-id>	
+            <unmanaged>SetConstrictionSize</unmanaged>	
+            <unmanaged-short>SetConstrictionSize</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl::SetConstrictionSize([In, Optional] SIZE* pConstrictionSize)</unmanaged>
+        </member>
+        <member name="T:SharpDX.MediaFoundation.VideoProcessorControl2">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl2']/*"/>	
+            <unmanaged>IMFVideoProcessorControl2</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl2</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl2.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.VideoProcessorControl2"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl2.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.VideoProcessorControl2">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.VideoProcessorControl2"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl2.SetRotationOverride(System.Int32)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="uiRotation">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl2::SetRotationOverride']/*"/>	
+            <unmanaged>HRESULT IMFVideoProcessorControl2::SetRotationOverride([In] unsigned int uiRotation)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl2::SetRotationOverride</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl2.EnableHardwareEffects(SharpDX.Mathematics.Interop.RawBool)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="fEnabled">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl2::EnableHardwareEffects']/*"/>	
+            <unmanaged>HRESULT IMFVideoProcessorControl2::EnableHardwareEffects([In] BOOL fEnabled)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl2::EnableHardwareEffects</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoProcessorControl2.GetSupportedHardwareEffects(System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="uiSupportRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl2::GetSupportedHardwareEffects']/*"/>	
+            <unmanaged>HRESULT IMFVideoProcessorControl2::GetSupportedHardwareEffects([Out] unsigned int* puiSupport)</unmanaged>	
+            <unmanaged-short>IMFVideoProcessorControl2::GetSupportedHardwareEffects</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl2.RotationOverride">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl2::SetRotationOverride']/*"/>	
+            <unmanaged>SetRotationOverride</unmanaged>	
+            <unmanaged-short>SetRotationOverride</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl2::SetRotationOverride([In] unsigned int uiRotation)</unmanaged>
+        </member>
+        <member name="P:SharpDX.MediaFoundation.VideoProcessorControl2.SupportedHardwareEffects">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoProcessorControl2::GetSupportedHardwareEffects']/*"/>	
+            <unmanaged>GetSupportedHardwareEffects</unmanaged>	
+            <unmanaged-short>GetSupportedHardwareEffects</unmanaged-short>	
+            <unmanaged>HRESULT IMFVideoProcessorControl2::GetSupportedHardwareEffects([Out] unsigned int* puiSupport)</unmanaged>
+        </member>
         <member name="T:SharpDX.MediaFoundation.VideoSampleAllocator">
             <summary>	
             <p>Allocates video samples for a video media sink.</p><p>The stream sinks on the enhanced video renderer (EVR) expose this interface as a service. To obtain a reference to the interface, call <strong><see cref="M:SharpDX.MediaFoundation.ServiceProvider.GetService(System.Guid,System.Guid)"/></strong> using the service identifier MR_VIDEO_ACCELERATION_SERVICE. Custom media sinks can also implement this interface. The Media Session uses this interface to allocate samples for the EVR, unless the upstream decoder supports DirectX Video Acceleration (DXVA).</p>	
@@ -20197,6 +21004,39 @@
             <unmanaged>HRESULT IMFVideoSampleAllocatorNotify::NotifyRelease()</unmanaged>	
             <unmanaged-short>IMFVideoSampleAllocatorNotify::NotifyRelease</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.MediaFoundation.VideoSampleAllocatorNotifyEx">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoSampleAllocatorNotifyEx']/*"/>	
+            <unmanaged>IMFVideoSampleAllocatorNotifyEx</unmanaged>	
+            <unmanaged-short>IMFVideoSampleAllocatorNotifyEx</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoSampleAllocatorNotifyEx.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.MediaFoundation.VideoSampleAllocatorNotifyEx"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoSampleAllocatorNotifyEx.op_Explicit(System.IntPtr)~SharpDX.MediaFoundation.VideoSampleAllocatorNotifyEx">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.MediaFoundation.VideoSampleAllocatorNotifyEx"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.MediaFoundation.VideoSampleAllocatorNotifyEx.NotifyPrune(SharpDX.MediaFoundation.Sample)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="midlIMFVideoSampleAllocatorNotifyEx0000">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IMFVideoSampleAllocatorNotifyEx::NotifyPrune']/*"/>	
+            <unmanaged>HRESULT IMFVideoSampleAllocatorNotifyEx::NotifyPrune([In] IMFSample* __MIDL__IMFVideoSampleAllocatorNotifyEx0000)</unmanaged>	
+            <unmanaged-short>IMFVideoSampleAllocatorNotifyEx::NotifyPrune</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.MediaFoundation.AYUVSample">
             <summary>	
             <p> </p><p>Describes a 4:4:4:4 Y'Cb'Cr' sample.</p>	
@@ -20350,6 +21190,86 @@
             <unmanaged>unsigned longlong qwEndOffset</unmanaged>	
             <unmanaged-short>unsigned longlong qwEndOffset</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.MediaFoundation.CapturedMetadataExposureCompensation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataExposureCompensation']/*"/>	
+            <unmanaged>CapturedMetadataExposureCompensation</unmanaged>	
+            <unmanaged-short>CapturedMetadataExposureCompensation</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.CapturedMetadataExposureCompensation.Flags">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataExposureCompensation::Flags']/*"/>	
+            <unmanaged>unsigned longlong Flags</unmanaged>	
+            <unmanaged-short>unsigned longlong Flags</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.CapturedMetadataExposureCompensation.Value">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataExposureCompensation::Value']/*"/>	
+            <unmanaged>int Value</unmanaged>	
+            <unmanaged-short>int Value</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.CapturedMetadataISOGains">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataISOGains']/*"/>	
+            <unmanaged>CapturedMetadataISOGains</unmanaged>	
+            <unmanaged-short>CapturedMetadataISOGains</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.CapturedMetadataISOGains.AnalogGain">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataISOGains::AnalogGain']/*"/>	
+            <unmanaged>float AnalogGain</unmanaged>	
+            <unmanaged-short>float AnalogGain</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.CapturedMetadataISOGains.DigitalGain">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataISOGains::DigitalGain']/*"/>	
+            <unmanaged>float DigitalGain</unmanaged>	
+            <unmanaged-short>float DigitalGain</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.CapturedMetadataWhiteBalanceGains">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataWhiteBalanceGains']/*"/>	
+            <unmanaged>CapturedMetadataWhiteBalanceGains</unmanaged>	
+            <unmanaged-short>CapturedMetadataWhiteBalanceGains</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.CapturedMetadataWhiteBalanceGains.R">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataWhiteBalanceGains::R']/*"/>	
+            <unmanaged>float R</unmanaged>	
+            <unmanaged-short>float R</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.CapturedMetadataWhiteBalanceGains.G">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataWhiteBalanceGains::G']/*"/>	
+            <unmanaged>float G</unmanaged>	
+            <unmanaged-short>float G</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.CapturedMetadataWhiteBalanceGains.B">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='CapturedMetadataWhiteBalanceGains::B']/*"/>	
+            <unmanaged>float B</unmanaged>	
+            <unmanaged-short>float B</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.MediaFoundation.ClockProperties">
             <summary>	
             <p> Defines the properties of a clock. </p>	
@@ -20412,6 +21332,182 @@
             <msdn-id>ms695206</msdn-id>	
             <unmanaged>unsigned int dwClockJitter</unmanaged>	
             <unmanaged-short>unsigned int dwClockJitter</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.ContentprotectiondeviceInputData">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_INPUT_DATA']/*"/>	
+            <unmanaged>MFCONTENTPROTECTIONDEVICE_INPUT_DATA</unmanaged>	
+            <unmanaged-short>MFCONTENTPROTECTIONDEVICE_INPUT_DATA</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceInputData.HWProtectionFunctionID">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_INPUT_DATA::HWProtectionFunctionID']/*"/>	
+            <unmanaged>unsigned int HWProtectionFunctionID</unmanaged>	
+            <unmanaged-short>unsigned int HWProtectionFunctionID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceInputData.PrivateDataByteCount">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_INPUT_DATA::PrivateDataByteCount']/*"/>	
+            <unmanaged>unsigned int PrivateDataByteCount</unmanaged>	
+            <unmanaged-short>unsigned int PrivateDataByteCount</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceInputData.HWProtectionDataByteCount">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_INPUT_DATA::HWProtectionDataByteCount']/*"/>	
+            <unmanaged>unsigned int HWProtectionDataByteCount</unmanaged>	
+            <unmanaged-short>unsigned int HWProtectionDataByteCount</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceInputData.Reserved">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_INPUT_DATA::Reserved']/*"/>	
+            <unmanaged>unsigned int Reserved</unmanaged>	
+            <unmanaged-short>unsigned int Reserved</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.MediaFoundation.ContentprotectiondeviceInputData.InputData">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_INPUT_DATA::InputData']/*"/>	
+            <unmanaged>unsigned char InputData[4]</unmanaged>	
+            <unmanaged-short>unsigned char InputData</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA']/*"/>	
+            <unmanaged>MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA</unmanaged>	
+            <unmanaged-short>MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData.PrivateDataByteCount">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA::PrivateDataByteCount']/*"/>	
+            <unmanaged>unsigned int PrivateDataByteCount</unmanaged>	
+            <unmanaged-short>unsigned int PrivateDataByteCount</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData.MaxHWProtectionDataByteCount">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA::MaxHWProtectionDataByteCount']/*"/>	
+            <unmanaged>unsigned int MaxHWProtectionDataByteCount</unmanaged>	
+            <unmanaged-short>unsigned int MaxHWProtectionDataByteCount</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData.HWProtectionDataByteCount">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA::HWProtectionDataByteCount']/*"/>	
+            <unmanaged>unsigned int HWProtectionDataByteCount</unmanaged>	
+            <unmanaged-short>unsigned int HWProtectionDataByteCount</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData.Status">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA::Status']/*"/>	
+            <unmanaged>HRESULT Status</unmanaged>	
+            <unmanaged-short>HRESULT Status</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData.TransportTimeInHundredsOfNanoseconds">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA::TransportTimeInHundredsOfNanoseconds']/*"/>	
+            <unmanaged>longlong TransportTimeInHundredsOfNanoseconds</unmanaged>	
+            <unmanaged-short>longlong TransportTimeInHundredsOfNanoseconds</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData.ExecutionTimeInHundredsOfNanoseconds">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA::ExecutionTimeInHundredsOfNanoseconds']/*"/>	
+            <unmanaged>longlong ExecutionTimeInHundredsOfNanoseconds</unmanaged>	
+            <unmanaged-short>longlong ExecutionTimeInHundredsOfNanoseconds</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.MediaFoundation.ContentprotectiondeviceOutputData.OutputData">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_OUTPUT_DATA::OutputData']/*"/>	
+            <unmanaged>unsigned char OutputData[4]</unmanaged>	
+            <unmanaged-short>unsigned char OutputData</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.ContentprotectiondeviceRealtimeclientData">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA']/*"/>	
+            <unmanaged>MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA</unmanaged>	
+            <unmanaged-short>MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceRealtimeclientData.TaskIndex">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA::TaskIndex']/*"/>	
+            <unmanaged>unsigned int TaskIndex</unmanaged>	
+            <unmanaged-short>unsigned int TaskIndex</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceRealtimeclientData.ClassName">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA::ClassName']/*"/>	
+            <unmanaged>wchar_t ClassName[260]</unmanaged>	
+            <unmanaged-short>wchar_t ClassName</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.ContentprotectiondeviceRealtimeclientData.BasePriority">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MFCONTENTPROTECTIONDEVICE_REALTIMECLIENT_DATA::BasePriority']/*"/>	
+            <unmanaged>int BasePriority</unmanaged>	
+            <unmanaged-short>int BasePriority</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.DirtyrectInformation">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIRTYRECT_INFO']/*"/>	
+            <unmanaged>DIRTYRECT_INFO</unmanaged>	
+            <unmanaged-short>DIRTYRECT_INFO</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.DirtyrectInformation.FrameNumber">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIRTYRECT_INFO::FrameNumber']/*"/>	
+            <unmanaged>unsigned int FrameNumber</unmanaged>	
+            <unmanaged-short>unsigned int FrameNumber</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.DirtyrectInformation.NumDirtyRects">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIRTYRECT_INFO::NumDirtyRects']/*"/>	
+            <unmanaged>unsigned int NumDirtyRects</unmanaged>	
+            <unmanaged-short>unsigned int NumDirtyRects</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.MediaFoundation.DirtyrectInformation.DirtyRects">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DIRTYRECT_INFO::DirtyRects']/*"/>	
+            <unmanaged>RECT DirtyRects[1]</unmanaged>	
+            <unmanaged-short>RECT DirtyRects</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.DmoMediaType">
             <summary>	
@@ -20506,6 +21602,118 @@
             <unmanaged>unsigned char* pbFormat</unmanaged>	
             <unmanaged-short>unsigned char pbFormat</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.MediaFoundation.FaceCharacterization">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterization']/*"/>	
+            <unmanaged>FaceCharacterization</unmanaged>	
+            <unmanaged-short>FaceCharacterization</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceCharacterization.BlinkScoreLeft">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterization::BlinkScoreLeft']/*"/>	
+            <unmanaged>unsigned int BlinkScoreLeft</unmanaged>	
+            <unmanaged-short>unsigned int BlinkScoreLeft</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceCharacterization.BlinkScoreRight">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterization::BlinkScoreRight']/*"/>	
+            <unmanaged>unsigned int BlinkScoreRight</unmanaged>	
+            <unmanaged-short>unsigned int BlinkScoreRight</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceCharacterization.FacialExpression">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterization::FacialExpression']/*"/>	
+            <unmanaged>unsigned int FacialExpression</unmanaged>	
+            <unmanaged-short>unsigned int FacialExpression</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceCharacterization.FacialExpressionScore">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterization::FacialExpressionScore']/*"/>	
+            <unmanaged>unsigned int FacialExpressionScore</unmanaged>	
+            <unmanaged-short>unsigned int FacialExpressionScore</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.FaceCharacterizationBlobHeader">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterizationBlobHeader']/*"/>	
+            <unmanaged>FaceCharacterizationBlobHeader</unmanaged>	
+            <unmanaged-short>FaceCharacterizationBlobHeader</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceCharacterizationBlobHeader.Size">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterizationBlobHeader::Size']/*"/>	
+            <unmanaged>unsigned int Size</unmanaged>	
+            <unmanaged-short>unsigned int Size</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceCharacterizationBlobHeader.Count">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceCharacterizationBlobHeader::Count']/*"/>	
+            <unmanaged>unsigned int Count</unmanaged>	
+            <unmanaged-short>unsigned int Count</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.FaceRectInfo">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceRectInfo']/*"/>	
+            <unmanaged>FaceRectInfo</unmanaged>	
+            <unmanaged-short>FaceRectInfo</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceRectInfo.Region">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceRectInfo::Region']/*"/>	
+            <unmanaged>RECT Region</unmanaged>	
+            <unmanaged-short>RECT Region</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceRectInfo.ConfidenceLevel">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceRectInfo::confidenceLevel']/*"/>	
+            <unmanaged>int confidenceLevel</unmanaged>	
+            <unmanaged-short>int confidenceLevel</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.FaceRectInfoBlobHeader">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceRectInfoBlobHeader']/*"/>	
+            <unmanaged>FaceRectInfoBlobHeader</unmanaged>	
+            <unmanaged-short>FaceRectInfoBlobHeader</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceRectInfoBlobHeader.Size">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceRectInfoBlobHeader::Size']/*"/>	
+            <unmanaged>unsigned int Size</unmanaged>	
+            <unmanaged-short>unsigned int Size</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.FaceRectInfoBlobHeader.Count">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='FaceRectInfoBlobHeader::Count']/*"/>	
+            <unmanaged>unsigned int Count</unmanaged>	
+            <unmanaged-short>unsigned int Count</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.MediaFoundation.FolddownMatrix">
             <summary>	
             <p> </p><p>Contains coefficients used to transform multichannel audio into a smaller number of audio channels. This process is called <em>fold-down</em>.</p>	
@@ -20562,6 +21770,142 @@
             <msdn-id>aa369731</msdn-id>	
             <unmanaged>int Coeff[64]</unmanaged>	
             <unmanaged-short>int Coeff</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.HistogramBlobHeader">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramBlobHeader']/*"/>	
+            <unmanaged>HistogramBlobHeader</unmanaged>	
+            <unmanaged-short>HistogramBlobHeader</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramBlobHeader.Size">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramBlobHeader::Size']/*"/>	
+            <unmanaged>unsigned int Size</unmanaged>	
+            <unmanaged-short>unsigned int Size</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramBlobHeader.Histograms">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramBlobHeader::Histograms']/*"/>	
+            <unmanaged>unsigned int Histograms</unmanaged>	
+            <unmanaged-short>unsigned int Histograms</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.HistogramDataHeader">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramDataHeader']/*"/>	
+            <unmanaged>HistogramDataHeader</unmanaged>	
+            <unmanaged-short>HistogramDataHeader</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramDataHeader.Size">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramDataHeader::Size']/*"/>	
+            <unmanaged>unsigned int Size</unmanaged>	
+            <unmanaged-short>unsigned int Size</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramDataHeader.ChannelMask">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramDataHeader::ChannelMask']/*"/>	
+            <unmanaged>unsigned int ChannelMask</unmanaged>	
+            <unmanaged-short>unsigned int ChannelMask</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramDataHeader.Linear">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramDataHeader::Linear']/*"/>	
+            <unmanaged>unsigned int Linear</unmanaged>	
+            <unmanaged-short>unsigned int Linear</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.HistogramGrid">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramGrid']/*"/>	
+            <unmanaged>HistogramGrid</unmanaged>	
+            <unmanaged-short>HistogramGrid</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramGrid.Width">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramGrid::Width']/*"/>	
+            <unmanaged>unsigned int Width</unmanaged>	
+            <unmanaged-short>unsigned int Width</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramGrid.Height">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramGrid::Height']/*"/>	
+            <unmanaged>unsigned int Height</unmanaged>	
+            <unmanaged-short>unsigned int Height</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramGrid.Region">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramGrid::Region']/*"/>	
+            <unmanaged>RECT Region</unmanaged>	
+            <unmanaged-short>RECT Region</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.HistogramHeader">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramHeader']/*"/>	
+            <unmanaged>HistogramHeader</unmanaged>	
+            <unmanaged-short>HistogramHeader</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramHeader.Size">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramHeader::Size']/*"/>	
+            <unmanaged>unsigned int Size</unmanaged>	
+            <unmanaged-short>unsigned int Size</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramHeader.Bins">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramHeader::Bins']/*"/>	
+            <unmanaged>unsigned int Bins</unmanaged>	
+            <unmanaged-short>unsigned int Bins</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramHeader.FourCC">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramHeader::FourCC']/*"/>	
+            <unmanaged>unsigned int FourCC</unmanaged>	
+            <unmanaged-short>unsigned int FourCC</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramHeader.ChannelMasks">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramHeader::ChannelMasks']/*"/>	
+            <unmanaged>unsigned int ChannelMasks</unmanaged>	
+            <unmanaged-short>unsigned int ChannelMasks</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.HistogramHeader.Grid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='HistogramHeader::Grid']/*"/>	
+            <unmanaged>HistogramGrid Grid</unmanaged>	
+            <unmanaged-short>HistogramGrid Grid</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.InputTrustauthorityAccessAction">
             <summary>	
@@ -20709,6 +22053,94 @@
             <msdn-id>aa371870</msdn-id>	
             <unmanaged>unsigned int msBufferWindow</unmanaged>	
             <unmanaged-short>unsigned int msBufferWindow</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.MetadataTimeStamps">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MetadataTimeStamps']/*"/>	
+            <unmanaged>MetadataTimeStamps</unmanaged>	
+            <unmanaged-short>MetadataTimeStamps</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MetadataTimeStamps.Flags">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MetadataTimeStamps::Flags']/*"/>	
+            <unmanaged>unsigned int Flags</unmanaged>	
+            <unmanaged-short>unsigned int Flags</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MetadataTimeStamps.Device">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MetadataTimeStamps::Device']/*"/>	
+            <unmanaged>longlong Device</unmanaged>	
+            <unmanaged-short>longlong Device</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MetadataTimeStamps.Presentation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MetadataTimeStamps::Presentation']/*"/>	
+            <unmanaged>longlong Presentation</unmanaged>	
+            <unmanaged-short>longlong Presentation</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.MoveRectangle">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MOVE_RECT']/*"/>	
+            <unmanaged>MOVE_RECT</unmanaged>	
+            <unmanaged-short>MOVE_RECT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MoveRectangle.SourcePoint">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MOVE_RECT::SourcePoint']/*"/>	
+            <unmanaged>POINT SourcePoint</unmanaged>	
+            <unmanaged-short>POINT SourcePoint</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MoveRectangle.DestRect">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MOVE_RECT::DestRect']/*"/>	
+            <unmanaged>RECT DestRect</unmanaged>	
+            <unmanaged-short>RECT DestRect</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.MediaFoundation.MoveregionInformation">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MOVEREGION_INFO']/*"/>	
+            <unmanaged>MOVEREGION_INFO</unmanaged>	
+            <unmanaged-short>MOVEREGION_INFO</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MoveregionInformation.FrameNumber">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MOVEREGION_INFO::FrameNumber']/*"/>	
+            <unmanaged>unsigned int FrameNumber</unmanaged>	
+            <unmanaged-short>unsigned int FrameNumber</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.MediaFoundation.MoveregionInformation.NumMoveRegions">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MOVEREGION_INFO::NumMoveRegions']/*"/>	
+            <unmanaged>unsigned int NumMoveRegions</unmanaged>	
+            <unmanaged-short>unsigned int NumMoveRegions</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.MediaFoundation.MoveregionInformation.MoveRegions">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='MOVEREGION_INFO::MoveRegions']/*"/>	
+            <unmanaged>MOVE_RECT MoveRegions[1]</unmanaged>	
+            <unmanaged-short>MOVE_RECT MoveRegions</unmanaged-short>	
         </member>
         <member name="T:SharpDX.MediaFoundation.Offset">
             <summary>	

@@ -6114,6 +6114,17 @@
             The result of the conversion.
             </returns>
         </member>
+        <member name="M:SharpDX.DirectWrite.Factory1.GetEudcFontCollection(SharpDX.DirectWrite.FontCollection@,SharpDX.Mathematics.Interop.RawBool)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="fontCollection">No documentation.</param>	
+            <param name="checkForUpdates">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDWriteFactory1::GetEudcFontCollection']/*"/>	
+            <unmanaged>HRESULT IDWriteFactory1::GetEudcFontCollection([Out] IDWriteFontCollection** fontCollection,[In] BOOL checkForUpdates)</unmanaged>	
+            <unmanaged-short>IDWriteFactory1::GetEudcFontCollection</unmanaged-short>	
+        </member>
         <member name="M:SharpDX.DirectWrite.Factory1.CreateCustomRenderingParams(System.Single,System.Single,System.Single,System.Single,SharpDX.DirectWrite.PixelGeometry,SharpDX.DirectWrite.RenderingMode,SharpDX.DirectWrite.RenderingParams1@)">
             <summary>	
             <p>Creates a rendering parameters object with the specified properties.</p>	
@@ -7961,6 +7972,10 @@
             <summary>Constant Composite.</summary>
             <unmanaged>CLSID_D2D1Composite</unmanaged>
         </member>
+        <member name="F:SharpDX.Direct2D1.Effect.Turbulence">
+            <summary>Constant Turbulence.</summary>
+            <unmanaged>CLSID_D2D1Turbulence</unmanaged>
+        </member>
         <member name="F:SharpDX.Direct2D1.Effect.HueRotation">
             <summary>Constant HueRotation.</summary>
             <unmanaged>CLSID_D2D1HueRotation</unmanaged>
@@ -7976,10 +7991,6 @@
         <member name="F:SharpDX.Direct2D1.Effect.Brightness">
             <summary>Constant Brightness.</summary>
             <unmanaged>CLSID_D2D1Brightness</unmanaged>
-        </member>
-        <member name="F:SharpDX.Direct2D1.Effect.Premultiply">
-            <summary>Constant Premultiply.</summary>
-            <unmanaged>CLSID_D2D1Premultiply</unmanaged>
         </member>
         <member name="F:SharpDX.Direct2D1.Effect.SpotDiffuse">
             <summary>Constant SpotDiffuse.</summary>
@@ -7997,6 +8008,18 @@
             <summary>Constant GaussianBlur.</summary>
             <unmanaged>CLSID_D2D1GaussianBlur</unmanaged>
         </member>
+        <member name="F:SharpDX.Direct2D1.Effect.LinearTransfer">
+            <summary>Constant LinearTransfer.</summary>
+            <unmanaged>CLSID_D2D1LinearTransfer</unmanaged>
+        </member>
+        <member name="F:SharpDX.Direct2D1.Effect.OpacityMetadata">
+            <summary>Constant OpacityMetadata.</summary>
+            <unmanaged>CLSID_D2D1OpacityMetadata</unmanaged>
+        </member>
+        <member name="F:SharpDX.Direct2D1.Effect.DpiCompensation">
+            <summary>Constant DpiCompensation.</summary>
+            <unmanaged>CLSID_D2D1DpiCompensation</unmanaged>
+        </member>
         <member name="F:SharpDX.Direct2D1.Effect.Crop">
             <summary>Constant Crop.</summary>
             <unmanaged>CLSID_D2D1Crop</unmanaged>
@@ -8004,10 +8027,6 @@
         <member name="F:SharpDX.Direct2D1.Effect.DirectionalBlur">
             <summary>Constant DirectionalBlur.</summary>
             <unmanaged>CLSID_D2D1DirectionalBlur</unmanaged>
-        </member>
-        <member name="F:SharpDX.Direct2D1.Effect.Flood">
-            <summary>Constant Flood.</summary>
-            <unmanaged>CLSID_D2D1Flood</unmanaged>
         </member>
         <member name="F:SharpDX.Direct2D1.Effect.DiscreteTransfer">
             <summary>Constant DiscreteTransfer.</summary>
@@ -8025,10 +8044,6 @@
             <summary>Constant LuminanceToAlpha.</summary>
             <unmanaged>CLSID_D2D1LuminanceToAlpha</unmanaged>
         </member>
-        <member name="F:SharpDX.Direct2D1.Effect.Morphology">
-            <summary>Constant Morphology.</summary>
-            <unmanaged>CLSID_D2D1Morphology</unmanaged>
-        </member>
         <member name="F:SharpDX.Direct2D1.Effect.UnPremultiply">
             <summary>Constant UnPremultiply.</summary>
             <unmanaged>CLSID_D2D1UnPremultiply</unmanaged>
@@ -8041,9 +8056,9 @@
             <summary>Constant ConvolveMatrix.</summary>
             <unmanaged>CLSID_D2D1ConvolveMatrix</unmanaged>
         </member>
-        <member name="F:SharpDX.Direct2D1.Effect.OpacityMetadata">
-            <summary>Constant OpacityMetadata.</summary>
-            <unmanaged>CLSID_D2D1OpacityMetadata</unmanaged>
+        <member name="F:SharpDX.Direct2D1.Effect.Morphology">
+            <summary>Constant Morphology.</summary>
+            <unmanaged>CLSID_D2D1Morphology</unmanaged>
         </member>
         <member name="F:SharpDX.Direct2D1.Effect.ColorMatrix">
             <summary>Constant ColorMatrix.</summary>
@@ -8065,25 +8080,21 @@
             <summary>Constant Shadow.</summary>
             <unmanaged>CLSID_D2D1Shadow</unmanaged>
         </member>
-        <member name="F:SharpDX.Direct2D1.Effect.Turbulence">
-            <summary>Constant Turbulence.</summary>
-            <unmanaged>CLSID_D2D1Turbulence</unmanaged>
+        <member name="F:SharpDX.Direct2D1.Effect.Flood">
+            <summary>Constant Flood.</summary>
+            <unmanaged>CLSID_D2D1Flood</unmanaged>
         </member>
         <member name="F:SharpDX.Direct2D1.Effect.BitmapSource">
             <summary>Constant BitmapSource.</summary>
             <unmanaged>CLSID_D2D1BitmapSource</unmanaged>
         </member>
-        <member name="F:SharpDX.Direct2D1.Effect.LinearTransfer">
-            <summary>Constant LinearTransfer.</summary>
-            <unmanaged>CLSID_D2D1LinearTransfer</unmanaged>
-        </member>
         <member name="F:SharpDX.Direct2D1.Effect.PointDiffuse">
             <summary>Constant PointDiffuse.</summary>
             <unmanaged>CLSID_D2D1PointDiffuse</unmanaged>
         </member>
-        <member name="F:SharpDX.Direct2D1.Effect.DpiCompensation">
-            <summary>Constant DpiCompensation.</summary>
-            <unmanaged>CLSID_D2D1DpiCompensation</unmanaged>
+        <member name="F:SharpDX.Direct2D1.Effect.Premultiply">
+            <summary>Constant Premultiply.</summary>
+            <unmanaged>CLSID_D2D1Premultiply</unmanaged>
         </member>
         <member name="F:SharpDX.Direct2D1.Effect.YCbCr">
             <summary>Constant YCbCr.</summary>
@@ -10558,6 +10569,21 @@
             <param name="max">Maximum value of this property</param>
             <param name="defaultValue">Default value of this property</param>
         </member>
+        <member name="M:SharpDX.Direct2D1.PropertyBindingAttribute.#ctor(SharpDX.Direct2D1.PropertyType,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of <see cref="T:SharpDX.Direct2D1.PropertyBindingAttribute"/> attribute.
+            </summary>
+            <param name="bindingType">Type of binding</param>
+            <param name="order">Order of the property</param>
+            <param name="min">Minimum value of this property</param>
+            <param name="max">Maximum value of this property</param>
+            <param name="defaultValue">Default value of this property</param>
+        </member>
+        <member name="P:SharpDX.Direct2D1.PropertyBindingAttribute.BindingType">
+            <summary>
+            Gets binding type.
+            </summary>
+        </member>
         <member name="P:SharpDX.Direct2D1.PropertyBindingAttribute.Order">
             <summary>
             Gets the order of this property.
@@ -12934,6 +12960,15 @@
             <unmanaged>WICBitmapInterpolationModeFant</unmanaged>	
             <unmanaged-short>WICBitmapInterpolationModeFant</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.WIC.BitmapInterpolationMode.HighQualityCubic">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICBitmapInterpolationModeHighQualityCubic']/*"/>	
+            <msdn-id>ee719810</msdn-id>	
+            <unmanaged>WICBitmapInterpolationModeHighQualityCubic</unmanaged>	
+            <unmanaged-short>WICBitmapInterpolationModeHighQualityCubic</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.WIC.BitmapLockFlags">
             <summary>	
             <p>Specifies access to an <strong><see cref="T:SharpDX.WIC.Bitmap"/></strong>.</p>	
@@ -13801,6 +13836,30 @@
             <unmanaged>WICJpegCommentText</unmanaged>	
             <unmanaged-short>WICJpegCommentText</unmanaged-short>	
         </member>
+        <member name="T:SharpDX.WIC.JpegIndexingOptions">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegIndexingOptions']/*"/>	
+            <unmanaged>WICJpegIndexingOptions</unmanaged>	
+            <unmanaged-short>WICJpegIndexingOptions</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegIndexingOptions.JpegIndexingOptionsGenerateOnDemand">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegIndexingOptionsGenerateOnDemand']/*"/>	
+            <unmanaged>WICJpegIndexingOptionsGenerateOnDemand</unmanaged>	
+            <unmanaged-short>WICJpegIndexingOptionsGenerateOnDemand</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegIndexingOptions.JpegIndexingOptionsGenerateOnLoad">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegIndexingOptionsGenerateOnLoad']/*"/>	
+            <unmanaged>WICJpegIndexingOptionsGenerateOnLoad</unmanaged>	
+            <unmanaged-short>WICJpegIndexingOptionsGenerateOnLoad</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.WIC.JpegLuminanceProperties">
             <summary>	
             <p>Specifies the JPEG luminance table property.</p>	
@@ -13818,6 +13877,62 @@
             <msdn-id>ee719833</msdn-id>	
             <unmanaged>WICJpegLuminanceTable</unmanaged>	
             <unmanaged-short>WICJpegLuminanceTable</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.WIC.JpegScanType">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanType']/*"/>	
+            <unmanaged>WICJpegScanType</unmanaged>	
+            <unmanaged-short>WICJpegScanType</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanType.JpegScanTypeInterleaved">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanTypeInterleaved']/*"/>	
+            <unmanaged>WICJpegScanTypeInterleaved</unmanaged>	
+            <unmanaged-short>WICJpegScanTypeInterleaved</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanType.JpegScanTypePlanarComponents">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanTypePlanarComponents']/*"/>	
+            <unmanaged>WICJpegScanTypePlanarComponents</unmanaged>	
+            <unmanaged-short>WICJpegScanTypePlanarComponents</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanType.JpegScanTypeProgressive">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanTypeProgressive']/*"/>	
+            <unmanaged>WICJpegScanTypeProgressive</unmanaged>	
+            <unmanaged-short>WICJpegScanTypeProgressive</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.WIC.JpegTransferMatrix">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegTransferMatrix']/*"/>	
+            <unmanaged>WICJpegTransferMatrix</unmanaged>	
+            <unmanaged-short>WICJpegTransferMatrix</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegTransferMatrix.JpegTransferMatrixIdentity">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegTransferMatrixIdentity']/*"/>	
+            <unmanaged>WICJpegTransferMatrixIdentity</unmanaged>	
+            <unmanaged-short>WICJpegTransferMatrixIdentity</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegTransferMatrix.JpegTransferMatrixBT601">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegTransferMatrixBT601']/*"/>	
+            <unmanaged>WICJpegTransferMatrixBT601</unmanaged>	
+            <unmanaged-short>WICJpegTransferMatrixBT601</unmanaged-short>	
         </member>
         <member name="T:SharpDX.WIC.JpegYCrCbSubsamplingOption">
             <summary>	
@@ -14853,6 +14968,10 @@
             <summary>Constant Tiff.</summary>
             <unmanaged>CLSID_WICTiffEncoder</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.BitmapEncoderGuids.JpegQualcommPhone">
+            <summary>Constant JpegQualcommPhone.</summary>
+            <unmanaged>CLSID_WICJpegQualcommPhoneEncoder</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.BitmapEncoderGuids.Dds">
             <summary>Constant Dds.</summary>
             <unmanaged>CLSID_WICDdsEncoder</unmanaged>
@@ -14871,9 +14990,17 @@
             <summary>Constant Ico.</summary>
             <unmanaged>GUID_ContainerFormatIco</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.ContainerFormatGuids.Bmp">
+            <summary>Constant Bmp.</summary>
+            <unmanaged>GUID_ContainerFormatBmp</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.ContainerFormatGuids.Gif">
             <summary>Constant Gif.</summary>
             <unmanaged>GUID_ContainerFormatGif</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.ContainerFormatGuids.Png">
+            <summary>Constant Png.</summary>
+            <unmanaged>GUID_ContainerFormatPng</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.ContainerFormatGuids.Jpeg">
             <summary>Constant Jpeg.</summary>
@@ -14883,17 +15010,9 @@
             <summary>Constant Wmp.</summary>
             <unmanaged>GUID_ContainerFormatWmp</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.ContainerFormatGuids.Png">
-            <summary>Constant Png.</summary>
-            <unmanaged>GUID_ContainerFormatPng</unmanaged>
-        </member>
         <member name="F:SharpDX.WIC.ContainerFormatGuids.Tiff">
             <summary>Constant Tiff.</summary>
             <unmanaged>GUID_ContainerFormatTiff</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.ContainerFormatGuids.Bmp">
-            <summary>Constant Bmp.</summary>
-            <unmanaged>GUID_ContainerFormatBmp</unmanaged>
         </member>
         <member name="T:SharpDX.WIC.PixelFormat">
             <summary>	
@@ -14909,6 +15028,10 @@
             <summary>Constant Format72bpp8ChannelsAlpha.</summary>
             <unmanaged>GUID_WICPixelFormat72bpp8ChannelsAlpha</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format128bppRGBFloat">
+            <summary>Constant Format128bppRGBFloat.</summary>
+            <unmanaged>GUID_WICPixelFormat128bppRGBFloat</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format2bppIndexed">
             <summary>Constant Format2bppIndexed.</summary>
             <unmanaged>GUID_WICPixelFormat2bppIndexed</unmanaged>
@@ -14917,9 +15040,17 @@
             <summary>Constant Format32bppGrayFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat32bppGrayFixedPoint</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format64bppRGBA">
+            <summary>Constant Format64bppRGBA.</summary>
+            <unmanaged>GUID_WICPixelFormat64bppRGBA</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format1bppIndexed">
             <summary>Constant Format1bppIndexed.</summary>
             <unmanaged>GUID_WICPixelFormat1bppIndexed</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format128bpp8Channels">
+            <summary>Constant Format128bpp8Channels.</summary>
+            <unmanaged>GUID_WICPixelFormat128bpp8Channels</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format64bpp8Channels">
             <summary>Constant Format64bpp8Channels.</summary>
@@ -14941,25 +15072,21 @@
             <summary>Constant Format112bpp7Channels.</summary>
             <unmanaged>GUID_WICPixelFormat112bpp7Channels</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format128bppRGBFloat">
-            <summary>Constant Format128bppRGBFloat.</summary>
-            <unmanaged>GUID_WICPixelFormat128bppRGBFloat</unmanaged>
-        </member>
         <member name="F:SharpDX.WIC.PixelFormat.FormatDontCare">
             <summary>Constant FormatDontCare.</summary>
             <unmanaged>GUID_WICPixelFormatDontCare</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format128bpp7ChannelsAlpha">
+            <summary>Constant Format128bpp7ChannelsAlpha.</summary>
+            <unmanaged>GUID_WICPixelFormat128bpp7ChannelsAlpha</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format48bppBGRFixedPoint">
             <summary>Constant Format48bppBGRFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat48bppBGRFixedPoint</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format24bppRGB">
-            <summary>Constant Format24bppRGB.</summary>
-            <unmanaged>GUID_WICPixelFormat24bppRGB</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format64bpp4Channels">
-            <summary>Constant Format64bpp4Channels.</summary>
-            <unmanaged>GUID_WICPixelFormat64bpp4Channels</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format8bppIndexed">
+            <summary>Constant Format8bppIndexed.</summary>
+            <unmanaged>GUID_WICPixelFormat8bppIndexed</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format24bpp3Channels">
             <summary>Constant Format24bpp3Channels.</summary>
@@ -14969,17 +15096,21 @@
             <summary>Constant Format32bppBGR.</summary>
             <unmanaged>GUID_WICPixelFormat32bppBGR</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format56bpp6ChannelsAlpha">
+            <summary>Constant Format56bpp6ChannelsAlpha.</summary>
+            <unmanaged>GUID_WICPixelFormat56bpp6ChannelsAlpha</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format48bppBGR">
             <summary>Constant Format48bppBGR.</summary>
             <unmanaged>GUID_WICPixelFormat48bppBGR</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format48bppRGBFixedPoint">
-            <summary>Constant Format48bppRGBFixedPoint.</summary>
-            <unmanaged>GUID_WICPixelFormat48bppRGBFixedPoint</unmanaged>
-        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format64bpp3ChannelsAlpha">
             <summary>Constant Format64bpp3ChannelsAlpha.</summary>
             <unmanaged>GUID_WICPixelFormat64bpp3ChannelsAlpha</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format64bppCMYK">
+            <summary>Constant Format64bppCMYK.</summary>
+            <unmanaged>GUID_WICPixelFormat64bppCMYK</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format2bppGray">
             <summary>Constant Format2bppGray.</summary>
@@ -14988,6 +15119,14 @@
         <member name="F:SharpDX.WIC.PixelFormat.Format64bppBGRA">
             <summary>Constant Format64bppBGRA.</summary>
             <unmanaged>GUID_WICPixelFormat64bppBGRA</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format48bppRGBFixedPoint">
+            <summary>Constant Format48bppRGBFixedPoint.</summary>
+            <unmanaged>GUID_WICPixelFormat48bppRGBFixedPoint</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format64bppPBGRA">
+            <summary>Constant Format64bppPBGRA.</summary>
+            <unmanaged>GUID_WICPixelFormat64bppPBGRA</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format96bpp6Channels">
             <summary>Constant Format96bpp6Channels.</summary>
@@ -15021,13 +15160,13 @@
             <summary>Constant Format16bppGrayFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat16bppGrayFixedPoint</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format128bpp8Channels">
-            <summary>Constant Format128bpp8Channels.</summary>
-            <unmanaged>GUID_WICPixelFormat128bpp8Channels</unmanaged>
-        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format64bppRGBAFixedPoint">
             <summary>Constant Format64bppRGBAFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat64bppRGBAFixedPoint</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format64bppPRGBA">
+            <summary>Constant Format64bppPRGBA.</summary>
+            <unmanaged>GUID_WICPixelFormat64bppPRGBA</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format144bpp8ChannelsAlpha">
             <summary>Constant Format144bpp8ChannelsAlpha.</summary>
@@ -15037,9 +15176,9 @@
             <summary>Constant Format16bppGrayHalf.</summary>
             <unmanaged>GUID_WICPixelFormat16bppGrayHalf</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format48bpp6Channels">
-            <summary>Constant Format48bpp6Channels.</summary>
-            <unmanaged>GUID_WICPixelFormat48bpp6Channels</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format64bpp7ChannelsAlpha">
+            <summary>Constant Format64bpp7ChannelsAlpha.</summary>
+            <unmanaged>GUID_WICPixelFormat64bpp7ChannelsAlpha</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format128bppRGBAFixedPoint">
             <summary>Constant Format128bppRGBAFixedPoint.</summary>
@@ -15049,25 +15188,21 @@
             <summary>Constant Format32bppRGB.</summary>
             <unmanaged>GUID_WICPixelFormat32bppRGB</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format8bppIndexed">
-            <summary>Constant Format8bppIndexed.</summary>
-            <unmanaged>GUID_WICPixelFormat8bppIndexed</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format48bppRGB">
-            <summary>Constant Format48bppRGB.</summary>
-            <unmanaged>GUID_WICPixelFormat48bppRGB</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format32bpp4Channels">
-            <summary>Constant Format32bpp4Channels.</summary>
-            <unmanaged>GUID_WICPixelFormat32bpp4Channels</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format96bppRGBFloat">
+            <summary>Constant Format96bppRGBFloat.</summary>
+            <unmanaged>GUID_WICPixelFormat96bppRGBFloat</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format32bpp3ChannelsAlpha">
             <summary>Constant Format32bpp3ChannelsAlpha.</summary>
             <unmanaged>GUID_WICPixelFormat32bpp3ChannelsAlpha</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format64bppCMYK">
-            <summary>Constant Format64bppCMYK.</summary>
-            <unmanaged>GUID_WICPixelFormat64bppCMYK</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format16bppCrQuantizedDctCoefficients">
+            <summary>Constant Format16bppCrQuantizedDctCoefficients.</summary>
+            <unmanaged>GUID_WICPixelFormat16bppCrQuantizedDctCoefficients</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format40bpp5Channels">
+            <summary>Constant Format40bpp5Channels.</summary>
+            <unmanaged>GUID_WICPixelFormat40bpp5Channels</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format4bppIndexed">
             <summary>Constant Format4bppIndexed.</summary>
@@ -15085,9 +15220,9 @@
             <summary>Constant Format64bppRGBFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat64bppRGBFixedPoint</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format64bppPBGRA">
-            <summary>Constant Format64bppPBGRA.</summary>
-            <unmanaged>GUID_WICPixelFormat64bppPBGRA</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format48bpp6Channels">
+            <summary>Constant Format48bpp6Channels.</summary>
+            <unmanaged>GUID_WICPixelFormat48bpp6Channels</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format16bppGray">
             <summary>Constant Format16bppGray.</summary>
@@ -15097,37 +15232,41 @@
             <summary>Constant Format40bppCMYKAlpha.</summary>
             <unmanaged>GUID_WICPixelFormat40bppCMYKAlpha</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format16bppYQuantizedDctCoefficients">
+            <summary>Constant Format16bppYQuantizedDctCoefficients.</summary>
+            <unmanaged>GUID_WICPixelFormat16bppYQuantizedDctCoefficients</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format32bppBGRA">
             <summary>Constant Format32bppBGRA.</summary>
             <unmanaged>GUID_WICPixelFormat32bppBGRA</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format128bpp7ChannelsAlpha">
-            <summary>Constant Format128bpp7ChannelsAlpha.</summary>
-            <unmanaged>GUID_WICPixelFormat128bpp7ChannelsAlpha</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format128bppRGBFixedPoint">
             <summary>Constant Format128bppRGBFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat128bppRGBFixedPoint</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format16bppCbQuantizedDctCoefficients">
+            <summary>Constant Format16bppCbQuantizedDctCoefficients.</summary>
+            <unmanaged>GUID_WICPixelFormat16bppCbQuantizedDctCoefficients</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format80bpp4ChannelsAlpha">
             <summary>Constant Format80bpp4ChannelsAlpha.</summary>
             <unmanaged>GUID_WICPixelFormat80bpp4ChannelsAlpha</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format24bppRGB">
+            <summary>Constant Format24bppRGB.</summary>
+            <unmanaged>GUID_WICPixelFormat24bppRGB</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format64bppPRGBAHalf">
             <summary>Constant Format64bppPRGBAHalf.</summary>
             <unmanaged>GUID_WICPixelFormat64bppPRGBAHalf</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format64bppRGBA">
-            <summary>Constant Format64bppRGBA.</summary>
-            <unmanaged>GUID_WICPixelFormat64bppRGBA</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format16bppBGRA5551">
-            <summary>Constant Format16bppBGRA5551.</summary>
-            <unmanaged>GUID_WICPixelFormat16bppBGRA5551</unmanaged>
-        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format64bppBGRAFixedPoint">
             <summary>Constant Format64bppBGRAFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat64bppBGRAFixedPoint</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format48bpp5ChannelsAlpha">
+            <summary>Constant Format48bpp5ChannelsAlpha.</summary>
+            <unmanaged>GUID_WICPixelFormat48bpp5ChannelsAlpha</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format32bppPRGBA">
             <summary>Constant Format32bppPRGBA.</summary>
@@ -15140,10 +15279,6 @@
         <member name="F:SharpDX.WIC.PixelFormat.Format96bppRGBFixedPoint">
             <summary>Constant Format96bppRGBFixedPoint.</summary>
             <unmanaged>GUID_WICPixelFormat96bppRGBFixedPoint</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format32bppRGBA1010102">
-            <summary>Constant Format32bppRGBA1010102.</summary>
-            <unmanaged>GUID_WICPixelFormat32bppRGBA1010102</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format32bppRGBA1010102XR">
             <summary>Constant Format32bppRGBA1010102XR.</summary>
@@ -15173,17 +15308,17 @@
             <summary>Constant Format8bppCr.</summary>
             <unmanaged>GUID_WICPixelFormat8bppCr</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format8bppAlpha">
+            <summary>Constant Format8bppAlpha.</summary>
+            <unmanaged>GUID_WICPixelFormat8bppAlpha</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format56bpp7Channels">
             <summary>Constant Format56bpp7Channels.</summary>
             <unmanaged>GUID_WICPixelFormat56bpp7Channels</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format96bppRGBFloat">
-            <summary>Constant Format96bppRGBFloat.</summary>
-            <unmanaged>GUID_WICPixelFormat96bppRGBFloat</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format40bpp5Channels">
-            <summary>Constant Format40bpp5Channels.</summary>
-            <unmanaged>GUID_WICPixelFormat40bpp5Channels</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format64bpp4Channels">
+            <summary>Constant Format64bpp4Channels.</summary>
+            <unmanaged>GUID_WICPixelFormat64bpp4Channels</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format8bppGray">
             <summary>Constant Format8bppGray.</summary>
@@ -15197,21 +15332,25 @@
             <summary>Constant Format24bppBGR.</summary>
             <unmanaged>GUID_WICPixelFormat24bppBGR</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.PixelFormat.Format32bppRGBA1010102">
+            <summary>Constant Format32bppRGBA1010102.</summary>
+            <unmanaged>GUID_WICPixelFormat32bppRGBA1010102</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format4bppGray">
             <summary>Constant Format4bppGray.</summary>
             <unmanaged>GUID_WICPixelFormat4bppGray</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format64bppPRGBA">
-            <summary>Constant Format64bppPRGBA.</summary>
-            <unmanaged>GUID_WICPixelFormat64bppPRGBA</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format48bppRGB">
+            <summary>Constant Format48bppRGB.</summary>
+            <unmanaged>GUID_WICPixelFormat48bppRGB</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format128bppRGBAFloat">
             <summary>Constant Format128bppRGBAFloat.</summary>
             <unmanaged>GUID_WICPixelFormat128bppRGBAFloat</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format48bpp5ChannelsAlpha">
-            <summary>Constant Format48bpp5ChannelsAlpha.</summary>
-            <unmanaged>GUID_WICPixelFormat48bpp5ChannelsAlpha</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format16bppBGRA5551">
+            <summary>Constant Format16bppBGRA5551.</summary>
+            <unmanaged>GUID_WICPixelFormat16bppBGRA5551</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format32bppRGBA">
             <summary>Constant Format32bppRGBA.</summary>
@@ -15221,25 +15360,17 @@
             <summary>Constant Format32bppRGBE.</summary>
             <unmanaged>GUID_WICPixelFormat32bppRGBE</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format56bpp6ChannelsAlpha">
-            <summary>Constant Format56bpp6ChannelsAlpha.</summary>
-            <unmanaged>GUID_WICPixelFormat56bpp6ChannelsAlpha</unmanaged>
+        <member name="F:SharpDX.WIC.PixelFormat.Format32bpp4Channels">
+            <summary>Constant Format32bpp4Channels.</summary>
+            <unmanaged>GUID_WICPixelFormat32bpp4Channels</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format128bppPRGBAFloat">
             <summary>Constant Format128bppPRGBAFloat.</summary>
             <unmanaged>GUID_WICPixelFormat128bppPRGBAFloat</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format64bpp7ChannelsAlpha">
-            <summary>Constant Format64bpp7ChannelsAlpha.</summary>
-            <unmanaged>GUID_WICPixelFormat64bpp7ChannelsAlpha</unmanaged>
-        </member>
         <member name="F:SharpDX.WIC.PixelFormat.Format64bppRGBHalf">
             <summary>Constant Format64bppRGBHalf.</summary>
             <unmanaged>GUID_WICPixelFormat64bppRGBHalf</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.PixelFormat.Format8bppAlpha">
-            <summary>Constant Format8bppAlpha.</summary>
-            <unmanaged>GUID_WICPixelFormat8bppAlpha</unmanaged>
         </member>
         <member name="M:SharpDX.WIC.PixelFormat.GetBitsPerPixel(System.Guid)">
             <summary>
@@ -15290,6 +15421,10 @@
             <summary>Constant OufOfMemory.</summary>
             <unmanaged>WINCODEC_ERR_OUTOFMEMORY</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.ResultCode.InvalidJpegscanindex">
+            <summary>Constant InvalidJpegscanindex.</summary>
+            <unmanaged>WINCODEC_ERR_INVALIDJPEGSCANINDEX</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.ResultCode.NotInitializeD">
             <summary>Constant NotInitializeD.</summary>
             <unmanaged>WINCODEC_ERR_NOTINITIALIZED</unmanaged>
@@ -15334,10 +15469,6 @@
             <summary>Constant Componentnotfound.</summary>
             <unmanaged>WINCODEC_ERR_COMPONENTNOTFOUND</unmanaged>
         </member>
-        <member name="F:SharpDX.WIC.ResultCode.InvalidRegistration">
-            <summary>Constant InvalidRegistration.</summary>
-            <unmanaged>WINCODEC_ERR_INVALIDREGISTRATION</unmanaged>
-        </member>
         <member name="F:SharpDX.WIC.ResultCode.UnexpectedSize">
             <summary>Constant UnexpectedSize.</summary>
             <unmanaged>WINCODEC_ERR_UNEXPECTEDSIZE</unmanaged>
@@ -15346,6 +15477,10 @@
             <summary>Constant Internalerror.</summary>
             <unmanaged>WINCODEC_ERR_INTERNALERROR</unmanaged>
         </member>
+        <member name="F:SharpDX.WIC.ResultCode.InvalidRegistration">
+            <summary>Constant InvalidRegistration.</summary>
+            <unmanaged>WINCODEC_ERR_INVALIDREGISTRATION</unmanaged>
+        </member>
         <member name="F:SharpDX.WIC.ResultCode.WrongState">
             <summary>Constant WrongState.</summary>
             <unmanaged>WINCODEC_ERR_WRONGSTATE</unmanaged>
@@ -15353,6 +15488,10 @@
         <member name="F:SharpDX.WIC.ResultCode.Aborted">
             <summary>Constant Aborted.</summary>
             <unmanaged>WINCODEC_ERR_ABORTED</unmanaged>
+        </member>
+        <member name="F:SharpDX.WIC.ResultCode.Propertyunexpectedtype">
+            <summary>Constant Propertyunexpectedtype.</summary>
+            <unmanaged>WINCODEC_ERR_PROPERTYUNEXPECTEDTYPE</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.ResultCode.Propertynotsupported">
             <summary>Constant Propertynotsupported.</summary>
@@ -15401,10 +15540,6 @@
         <member name="F:SharpDX.WIC.ResultCode.StreamRead">
             <summary>Constant StreamRead.</summary>
             <unmanaged>WINCODEC_ERR_STREAMREAD</unmanaged>
-        </member>
-        <member name="F:SharpDX.WIC.ResultCode.Propertyunexpectedtype">
-            <summary>Constant Propertyunexpectedtype.</summary>
-            <unmanaged>WINCODEC_ERR_PROPERTYUNEXPECTEDTYPE</unmanaged>
         </member>
         <member name="F:SharpDX.WIC.ResultCode.Codecpresent">
             <summary>Constant Codecpresent.</summary>
@@ -19962,6 +20097,222 @@
             Initializes a new instance of the <see cref="T:SharpDX.WIC.ImagingFactory2"/> class.
             </summary>
         </member>
+        <member name="T:SharpDX.WIC.JpegFrameDecode">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode']/*"/>	
+            <unmanaged>IWICJpegFrameDecode</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.WIC.JpegFrameDecode"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.op_Explicit(System.IntPtr)~SharpDX.WIC.JpegFrameDecode">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.WIC.JpegFrameDecode"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.DoesSupportIndexing(SharpDX.Mathematics.Interop.RawBool@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="fIndexingSupportedRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::DoesSupportIndexing']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::DoesSupportIndexing([Out] BOOL* pfIndexingSupported)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::DoesSupportIndexing</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.SetIndexing(SharpDX.WIC.JpegIndexingOptions,System.Int32)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="options">No documentation.</param>	
+            <param name="horizontalIntervalSize">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::SetIndexing']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::SetIndexing([In] WICJpegIndexingOptions options,[In] unsigned int horizontalIntervalSize)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::SetIndexing</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.ClearIndexing">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::ClearIndexing']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::ClearIndexing()</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::ClearIndexing</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.GetAcHuffmanTable(System.Int32,System.Int32,SharpDX.DXGI.JpegAcHuffmanTable@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="tableIndex">No documentation.</param>	
+            <param name="acHuffmanTableRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::GetAcHuffmanTable']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::GetAcHuffmanTable([In] unsigned int scanIndex,[In] unsigned int tableIndex,[Out] DXGI_JPEG_AC_HUFFMAN_TABLE* pAcHuffmanTable)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::GetAcHuffmanTable</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.GetDcHuffmanTable(System.Int32,System.Int32,SharpDX.DXGI.JpegDeviceContextHuffmanTable@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="tableIndex">No documentation.</param>	
+            <param name="dcHuffmanTableRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::GetDcHuffmanTable']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::GetDcHuffmanTable([In] unsigned int scanIndex,[In] unsigned int tableIndex,[Out] DXGI_JPEG_DC_HUFFMAN_TABLE* pDcHuffmanTable)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::GetDcHuffmanTable</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.GetQuantizationTable(System.Int32,System.Int32,SharpDX.DXGI.JpegQuantizationTable@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="tableIndex">No documentation.</param>	
+            <param name="quantizationTableRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::GetQuantizationTable']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::GetQuantizationTable([In] unsigned int scanIndex,[In] unsigned int tableIndex,[Out] DXGI_JPEG_QUANTIZATION_TABLE* pQuantizationTable)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::GetQuantizationTable</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.GetFrameHeader(SharpDX.WIC.JpegFrameHeader@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="frameHeaderRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::GetFrameHeader']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::GetFrameHeader([Out] WICJpegFrameHeader* pFrameHeader)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::GetFrameHeader</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.GetScanHeader(System.Int32,SharpDX.WIC.JpegScanHeader@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="scanHeaderRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::GetScanHeader']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::GetScanHeader([In] unsigned int scanIndex,[Out] WICJpegScanHeader* pScanHeader)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::GetScanHeader</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.CopyScan(System.Int32,System.Int32,System.Int32,System.Byte[],System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="scanOffset">No documentation.</param>	
+            <param name="scanData">No documentation.</param>	
+            <param name="scanDataRef">No documentation.</param>	
+            <param name="scanDataActualRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::CopyScan']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::CopyScan([In] unsigned int scanIndex,[In] unsigned int scanOffset,[In] unsigned int cbScanData,[Out, Buffer] unsigned char* pbScanData,[Out] unsigned int* pcbScanDataActual)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::CopyScan</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameDecode.CopyMinimalStream(System.Int32,System.Int32,System.Byte[],System.Int32@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="streamOffset">No documentation.</param>	
+            <param name="streamData">No documentation.</param>	
+            <param name="streamDataRef">No documentation.</param>	
+            <param name="streamDataActualRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::CopyMinimalStream']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::CopyMinimalStream([In] unsigned int streamOffset,[In] unsigned int cbStreamData,[Out, Buffer] unsigned char* pbStreamData,[Out] unsigned int* pcbStreamDataActual)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameDecode::CopyMinimalStream</unmanaged-short>	
+        </member>
+        <member name="P:SharpDX.WIC.JpegFrameDecode.FrameHeader">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameDecode::GetFrameHeader']/*"/>	
+            <unmanaged>GetFrameHeader</unmanaged>	
+            <unmanaged-short>GetFrameHeader</unmanaged-short>	
+            <unmanaged>HRESULT IWICJpegFrameDecode::GetFrameHeader([Out] WICJpegFrameHeader* pFrameHeader)</unmanaged>
+        </member>
+        <member name="T:SharpDX.WIC.JpegFrameEncode">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameEncode']/*"/>	
+            <unmanaged>IWICJpegFrameEncode</unmanaged>	
+            <unmanaged-short>IWICJpegFrameEncode</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameEncode.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpDX.WIC.JpegFrameEncode"/> class.
+            </summary>
+            <param name="nativePtr">The native pointer.</param>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameEncode.op_Explicit(System.IntPtr)~SharpDX.WIC.JpegFrameEncode">
+            <summary>
+            Performs an explicit conversion from <see cref="T:System.IntPtr"/> to <see cref="T:SharpDX.WIC.JpegFrameEncode"/>. (This method is a shortcut to <see cref="P:SharpDX.CppObject.NativePointer"/>) 
+            </summary>
+            <param name="nativePointer">The native pointer.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameEncode.GetAcHuffmanTable(System.Int32,System.Int32,SharpDX.DXGI.JpegAcHuffmanTable@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="tableIndex">No documentation.</param>	
+            <param name="acHuffmanTableRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameEncode::GetAcHuffmanTable']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameEncode::GetAcHuffmanTable([In] unsigned int scanIndex,[In] unsigned int tableIndex,[Out] DXGI_JPEG_AC_HUFFMAN_TABLE* pAcHuffmanTable)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameEncode::GetAcHuffmanTable</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameEncode.GetDcHuffmanTable(System.Int32,System.Int32,SharpDX.DXGI.JpegDeviceContextHuffmanTable@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="tableIndex">No documentation.</param>	
+            <param name="dcHuffmanTableRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameEncode::GetDcHuffmanTable']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameEncode::GetDcHuffmanTable([In] unsigned int scanIndex,[In] unsigned int tableIndex,[Out] DXGI_JPEG_DC_HUFFMAN_TABLE* pDcHuffmanTable)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameEncode::GetDcHuffmanTable</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameEncode.GetQuantizationTable(System.Int32,System.Int32,SharpDX.DXGI.JpegQuantizationTable@)">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanIndex">No documentation.</param>	
+            <param name="tableIndex">No documentation.</param>	
+            <param name="quantizationTableRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameEncode::GetQuantizationTable']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameEncode::GetQuantizationTable([In] unsigned int scanIndex,[In] unsigned int tableIndex,[Out] DXGI_JPEG_QUANTIZATION_TABLE* pQuantizationTable)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameEncode::GetQuantizationTable</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.WIC.JpegFrameEncode.WriteScan(System.Int32,System.Byte[])">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="scanData">No documentation.</param>	
+            <param name="scanDataRef">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IWICJpegFrameEncode::WriteScan']/*"/>	
+            <unmanaged>HRESULT IWICJpegFrameEncode::WriteScan([In] unsigned int cbScanData,[In, Buffer] const unsigned char* pbScanData)</unmanaged>	
+            <unmanaged-short>IWICJpegFrameEncode::WriteScan</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.WIC.MetadataQueryReader">
             <summary>	
             <p>Exposes methods for retrieving metadata blocks and items from a decoder or its image frames using a metadata query expression.</p>	
@@ -21533,6 +21884,150 @@
             <param name="left">The left.</param>
             <param name="pixelWidth">Width in pixel.</param>
             <param name="pixelHeight">Height in pixel.</param>
+        </member>
+        <member name="T:SharpDX.WIC.JpegFrameHeader">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader']/*"/>	
+            <unmanaged>WICJpegFrameHeader</unmanaged>	
+            <unmanaged-short>WICJpegFrameHeader</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.Width">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::Width']/*"/>	
+            <unmanaged>unsigned int Width</unmanaged>	
+            <unmanaged-short>unsigned int Width</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.Height">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::Height']/*"/>	
+            <unmanaged>unsigned int Height</unmanaged>	
+            <unmanaged-short>unsigned int Height</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.TransferMatrix">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::TransferMatrix']/*"/>	
+            <unmanaged>WICJpegTransferMatrix TransferMatrix</unmanaged>	
+            <unmanaged-short>WICJpegTransferMatrix TransferMatrix</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.ScanType">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::ScanType']/*"/>	
+            <unmanaged>WICJpegScanType ScanType</unmanaged>	
+            <unmanaged-short>WICJpegScanType ScanType</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.CComponents">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::cComponents']/*"/>	
+            <unmanaged>unsigned int cComponents</unmanaged>	
+            <unmanaged-short>unsigned int cComponents</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.ComponentIdentifiers">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::ComponentIdentifiers']/*"/>	
+            <unmanaged>unsigned int ComponentIdentifiers</unmanaged>	
+            <unmanaged-short>unsigned int ComponentIdentifiers</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.SampleFactors">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::SampleFactors']/*"/>	
+            <unmanaged>unsigned int SampleFactors</unmanaged>	
+            <unmanaged-short>unsigned int SampleFactors</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegFrameHeader.QuantizationTableIndices">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegFrameHeader::QuantizationTableIndices']/*"/>	
+            <unmanaged>unsigned int QuantizationTableIndices</unmanaged>	
+            <unmanaged-short>unsigned int QuantizationTableIndices</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.WIC.JpegScanHeader">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader']/*"/>	
+            <unmanaged>WICJpegScanHeader</unmanaged>	
+            <unmanaged-short>WICJpegScanHeader</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.CComponents">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::cComponents']/*"/>	
+            <unmanaged>unsigned int cComponents</unmanaged>	
+            <unmanaged-short>unsigned int cComponents</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.RestartInterval">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::RestartInterval']/*"/>	
+            <unmanaged>unsigned int RestartInterval</unmanaged>	
+            <unmanaged-short>unsigned int RestartInterval</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.ComponentSelectors">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::ComponentSelectors']/*"/>	
+            <unmanaged>unsigned int ComponentSelectors</unmanaged>	
+            <unmanaged-short>unsigned int ComponentSelectors</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.HuffmanTableIndices">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::HuffmanTableIndices']/*"/>	
+            <unmanaged>unsigned int HuffmanTableIndices</unmanaged>	
+            <unmanaged-short>unsigned int HuffmanTableIndices</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.StartSpectralSelection">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::StartSpectralSelection']/*"/>	
+            <unmanaged>unsigned char StartSpectralSelection</unmanaged>	
+            <unmanaged-short>unsigned char StartSpectralSelection</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.EndSpectralSelection">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::EndSpectralSelection']/*"/>	
+            <unmanaged>unsigned char EndSpectralSelection</unmanaged>	
+            <unmanaged-short>unsigned char EndSpectralSelection</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.SuccessiveApproximationHigh">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::SuccessiveApproximationHigh']/*"/>	
+            <unmanaged>unsigned char SuccessiveApproximationHigh</unmanaged>	
+            <unmanaged-short>unsigned char SuccessiveApproximationHigh</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.WIC.JpegScanHeader.SuccessiveApproximationLow">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='WICJpegScanHeader::SuccessiveApproximationLow']/*"/>	
+            <unmanaged>unsigned char SuccessiveApproximationLow</unmanaged>	
+            <unmanaged-short>unsigned char SuccessiveApproximationLow</unmanaged-short>	
         </member>
         <member name="T:SharpDX.WIC.RawCapabilitiesInfo">
             <summary>	
@@ -29437,6 +29932,15 @@
             <unmanaged>DWRITE_INFORMATIONAL_STRING_POSTSCRIPT_CID_NAME</unmanaged>	
             <unmanaged-short>DWRITE_INFORMATIONAL_STRING_POSTSCRIPT_CID_NAME</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.DirectWrite.InformationalStringId.WwsFamilyName">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DWRITE_INFORMATIONAL_STRING_WWS_FAMILY_NAME']/*"/>	
+            <msdn-id>dd368094</msdn-id>	
+            <unmanaged>DWRITE_INFORMATIONAL_STRING_WWS_FAMILY_NAME</unmanaged>	
+            <unmanaged-short>DWRITE_INFORMATIONAL_STRING_WWS_FAMILY_NAME</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.DirectWrite.LineSpacingMethod">
             <summary>	
             <p>The method used for line spacing in a text layout.</p>	
@@ -29466,6 +29970,15 @@
             <msdn-id>dd368101</msdn-id>	
             <unmanaged>DWRITE_LINE_SPACING_METHOD_UNIFORM</unmanaged>	
             <unmanaged-short>DWRITE_LINE_SPACING_METHOD_UNIFORM</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.DirectWrite.LineSpacingMethod.Proportional">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='DWRITE_LINE_SPACING_METHOD_PROPORTIONAL']/*"/>	
+            <msdn-id>dd368101</msdn-id>	
+            <unmanaged>DWRITE_LINE_SPACING_METHOD_PROPORTIONAL</unmanaged>	
+            <unmanaged-short>DWRITE_LINE_SPACING_METHOD_PROPORTIONAL</unmanaged-short>	
         </member>
         <member name="T:SharpDX.DirectWrite.NumberSubstitutionMethod">
             <summary>	
@@ -33001,7 +33514,7 @@
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDWriteFont::GetInformationalStrings']/*"/>	
             <msdn-id>dd371147</msdn-id>	
-            <unmanaged>HRESULT IDWriteFont::GetInformationalStrings([In] DWRITE_INFORMATIONAL_STRING_ID informationalStringID,[Out] IDWriteLocalizedStrings** informationalStrings,[Out] BOOL* exists)</unmanaged>	
+            <unmanaged>HRESULT IDWriteFont::GetInformationalStrings([In] DWRITE_INFORMATIONAL_STRING_ID informationalStringID,[Out, Optional] IDWriteLocalizedStrings** informationalStrings,[Out] BOOL* exists)</unmanaged>	
             <unmanaged-short>IDWriteFont::GetInformationalStrings</unmanaged-short>	
         </member>
         <member name="M:SharpDX.DirectWrite.Font.GetSimulations">
@@ -33406,6 +33919,27 @@
             <msdn-id>Hh780416</msdn-id>	
             <unmanaged>HRESULT IDWriteFontFace1::GetRecommendedRenderingMode([In] float fontEmSize,[In] float dpiX,[In] float dpiY,[In, Optional] const DWRITE_MATRIX* transform,[In] BOOL isSideways,[In] DWRITE_OUTLINE_THRESHOLD outlineThreshold,[In] DWRITE_MEASURING_MODE measuringMode,[Out] DWRITE_RENDERING_MODE* renderingMode)</unmanaged>	
             <unmanaged-short>IDWriteFontFace1::GetRecommendedRenderingMode</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DirectWrite.FontFace1.GetVerticalGlyphVariants(System.Int32,System.Int16[],System.Int16[])">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <param name="glyphCount">No documentation.</param>	
+            <param name="nominalGlyphIndices">No documentation.</param>	
+            <param name="verticalGlyphIndices">No documentation.</param>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDWriteFontFace1::GetVerticalGlyphVariants']/*"/>	
+            <unmanaged>HRESULT IDWriteFontFace1::GetVerticalGlyphVariants([In] unsigned int glyphCount,[In, Buffer] const unsigned short* nominalGlyphIndices,[Out, Buffer] unsigned short* verticalGlyphIndices)</unmanaged>	
+            <unmanaged-short>IDWriteFontFace1::GetVerticalGlyphVariants</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.DirectWrite.FontFace1.HasVerticalGlyphVariants">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <returns>No documentation.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='IDWriteFontFace1::HasVerticalGlyphVariants']/*"/>	
+            <unmanaged>BOOL IDWriteFontFace1::HasVerticalGlyphVariants()</unmanaged>	
+            <unmanaged-short>IDWriteFontFace1::HasVerticalGlyphVariants</unmanaged-short>	
         </member>
         <member name="P:SharpDX.DirectWrite.FontFace1.Metrics">
             <summary>	
@@ -42058,10 +42592,6 @@
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.Direct2D1.ResultCode']/*"/>	
         </member>
-        <member name="F:SharpDX.Direct2D1.ResultCode.EffectIsNotRegistered">
-            <summary>Constant EffectIsNotRegistered.</summary>
-            <unmanaged>D2DERR_EFFECT_IS_NOT_REGISTERED</unmanaged>
-        </member>
         <member name="F:SharpDX.Direct2D1.ResultCode.WrongFactory">
             <summary>Constant WrongFactory.</summary>
             <unmanaged>D2DERR_WRONG_FACTORY</unmanaged>
@@ -42229,6 +42759,10 @@
         <member name="F:SharpDX.Direct2D1.ResultCode.NotInitializeD">
             <summary>Constant NotInitializeD.</summary>
             <unmanaged>D2DERR_NOT_INITIALIZED</unmanaged>
+        </member>
+        <member name="F:SharpDX.Direct2D1.ResultCode.EffectIsNotRegistered">
+            <summary>Constant EffectIsNotRegistered.</summary>
+            <unmanaged>D2DERR_EFFECT_IS_NOT_REGISTERED</unmanaged>
         </member>
         <member name="F:SharpDX.Direct2D1.ResultCode.TargetNotGdiCompatible">
             <summary>Constant TargetNotGdiCompatible.</summary>

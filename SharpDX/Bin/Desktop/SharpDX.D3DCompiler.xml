@@ -230,7 +230,7 @@
             <returns><p>Returns <see cref="F:SharpDX.Result.Ok"/> if successful; otherwise, returns one of the Direct3D 11 Return Codes.</p></returns>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ID3D11FunctionLinkingGraph::GetLastError']/*"/>	
             <msdn-id>dn280539</msdn-id>	
-            <unmanaged>HRESULT ID3D11FunctionLinkingGraph::GetLastError([Out] ID3D10Blob** ppErrorBuffer)</unmanaged>	
+            <unmanaged>HRESULT ID3D11FunctionLinkingGraph::GetLastError([Out, Optional] ID3D10Blob** ppErrorBuffer)</unmanaged>	
             <unmanaged-short>ID3D11FunctionLinkingGraph::GetLastError</unmanaged-short>	
         </member>
         <member name="M:SharpDX.D3DCompiler.FunctionLinkingGraph.GenerateHlsl(System.Int32,SharpDX.Direct3D.Blob@)">
@@ -258,7 +258,7 @@
             <msdn-id>dn280539</msdn-id>	
             <unmanaged>GetLastError</unmanaged>	
             <unmanaged-short>GetLastError</unmanaged-short>	
-            <unmanaged>HRESULT ID3D11FunctionLinkingGraph::GetLastError([Out] ID3D10Blob** ppErrorBuffer)</unmanaged>
+            <unmanaged>HRESULT ID3D11FunctionLinkingGraph::GetLastError([Out, Optional] ID3D10Blob** ppErrorBuffer)</unmanaged>
         </member>
         <member name="T:SharpDX.D3DCompiler.ConstantBufferFlags">
             <summary>	
@@ -1149,6 +1149,15 @@
             <unmanaged>D3D_BLOB_PRIVATE_DATA</unmanaged>	
             <unmanaged-short>D3D_BLOB_PRIVATE_DATA</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderBytecodePart.RootSignature">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_BLOB_ROOT_SIGNATURE']/*"/>	
+            <msdn-id>ff728720</msdn-id>	
+            <unmanaged>D3D_BLOB_ROOT_SIGNATURE</unmanaged>	
+            <unmanaged-short>D3D_BLOB_ROOT_SIGNATURE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.D3DCompiler.ShaderBytecodePart.TestAlternateShader">
             <summary>	
             No documentation.	
@@ -1587,6 +1596,134 @@
             <msdn-id>ff728731</msdn-id>	
             <unmanaged>D3D_SIT_UAV_RWSTRUCTURED_WITH_COUNTER</unmanaged>	
             <unmanaged-short>D3D_SIT_UAV_RWSTRUCTURED_WITH_COUNTER</unmanaged-short>	
+        </member>
+        <member name="T:SharpDX.D3DCompiler.ShaderRequiresFlags">
+            <summary>	
+            No documentation for Direct3D12	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DCOMPILE_SHADER_REQUIRES_FLAGS']/*"/>	
+            <unmanaged>D3DCOMPILE_SHADER_REQUIRES_FLAGS</unmanaged>	
+            <unmanaged-short>D3DCOMPILE_SHADER_REQUIRES_FLAGS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresDoubles">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_DOUBLES']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_DOUBLES</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_DOUBLES</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresEarlyDepthStencil">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_EARLY_DEPTH_STENCIL']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_EARLY_DEPTH_STENCIL</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_EARLY_DEPTH_STENCIL</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresUnorderedAccessViewsAtEveryStage">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_UAVS_AT_EVERY_STAGE']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_UAVS_AT_EVERY_STAGE</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_UAVS_AT_EVERY_STAGE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires64UnorderedAccessViews">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_64_UAVS']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_64_UAVS</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_64_UAVS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresMinimumPrecision">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_MINIMUM_PRECISION']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_MINIMUM_PRECISION</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_MINIMUM_PRECISION</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111DoubleExtensionS">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_11_1_DOUBLE_EXTENSIONS']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_11_1_DOUBLE_EXTENSIONS</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_11_1_DOUBLE_EXTENSIONS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111ShaderExtensionS">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_11_1_SHADER_EXTENSIONS']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_11_1_SHADER_EXTENSIONS</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_11_1_SHADER_EXTENSIONS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresLevel9ComparisonFiltering">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_LEVEL_9_COMPARISON_FILTERING']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_LEVEL_9_COMPARISON_FILTERING</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_LEVEL_9_COMPARISON_FILTERING</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresTiledResources">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_TILED_RESOURCES']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_TILED_RESOURCES</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_TILED_RESOURCES</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresStencilRef">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_STENCIL_REF']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_STENCIL_REF</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_STENCIL_REF</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresInnerCoverage">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_INNER_COVERAGE']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_INNER_COVERAGE</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_INNER_COVERAGE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresTypedUnorderedAccessViewLoadAdditionalFormatS">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_TYPED_UAV_LOAD_ADDITIONAL_FORMATS']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_TYPED_UAV_LOAD_ADDITIONAL_FORMATS</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_TYPED_UAV_LOAD_ADDITIONAL_FORMATS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresRovs">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_ROVS']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_ROVS</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_ROVS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresViewportAndRtArrayIndexFromAnyShaderFeedingRasterizer">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_SHADER_REQUIRES_VIEWPORT_AND_RT_ARRAY_INDEX_FROM_ANY_SHADER_FEEDING_RASTERIZER']/*"/>	
+            <unmanaged>D3D_SHADER_REQUIRES_VIEWPORT_AND_RT_ARRAY_INDEX_FROM_ANY_SHADER_FEEDING_RASTERIZER</unmanaged>	
+            <unmanaged-short>D3D_SHADER_REQUIRES_VIEWPORT_AND_RT_ARRAY_INDEX_FROM_ANY_SHADER_FEEDING_RASTERIZER</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.ShaderRequiresFlags.None">
+            <summary>	
+            None.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='']/*"/>	
+            <unmanaged>None</unmanaged>	
+            <unmanaged-short>None</unmanaged-short>	
         </member>
         <member name="T:SharpDX.D3DCompiler.ShaderVariableClass">
             <summary>	
@@ -2383,6 +2520,15 @@
             <unmanaged>D3DCOMPILER_STRIP_PRIVATE_DATA</unmanaged>	
             <unmanaged-short>D3DCOMPILER_STRIP_PRIVATE_DATA</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.D3DCompiler.StripFlags.CompilerStripRootSignature">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3DCOMPILER_STRIP_ROOT_SIGNATURE']/*"/>	
+            <msdn-id>dd607325</msdn-id>	
+            <unmanaged>D3DCOMPILER_STRIP_ROOT_SIGNATURE</unmanaged>	
+            <unmanaged-short>D3DCOMPILER_STRIP_ROOT_SIGNATURE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.D3DCompiler.StripFlags.None">
             <summary>	
             None.	
@@ -2600,6 +2746,24 @@
             <msdn-id>ff728724</msdn-id>	
             <unmanaged>D3D_NAME_DEPTH_LESS_EQUAL</unmanaged>	
             <unmanaged-short>D3D_NAME_DEPTH_LESS_EQUAL</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.SystemValueType.StencilRef">
+            <summary>	
+            <dd> <p>This parameter does not use a predefined system-value semantic.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_NAME_STENCIL_REF']/*"/>	
+            <msdn-id>ff728724</msdn-id>	
+            <unmanaged>D3D_NAME_STENCIL_REF</unmanaged>	
+            <unmanaged-short>D3D_NAME_STENCIL_REF</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.D3DCompiler.SystemValueType.InnerCoverage">
+            <summary>	
+            <dd> <p>This parameter contains position data.</p> </dd>	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_NAME_INNER_COVERAGE']/*"/>	
+            <msdn-id>ff728724</msdn-id>	
+            <unmanaged>D3D_NAME_INNER_COVERAGE</unmanaged>	
+            <unmanaged-short>D3D_NAME_INNER_COVERAGE</unmanaged-short>	
         </member>
         <member name="T:SharpDX.D3DCompiler.TessellatorDomain">
             <summary>	
@@ -3630,7 +3794,7 @@
             <returns><p>Returns <see cref="F:SharpDX.Result.Ok"/> if successful; otherwise, returns one of the Direct3D 11 Return Codes.</p></returns>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ID3D11Linker::Link']/*"/>	
             <msdn-id>dn280560</msdn-id>	
-            <unmanaged>HRESULT ID3D11Linker::Link([In] ID3D11ModuleInstance* pEntry,[In] const char* pEntryName,[In] const char* pTargetName,[In] unsigned int uFlags,[Out] ID3D10Blob** ppShaderBlob,[Out] ID3D10Blob** ppErrorBuffer)</unmanaged>	
+            <unmanaged>HRESULT ID3D11Linker::Link([In] ID3D11ModuleInstance* pEntry,[In] const char* pEntryName,[In] const char* pTargetName,[In] unsigned int uFlags,[Out] ID3D10Blob** ppShaderBlob,[Out, Optional] ID3D10Blob** ppErrorBuffer)</unmanaged>	
             <unmanaged-short>ID3D11Linker::Link</unmanaged-short>	
         </member>
         <member name="M:SharpDX.D3DCompiler.Linker.UseLibrary(SharpDX.D3DCompiler.ModuleInstance)">
@@ -4214,16 +4378,16 @@
             <summary>	
             <p>Gets a group of flags that indicates the requirements of a shader.</p>	
             </summary>	
-            <returns><p>A value that contains a combination of one or more shader requirements flags; each flag specifies a requirement of the shader. A default value of 0 means there are no requirements. </p><table> <tr><th>Shader requirement flag</th><th>Description</th></tr> <tr><td><strong>D3D_SHADER_REQUIRES_DOUBLES</strong></td><td>Shader requires that the graphics driver and hardware support double data type. For more info, see <strong><see cref="!:SharpDX.Direct3D11.FeatureDataDoubles"/></strong>.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_EARLY_DEPTH_STENCIL</strong></td><td>Shader requires an early depth stencil.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_UAVS_AT_EVERY_STAGE</strong></td><td>Shader requires unordered access views (UAVs) at every pipeline stage.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_64_UAVS</strong></td><td>Shader requires 64 UAVs.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_MINIMUM_PRECISION</strong></td><td>Shader requires the graphics driver and hardware to support minimum precision. For more info, see Using HLSL minimum precision.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_11_1_DOUBLE_EXTENSIONS</strong></td><td>Shader requires that the graphics driver and hardware support extended doubles instructions. For more info, see the <strong>ExtendedDoublesShaderInstructions</strong> member of <strong><see cref="!:SharpDX.Direct3D11.FeatureDataD3D11Options"/></strong>.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_11_1_SHADER_EXTENSIONS</strong></td><td>Shader requires that the graphics driver and hardware support the <strong>msad4</strong> intrinsic function in shaders. For more info, see the <strong>SAD4ShaderInstructions</strong> member of <strong><see cref="!:SharpDX.Direct3D11.FeatureDataD3D11Options"/></strong>.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_LEVEL_9_COMPARISON_FILTERING</strong></td><td>Shader requires that the graphics driver and hardware support Direct3D 9 shadow support. For more info, see <strong><see cref="!:SharpDX.Direct3D11.FeatureDataD3D9ShadowSupport"/></strong>.</td></tr> <tr><td><strong>D3D_SHADER_REQUIRES_TILED_RESOURCES</strong></td><td>Shader requires that the graphics driver and hardware support tiled resources. For more info, see <strong>GetResourceTiling</strong>. </td></tr> </table><p>?</p></returns>	
+            <returns><p>A value that contains a combination of one or more shader requirements flags; each flag specifies a requirement of the shader. A default value of 0 means there are no requirements. </p><table> <tr><th>Shader requirement flag</th><th>Description</th></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresDoubles"/></strong></td><td>Shader requires that the graphics driver and hardware support double data type. For more info, see <strong><see cref="!:SharpDX.Direct3D11.FeatureDataDoubles"/></strong>.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresEarlyDepthStencil"/></strong></td><td>Shader requires an early depth stencil.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresUnorderedAccessViewsAtEveryStage"/></strong></td><td>Shader requires unordered access views (UAVs) at every pipeline stage.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires64UnorderedAccessViews"/></strong></td><td>Shader requires 64 UAVs.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresMinimumPrecision"/></strong></td><td>Shader requires the graphics driver and hardware to support minimum precision. For more info, see Using HLSL minimum precision.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111DoubleExtensionS"/></strong></td><td>Shader requires that the graphics driver and hardware support extended doubles instructions. For more info, see the <strong>ExtendedDoublesShaderInstructions</strong> member of <strong><see cref="!:SharpDX.Direct3D11.FeatureDataD3D11Options"/></strong>.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111ShaderExtensionS"/></strong></td><td>Shader requires that the graphics driver and hardware support the <strong>msad4</strong> intrinsic function in shaders. For more info, see the <strong>SAD4ShaderInstructions</strong> member of <strong><see cref="!:SharpDX.Direct3D11.FeatureDataD3D11Options"/></strong>.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresLevel9ComparisonFiltering"/></strong></td><td>Shader requires that the graphics driver and hardware support Direct3D 9 shadow support. For more info, see <strong><see cref="!:SharpDX.Direct3D11.FeatureDataD3D9ShadowSupport"/></strong>.</td></tr> <tr><td><strong><see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresTiledResources"/></strong></td><td>Shader requires that the graphics driver and hardware support tiled resources. For more info, see <strong>GetResourceTiling</strong>. </td></tr> </table><p>?</p></returns>	
             <remarks>	
-            <p>Here is how the D3D11Shader.h header defines the shader requirements flags:</p><pre> #define D3D_SHADER_REQUIRES_DOUBLES                         0x00000001	
-            #define D3D_SHADER_REQUIRES_EARLY_DEPTH_STENCIL             0x00000002	
-            #define D3D_SHADER_REQUIRES_UAVS_AT_EVERY_STAGE             0x00000004	
-            #define D3D_SHADER_REQUIRES_64_UAVS                         0x00000008	
-            #define D3D_SHADER_REQUIRES_MINIMUM_PRECISION               0x00000010	
-            #define D3D_SHADER_REQUIRES_11_1_DOUBLE_EXTENSIONS          0x00000020	
-            #define D3D_SHADER_REQUIRES_11_1_SHADER_EXTENSIONS          0x00000040	
-            #define D3D_SHADER_REQUIRES_LEVEL_9_COMPARISON_FILTERING    0x00000080	
+            <p>Here is how the D3D11Shader.h header defines the shader requirements flags:</p><pre> #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresDoubles"/>                         0x00000001	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresEarlyDepthStencil"/>             0x00000002	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresUnorderedAccessViewsAtEveryStage"/>             0x00000004	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires64UnorderedAccessViews"/>                         0x00000008	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresMinimumPrecision"/>               0x00000010	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111DoubleExtensionS"/>          0x00000020	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111ShaderExtensionS"/>          0x00000040	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresLevel9ComparisonFiltering"/>    0x00000080	
             </pre>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ID3D11ShaderReflection::GetRequiresFlags']/*"/>	
@@ -4359,14 +4523,14 @@
             <p>Gets a group of flags that indicates the requirements of a shader.</p>	
             </summary>	
             <remarks>	
-            <p>Here is how the D3D11Shader.h header defines the shader requirements flags:</p><pre> #define D3D_SHADER_REQUIRES_DOUBLES                         0x00000001	
-            #define D3D_SHADER_REQUIRES_EARLY_DEPTH_STENCIL             0x00000002	
-            #define D3D_SHADER_REQUIRES_UAVS_AT_EVERY_STAGE             0x00000004	
-            #define D3D_SHADER_REQUIRES_64_UAVS                         0x00000008	
-            #define D3D_SHADER_REQUIRES_MINIMUM_PRECISION               0x00000010	
-            #define D3D_SHADER_REQUIRES_11_1_DOUBLE_EXTENSIONS          0x00000020	
-            #define D3D_SHADER_REQUIRES_11_1_SHADER_EXTENSIONS          0x00000040	
-            #define D3D_SHADER_REQUIRES_LEVEL_9_COMPARISON_FILTERING    0x00000080	
+            <p>Here is how the D3D11Shader.h header defines the shader requirements flags:</p><pre> #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresDoubles"/>                         0x00000001	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresEarlyDepthStencil"/>             0x00000002	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresUnorderedAccessViewsAtEveryStage"/>             0x00000004	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires64UnorderedAccessViews"/>                         0x00000008	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresMinimumPrecision"/>               0x00000010	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111DoubleExtensionS"/>          0x00000020	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequires111ShaderExtensionS"/>          0x00000040	
+            #define <see cref="F:SharpDX.D3DCompiler.ShaderRequiresFlags.ShaderRequiresLevel9ComparisonFiltering"/>    0x00000080	
             </pre>	
             </remarks>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ID3D11ShaderReflection::GetRequiresFlags']/*"/>	

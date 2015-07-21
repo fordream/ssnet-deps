@@ -3011,6 +3011,24 @@
             <unmanaged>D3D_FEATURE_LEVEL_11_1</unmanaged>	
             <unmanaged-short>D3D_FEATURE_LEVEL_11_1</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Direct3D.FeatureLevel.Level_12_0">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_FEATURE_LEVEL_12_0']/*"/>	
+            <msdn-id>ff476329</msdn-id>	
+            <unmanaged>D3D_FEATURE_LEVEL_12_0</unmanaged>	
+            <unmanaged-short>D3D_FEATURE_LEVEL_12_0</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Direct3D.FeatureLevel.Level_12_1">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='D3D_FEATURE_LEVEL_12_1']/*"/>	
+            <msdn-id>ff476329</msdn-id>	
+            <unmanaged>D3D_FEATURE_LEVEL_12_1</unmanaged>	
+            <unmanaged-short>D3D_FEATURE_LEVEL_12_1</unmanaged-short>	
+        </member>
         <member name="T:SharpDX.Direct3D.InterpolationMode">
             <summary>	
             <p>Specifies interpolation mode, which affects how values are calculated during rasterization.</p>	
@@ -3962,6 +3980,42 @@
             <msdn-id>hh404178</msdn-id>	
             <unmanaged>AudioCategory_GameMedia</unmanaged>	
             <unmanaged-short>AudioCategory_GameMedia</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Multimedia.AudioStreamCategory.GameChat">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='AudioCategory_GameChat']/*"/>	
+            <msdn-id>hh404178</msdn-id>	
+            <unmanaged>AudioCategory_GameChat</unmanaged>	
+            <unmanaged-short>AudioCategory_GameChat</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Multimedia.AudioStreamCategory.Speech">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='AudioCategory_Speech']/*"/>	
+            <msdn-id>hh404178</msdn-id>	
+            <unmanaged>AudioCategory_Speech</unmanaged>	
+            <unmanaged-short>AudioCategory_Speech</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Multimedia.AudioStreamCategory.Movie">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='AudioCategory_Movie']/*"/>	
+            <msdn-id>hh404178</msdn-id>	
+            <unmanaged>AudioCategory_Movie</unmanaged>	
+            <unmanaged-short>AudioCategory_Movie</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Multimedia.AudioStreamCategory.Media">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='AudioCategory_Media']/*"/>	
+            <msdn-id>hh404178</msdn-id>	
+            <unmanaged>AudioCategory_Media</unmanaged>	
+            <unmanaged-short>AudioCategory_Media</unmanaged-short>	
         </member>
         <member name="T:SharpDX.Multimedia.Speakers">
             <summary>	
@@ -8433,6 +8487,30 @@
             <unmanaged>ERROR_EXTERNAL_BACKING_PROVIDER_UNKNOWN</unmanaged>	
             <unmanaged-short>ERROR_EXTERNAL_BACKING_PROVIDER_UNKNOWN</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.CompressionNotBeneficial">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_COMPRESSION_NOT_BENEFICIAL']/*"/>	
+            <unmanaged>ERROR_COMPRESSION_NOT_BENEFICIAL</unmanaged>	
+            <unmanaged-short>ERROR_COMPRESSION_NOT_BENEFICIAL</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.StorageTopologyIdMismatch">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_STORAGE_TOPOLOGY_ID_MISMATCH']/*"/>	
+            <unmanaged>ERROR_STORAGE_TOPOLOGY_ID_MISMATCH</unmanaged>	
+            <unmanaged-short>ERROR_STORAGE_TOPOLOGY_ID_MISMATCH</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.BlockedByParentalControls">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_BLOCKED_BY_PARENTAL_CONTROLS']/*"/>	
+            <unmanaged>ERROR_BLOCKED_BY_PARENTAL_CONTROLS</unmanaged>	
+            <unmanaged-short>ERROR_BLOCKED_BY_PARENTAL_CONTROLS</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.FailNoactionReboot">
             <summary>	
             No documentation.	
@@ -10632,6 +10710,30 @@
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_ENCRYPTED_IO_NOT_POSSIBLE']/*"/>	
             <unmanaged>ERROR_ENCRYPTED_IO_NOT_POSSIBLE</unmanaged>	
             <unmanaged-short>ERROR_ENCRYPTED_IO_NOT_POSSIBLE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.FileMetadataOptimizationInProgress">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_FILE_METADATA_OPTIMIZATION_IN_PROGRESS']/*"/>	
+            <unmanaged>ERROR_FILE_METADATA_OPTIMIZATION_IN_PROGRESS</unmanaged>	
+            <unmanaged-short>ERROR_FILE_METADATA_OPTIMIZATION_IN_PROGRESS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.QuotaActivity">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_QUOTA_ACTIVITY']/*"/>	
+            <unmanaged>ERROR_QUOTA_ACTIVITY</unmanaged>	
+            <unmanaged-short>ERROR_QUOTA_ACTIVITY</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HandleRevoked">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HANDLE_REVOKED']/*"/>	
+            <unmanaged>ERROR_HANDLE_REVOKED</unmanaged>	
+            <unmanaged-short>ERROR_HANDLE_REVOKED</unmanaged-short>	
         </member>
         <member name="F:SharpDX.Win32.ErrorCode.EaAccessDenied">
             <summary>	
@@ -14297,6 +14399,14 @@
             <unmanaged>ERROR_DYNAMIC_CODE_BLOCKED</unmanaged>	
             <unmanaged-short>ERROR_DYNAMIC_CODE_BLOCKED</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.NotSameObject">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_NOT_SAME_OBJECT']/*"/>	
+            <unmanaged>ERROR_NOT_SAME_OBJECT</unmanaged>	
+            <unmanaged-short>ERROR_NOT_SAME_OBJECT</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.InvalidUserBuffer">
             <summary>	
             No documentation.	
@@ -15881,6 +15991,54 @@
             <unmanaged>ERROR_VOLUME_NOT_SIS_ENABLED</unmanaged>	
             <unmanaged-short>ERROR_VOLUME_NOT_SIS_ENABLED</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SystemIntegrityRollbackDetected">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SYSTEM_INTEGRITY_ROLLBACK_DETECTED']/*"/>	
+            <unmanaged>ERROR_SYSTEM_INTEGRITY_ROLLBACK_DETECTED</unmanaged>	
+            <unmanaged-short>ERROR_SYSTEM_INTEGRITY_ROLLBACK_DETECTED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SystemIntegrityPolicyViolation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SYSTEM_INTEGRITY_POLICY_VIOLATION']/*"/>	
+            <unmanaged>ERROR_SYSTEM_INTEGRITY_POLICY_VIOLATION</unmanaged>	
+            <unmanaged-short>ERROR_SYSTEM_INTEGRITY_POLICY_VIOLATION</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SystemIntegrityInvalidPolicy">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SYSTEM_INTEGRITY_INVALID_POLICY']/*"/>	
+            <unmanaged>ERROR_SYSTEM_INTEGRITY_INVALID_POLICY</unmanaged>	
+            <unmanaged-short>ERROR_SYSTEM_INTEGRITY_INVALID_POLICY</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SystemIntegrityPolicyNotSigned">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SYSTEM_INTEGRITY_POLICY_NOT_SIGNED']/*"/>	
+            <unmanaged>ERROR_SYSTEM_INTEGRITY_POLICY_NOT_SIGNED</unmanaged>	
+            <unmanaged-short>ERROR_SYSTEM_INTEGRITY_POLICY_NOT_SIGNED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.VsmNotInitialized">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_VSM_NOT_INITIALIZED']/*"/>	
+            <unmanaged>ERROR_VSM_NOT_INITIALIZED</unmanaged>	
+            <unmanaged-short>ERROR_VSM_NOT_INITIALIZED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.VsmDmaProtectionNotInUse">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_VSM_DMA_PROTECTION_NOT_IN_USE']/*"/>	
+            <unmanaged>ERROR_VSM_DMA_PROTECTION_NOT_IN_USE</unmanaged>	
+            <unmanaged-short>ERROR_VSM_DMA_PROTECTION_NOT_IN_USE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.DependentResourceExists">
             <summary>	
             No documentation.	
@@ -17256,6 +17414,134 @@
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_RESOURCE_IS_REPLICA_VIRTUAL_MACHINE']/*"/>	
             <unmanaged>ERROR_CLUSTER_RESOURCE_IS_REPLICA_VIRTUAL_MACHINE</unmanaged>	
             <unmanaged-short>ERROR_CLUSTER_RESOURCE_IS_REPLICA_VIRTUAL_MACHINE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterUpgradeIncompatibleVersions">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_UPGRADE_INCOMPATIBLE_VERSIONS']/*"/>	
+            <unmanaged>ERROR_CLUSTER_UPGRADE_INCOMPATIBLE_VERSIONS</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_UPGRADE_INCOMPATIBLE_VERSIONS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterUpgradeFixQuorumNotSupported">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_UPGRADE_FIX_QUORUM_NOT_SUPPORTED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_UPGRADE_FIX_QUORUM_NOT_SUPPORTED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_UPGRADE_FIX_QUORUM_NOT_SUPPORTED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterUpgradeRestartRequired">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_UPGRADE_RESTART_REQUIRED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_UPGRADE_RESTART_REQUIRED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_UPGRADE_RESTART_REQUIRED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterUpgradeInProgress">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_UPGRADE_IN_PROGRESS']/*"/>	
+            <unmanaged>ERROR_CLUSTER_UPGRADE_IN_PROGRESS</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_UPGRADE_IN_PROGRESS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterUpgradeIncomplete">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_UPGRADE_INCOMPLETE']/*"/>	
+            <unmanaged>ERROR_CLUSTER_UPGRADE_INCOMPLETE</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_UPGRADE_INCOMPLETE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterNodeInGracePeriod">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_NODE_IN_GRACE_PERIOD']/*"/>	
+            <unmanaged>ERROR_CLUSTER_NODE_IN_GRACE_PERIOD</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_NODE_IN_GRACE_PERIOD</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterCsvIoPauseTimeout">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_CSV_IO_PAUSE_TIMEOUT']/*"/>	
+            <unmanaged>ERROR_CLUSTER_CSV_IO_PAUSE_TIMEOUT</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_CSV_IO_PAUSE_TIMEOUT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.NodeNotActiveClusterMember">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_NODE_NOT_ACTIVE_CLUSTER_MEMBER']/*"/>	
+            <unmanaged>ERROR_NODE_NOT_ACTIVE_CLUSTER_MEMBER</unmanaged>	
+            <unmanaged-short>ERROR_NODE_NOT_ACTIVE_CLUSTER_MEMBER</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterResourceNotMonitored">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_RESOURCE_NOT_MONITORED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_RESOURCE_NOT_MONITORED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_RESOURCE_NOT_MONITORED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterResourceDoesNotSupportUnmonitored">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_RESOURCE_DOES_NOT_SUPPORT_UNMONITORED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_RESOURCE_DOES_NOT_SUPPORT_UNMONITORED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_RESOURCE_DOES_NOT_SUPPORT_UNMONITORED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterResourceIsReplicated">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_RESOURCE_IS_REPLICATED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_RESOURCE_IS_REPLICATED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_RESOURCE_IS_REPLICATED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterNodeIsolated">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_NODE_ISOLATED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_NODE_ISOLATED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_NODE_ISOLATED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterNodeQuarantined">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_NODE_QUARANTINED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_NODE_QUARANTINED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_NODE_QUARANTINED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterDatabaseUpdateConditionFailed">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_DATABASE_UPDATE_CONDITION_FAILED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_DATABASE_UPDATE_CONDITION_FAILED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_DATABASE_UPDATE_CONDITION_FAILED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterSpaceDegraded">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_SPACE_DEGRADED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_SPACE_DEGRADED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_SPACE_DEGRADED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.ClusterTokenDelegationNotSupported">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_CLUSTER_TOKEN_DELEGATION_NOT_SUPPORTED']/*"/>	
+            <unmanaged>ERROR_CLUSTER_TOKEN_DELEGATION_NOT_SUPPORTED</unmanaged>	
+            <unmanaged-short>ERROR_CLUSTER_TOKEN_DELEGATION_NOT_SUPPORTED</unmanaged-short>	
         </member>
         <member name="F:SharpDX.Win32.ErrorCode.EncryptionFailed">
             <summary>	
@@ -22217,6 +22503,22 @@
             <unmanaged>ERROR_DS_UPN_VALUE_NOT_UNIQUE_IN_FOREST</unmanaged>	
             <unmanaged-short>ERROR_DS_UPN_VALUE_NOT_UNIQUE_IN_FOREST</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.DsMissingForestTrust">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_DS_MISSING_FOREST_TRUST']/*"/>	
+            <unmanaged>ERROR_DS_MISSING_FOREST_TRUST</unmanaged>	
+            <unmanaged-short>ERROR_DS_MISSING_FOREST_TRUST</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.DsValueKeyNotUnique">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_DS_VALUE_KEY_NOT_UNIQUE']/*"/>	
+            <unmanaged>ERROR_DS_VALUE_KEY_NOT_UNIQUE</unmanaged>	
+            <unmanaged-short>ERROR_DS_VALUE_KEY_NOT_UNIQUE</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.IpsecQmPolicyExists">
             <summary>	
             No documentation.	
@@ -25385,6 +25687,62 @@
             <unmanaged>ERROR_INSTALL_FIREWALL_SERVICE_NOT_RUNNING</unmanaged>	
             <unmanaged-short>ERROR_INSTALL_FIREWALL_SERVICE_NOT_RUNNING</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.PackageMoveFailed">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_PACKAGE_MOVE_FAILED']/*"/>	
+            <unmanaged>ERROR_PACKAGE_MOVE_FAILED</unmanaged>	
+            <unmanaged-short>ERROR_PACKAGE_MOVE_FAILED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.InstallVolumeNotEmpty">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_INSTALL_VOLUME_NOT_EMPTY']/*"/>	
+            <unmanaged>ERROR_INSTALL_VOLUME_NOT_EMPTY</unmanaged>	
+            <unmanaged-short>ERROR_INSTALL_VOLUME_NOT_EMPTY</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.InstallVolumeOffline">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_INSTALL_VOLUME_OFFLINE']/*"/>	
+            <unmanaged>ERROR_INSTALL_VOLUME_OFFLINE</unmanaged>	
+            <unmanaged-short>ERROR_INSTALL_VOLUME_OFFLINE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.InstallVolumeCorrupt">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_INSTALL_VOLUME_CORRUPT']/*"/>	
+            <unmanaged>ERROR_INSTALL_VOLUME_CORRUPT</unmanaged>	
+            <unmanaged-short>ERROR_INSTALL_VOLUME_CORRUPT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.NeedsRegistration">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_NEEDS_REGISTRATION']/*"/>	
+            <unmanaged>ERROR_NEEDS_REGISTRATION</unmanaged>	
+            <unmanaged-short>ERROR_NEEDS_REGISTRATION</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.InstallWrongProcessorArchitecture">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_INSTALL_WRONG_PROCESSOR_ARCHITECTURE']/*"/>	
+            <unmanaged>ERROR_INSTALL_WRONG_PROCESSOR_ARCHITECTURE</unmanaged>	
+            <unmanaged-short>ERROR_INSTALL_WRONG_PROCESSOR_ARCHITECTURE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.DevSideloadLimitExceeded">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_DEV_SIDELOAD_LIMIT_EXCEEDED']/*"/>	
+            <unmanaged>ERROR_DEV_SIDELOAD_LIMIT_EXCEEDED</unmanaged>	
+            <unmanaged-short>ERROR_DEV_SIDELOAD_LIMIT_EXCEEDED</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.StateLoadStoreFailed">
             <summary>	
             No documentation.	
@@ -27025,6 +27383,14 @@
             <unmanaged>ERROR_GRAPHICS_ADAPTER_ACCESS_NOT_EXCLUDED</unmanaged>	
             <unmanaged-short>ERROR_GRAPHICS_ADAPTER_ACCESS_NOT_EXCLUDED</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.GraphicsDependableChildStatus">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_GRAPHICS_DEPENDABLE_CHILD_STATUS']/*"/>	
+            <unmanaged>ERROR_GRAPHICS_DEPENDABLE_CHILD_STATUS</unmanaged>	
+            <unmanaged-short>ERROR_GRAPHICS_DEPENDABLE_CHILD_STATUS</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.GraphicsOpmNotSupported">
             <summary>	
             No documentation.	
@@ -28049,6 +28415,38 @@
             <unmanaged>ERROR_HV_INSUFFICIENT_DEVICE_DOMAINS</unmanaged>	
             <unmanaged-short>ERROR_HV_INSUFFICIENT_DEVICE_DOMAINS</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvCpuidFeatureValidation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_CPUID_FEATURE_VALIDATION']/*"/>	
+            <unmanaged>ERROR_HV_CPUID_FEATURE_VALIDATION</unmanaged>	
+            <unmanaged-short>ERROR_HV_CPUID_FEATURE_VALIDATION</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvCpuidXsaveFeatureValidation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_CPUID_XSAVE_FEATURE_VALIDATION']/*"/>	
+            <unmanaged>ERROR_HV_CPUID_XSAVE_FEATURE_VALIDATION</unmanaged>	
+            <unmanaged-short>ERROR_HV_CPUID_XSAVE_FEATURE_VALIDATION</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvProcessorStartupTimeout">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_PROCESSOR_STARTUP_TIMEOUT']/*"/>	
+            <unmanaged>ERROR_HV_PROCESSOR_STARTUP_TIMEOUT</unmanaged>	
+            <unmanaged-short>ERROR_HV_PROCESSOR_STARTUP_TIMEOUT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvSmxEnabled">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_SMX_ENABLED']/*"/>	
+            <unmanaged>ERROR_HV_SMX_ENABLED</unmanaged>	
+            <unmanaged-short>ERROR_HV_SMX_ENABLED</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.HvInvalidLpIndex">
             <summary>	
             No documentation.	
@@ -28056,6 +28454,62 @@
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_INVALID_LP_INDEX']/*"/>	
             <unmanaged>ERROR_HV_INVALID_LP_INDEX</unmanaged>	
             <unmanaged-short>ERROR_HV_INVALID_LP_INDEX</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvInvalidRegisterValue">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_INVALID_REGISTER_VALUE']/*"/>	
+            <unmanaged>ERROR_HV_INVALID_REGISTER_VALUE</unmanaged>	
+            <unmanaged-short>ERROR_HV_INVALID_REGISTER_VALUE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvInvalidVtlState">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_INVALID_VTL_STATE']/*"/>	
+            <unmanaged>ERROR_HV_INVALID_VTL_STATE</unmanaged>	
+            <unmanaged-short>ERROR_HV_INVALID_VTL_STATE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvNxNotDetected">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_NX_NOT_DETECTED']/*"/>	
+            <unmanaged>ERROR_HV_NX_NOT_DETECTED</unmanaged>	
+            <unmanaged-short>ERROR_HV_NX_NOT_DETECTED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvInvalidDeviceId">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_INVALID_DEVICE_ID']/*"/>	
+            <unmanaged>ERROR_HV_INVALID_DEVICE_ID</unmanaged>	
+            <unmanaged-short>ERROR_HV_INVALID_DEVICE_ID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvInvalidDeviceState">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_INVALID_DEVICE_STATE']/*"/>	
+            <unmanaged>ERROR_HV_INVALID_DEVICE_STATE</unmanaged>	
+            <unmanaged-short>ERROR_HV_INVALID_DEVICE_STATE</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvPendingPageRequests">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_PENDING_PAGE_REQUESTS']/*"/>	
+            <unmanaged>ERROR_HV_PENDING_PAGE_REQUESTS</unmanaged>	
+            <unmanaged-short>ERROR_HV_PENDING_PAGE_REQUESTS</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.HvPageRequestInvalid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_HV_PAGE_REQUEST_INVALID']/*"/>	
+            <unmanaged>ERROR_HV_PAGE_REQUEST_INVALID</unmanaged>	
+            <unmanaged-short>ERROR_HV_PAGE_REQUEST_INVALID</unmanaged-short>	
         </member>
         <member name="F:SharpDX.Win32.ErrorCode.HvNotPresent">
             <summary>	
@@ -29497,6 +29951,30 @@
             <unmanaged>ERROR_VHD_METADATA_FULL</unmanaged>	
             <unmanaged-short>ERROR_VHD_METADATA_FULL</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.VhdInvalidChangeTrackingId">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_VHD_INVALID_CHANGE_TRACKING_ID']/*"/>	
+            <unmanaged>ERROR_VHD_INVALID_CHANGE_TRACKING_ID</unmanaged>	
+            <unmanaged-short>ERROR_VHD_INVALID_CHANGE_TRACKING_ID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.VhdChangeTrackingDisabled">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_VHD_CHANGE_TRACKING_DISABLED']/*"/>	
+            <unmanaged>ERROR_VHD_CHANGE_TRACKING_DISABLED</unmanaged>	
+            <unmanaged-short>ERROR_VHD_CHANGE_TRACKING_DISABLED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.VhdMissingChangeTrackingInformation">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_VHD_MISSING_CHANGE_TRACKING_INFORMATION']/*"/>	
+            <unmanaged>ERROR_VHD_MISSING_CHANGE_TRACKING_INFORMATION</unmanaged>	
+            <unmanaged-short>ERROR_VHD_MISSING_CHANGE_TRACKING_INFORMATION</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.QueryStorageError">
             <summary>	
             No documentation.	
@@ -29512,6 +29990,14 @@
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_POOL_WAS_DELETED']/*"/>	
             <unmanaged>ERROR_SPACES_POOL_WAS_DELETED</unmanaged>	
             <unmanaged-short>ERROR_SPACES_POOL_WAS_DELETED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesInternalError">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_INTERNAL_ERROR']/*"/>	
+            <unmanaged>ERROR_SPACES_INTERNAL_ERROR</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_INTERNAL_ERROR</unmanaged-short>	
         </member>
         <member name="F:SharpDX.Win32.ErrorCode.SpacesResiliencyTypeInvalid">
             <summary>	
@@ -29577,6 +30063,62 @@
             <unmanaged>ERROR_SPACES_NOT_ENOUGH_DRIVES</unmanaged>	
             <unmanaged-short>ERROR_SPACES_NOT_ENOUGH_DRIVES</unmanaged-short>	
         </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesExtendedError">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_EXTENDED_ERROR']/*"/>	
+            <unmanaged>ERROR_SPACES_EXTENDED_ERROR</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_EXTENDED_ERROR</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesProvisioningTypeInvalid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_PROVISIONING_TYPE_INVALID']/*"/>	
+            <unmanaged>ERROR_SPACES_PROVISIONING_TYPE_INVALID</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_PROVISIONING_TYPE_INVALID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesAllocationSizeInvalid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_ALLOCATION_SIZE_INVALID']/*"/>	
+            <unmanaged>ERROR_SPACES_ALLOCATION_SIZE_INVALID</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_ALLOCATION_SIZE_INVALID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesEnclosureAwareInvalid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_ENCLOSURE_AWARE_INVALID']/*"/>	
+            <unmanaged>ERROR_SPACES_ENCLOSURE_AWARE_INVALID</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_ENCLOSURE_AWARE_INVALID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesWriteCacheSizeInvalid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_WRITE_CACHE_SIZE_INVALID']/*"/>	
+            <unmanaged>ERROR_SPACES_WRITE_CACHE_SIZE_INVALID</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_WRITE_CACHE_SIZE_INVALID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesNumberOfGroupsInvalid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_NUMBER_OF_GROUPS_INVALID']/*"/>	
+            <unmanaged>ERROR_SPACES_NUMBER_OF_GROUPS_INVALID</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_NUMBER_OF_GROUPS_INVALID</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SpacesDriveOperationalStateInvalid">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SPACES_DRIVE_OPERATIONAL_STATE_INVALID']/*"/>	
+            <unmanaged>ERROR_SPACES_DRIVE_OPERATIONAL_STATE_INVALID</unmanaged>	
+            <unmanaged-short>ERROR_SPACES_DRIVE_OPERATIONAL_STATE_INVALID</unmanaged-short>	
+        </member>
         <member name="F:SharpDX.Win32.ErrorCode.VolsnapBootfileNotValid">
             <summary>	
             No documentation.	
@@ -29640,6 +30182,22 @@
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_TIERING_CANNOT_PIN_OBJECT']/*"/>	
             <unmanaged>ERROR_TIERING_CANNOT_PIN_OBJECT</unmanaged>	
             <unmanaged-short>ERROR_TIERING_CANNOT_PIN_OBJECT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SeccoreInvalidCommand">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SECCORE_INVALID_COMMAND']/*"/>	
+            <unmanaged>ERROR_SECCORE_INVALID_COMMAND</unmanaged>	
+            <unmanaged-short>ERROR_SECCORE_INVALID_COMMAND</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.NoApplicableAppLicensesFound">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_NO_APPLICABLE_APP_LICENSES_FOUND']/*"/>	
+            <unmanaged>ERROR_NO_APPLICABLE_APP_LICENSES_FOUND</unmanaged>	
+            <unmanaged-short>ERROR_NO_APPLICABLE_APP_LICENSES_FOUND</unmanaged-short>	
         </member>
         <member name="F:SharpDX.Win32.ErrorCode.DbgCreateProcessFailureLockdown">
             <summary>	
@@ -29776,6 +30334,46 @@
             <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_VHD_SHARED']/*"/>	
             <unmanaged>ERROR_VHD_SHARED</unmanaged>	
             <unmanaged-short>ERROR_VHD_SHARED</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SvhdxNoInitiator">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SVHDX_NO_INITIATOR']/*"/>	
+            <unmanaged>ERROR_SVHDX_NO_INITIATOR</unmanaged>	
+            <unmanaged-short>ERROR_SVHDX_NO_INITIATOR</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.VhdsetBackingStorageNotFound">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_VHDSET_BACKING_STORAGE_NOT_FOUND']/*"/>	
+            <unmanaged>ERROR_VHDSET_BACKING_STORAGE_NOT_FOUND</unmanaged>	
+            <unmanaged-short>ERROR_VHDSET_BACKING_STORAGE_NOT_FOUND</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SmbNoPreauthIntegrityHashOverlap">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SMB_NO_PREAUTH_INTEGRITY_HASH_OVERLAP']/*"/>	
+            <unmanaged>ERROR_SMB_NO_PREAUTH_INTEGRITY_HASH_OVERLAP</unmanaged>	
+            <unmanaged-short>ERROR_SMB_NO_PREAUTH_INTEGRITY_HASH_OVERLAP</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SmbBadClusterDialect">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SMB_BAD_CLUSTER_DIALECT']/*"/>	
+            <unmanaged>ERROR_SMB_BAD_CLUSTER_DIALECT</unmanaged>	
+            <unmanaged-short>ERROR_SMB_BAD_CLUSTER_DIALECT</unmanaged-short>	
+        </member>
+        <member name="F:SharpDX.Win32.ErrorCode.SmbGuestLogonBlocked">
+            <summary>	
+            No documentation.	
+            </summary>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='ERROR_SMB_GUEST_LOGON_BLOCKED']/*"/>	
+            <unmanaged>ERROR_SMB_GUEST_LOGON_BLOCKED</unmanaged>	
+            <unmanaged-short>ERROR_SMB_GUEST_LOGON_BLOCKED</unmanaged-short>	
         </member>
         <member name="T:SharpDX.Win32.LockType">
             <summary>	
