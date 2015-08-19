@@ -4564,6 +4564,17 @@
             <returns>A deserialized object.</returns>
             <exception cref="T:System.ArgumentNullException">stream</exception>
         </member>
+        <member name="M:SharpYaml.Serialization.Serializer.Deserialize(System.IO.Stream,System.Type,SharpYaml.Serialization.SerializerContextSettings,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified <see cref="T:System.IO.Stream"/> with an expected specific type.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="expectedType">The expected type.</param>
+            <param name="contextSettings">The context settings.</param>
+            <param name="context">The context used to deserialize this object.</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">stream</exception>
+        </member>
         <member name="M:SharpYaml.Serialization.Serializer.Deserialize``1(System.IO.Stream)">
             <summary>
             Deserializes an object from the specified <see cref="T:System.IO.Stream"/> with an expected specific type.
