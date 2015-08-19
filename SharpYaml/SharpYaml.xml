@@ -3174,6 +3174,12 @@
             <param name="memberInfo">The member information.</param>
             <param name="attribute">The attribute.</param>
         </member>
+        <member name="P:SharpYaml.Serialization.IAttributeRegistry.AttributeRemap">
+            <summary>
+            Gets or sets the attribute remapper. May be null
+            </summary>
+            <value>The remap attribute.</value>
+        </member>
         <member name="T:SharpYaml.Serialization.AttributeRegistryExtensions">
             <summary>
             Extension methods for attribute registry.
@@ -3642,7 +3648,7 @@
               <c>true</c> if errors are allowed; otherwise, <c>false</c>.
             </value>
         </member>
-        <member name="P:SharpYaml.Serialization.SerializerContext.HasRemapOccured">
+        <member name="P:SharpYaml.Serialization.SerializerContext.HasRemapOccurred">
             <summary>
             Gets a value indicating whether the deserialization has generated some remap.
             </summary>
@@ -3687,6 +3693,12 @@
             </summary>
             <param name="memberInfo">The member information.</param>
             <param name="attribute">The attribute.</param>
+        </member>
+        <member name="P:SharpYaml.Serialization.AttributeRegistry.AttributeRemap">
+            <summary>
+            Gets or sets the attribute remapper. May be null
+            </summary>
+            <value>The remap attribute.</value>
         </member>
         <member name="T:SharpYaml.Serialization.AssemblyRegistry">
             <summary>
