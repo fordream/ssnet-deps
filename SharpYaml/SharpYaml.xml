@@ -1116,11 +1116,12 @@
             Provides tag discovery from a type and type discovery from a tag.
             </summary>
         </member>
-        <member name="M:SharpYaml.Serialization.ITagTypeResolver.TypeFromTag(System.String)">
+        <member name="M:SharpYaml.Serialization.ITagTypeResolver.TypeFromTag(System.String,System.Boolean@)">
             <summary>
             Finds a type from a tag, null if not found.
             </summary>
             <param name="tagName">Name of the tag.</param>
+            <param name="isAlias"></param>
             <returns>A Type or null if not found</returns>
         </member>
         <member name="M:SharpYaml.Serialization.ITagTypeResolver.TagFromType(System.Type)">
@@ -1325,6 +1326,23 @@
             <param name="objectContext">The object context.</param>
             <param name="keyValue">The key value.</param>
             <param name="types">The types.</param>
+        </member>
+        <member name="T:SharpYaml.Serialization.YamlRemapAttribute">
+            <summary>
+            Allows to re-map a previous name to the specified property/field/enum/class/struct.
+            </summary>
+        </member>
+        <member name="M:SharpYaml.Serialization.YamlRemapAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpYaml.Serialization.YamlRemapAttribute"/> class.
+            </summary>
+            <param name="name">The previous name.</param>
+        </member>
+        <member name="P:SharpYaml.Serialization.YamlRemapAttribute.Name">
+            <summary>
+            Gets the previous name.
+            </summary>
+            <value>The previous name.</value>
         </member>
         <member name="T:SharpYaml.YamlStyle">
             <summary>
@@ -2563,6 +2581,13 @@
             Provides access members of a type.
             </summary>
         </member>
+        <member name="M:SharpYaml.Serialization.ITypeDescriptor.IsMemberRemapped(System.String)">
+            <summary>
+            Determines whether the named member is remmaped.
+            </summary>
+            <param name="name">The name.</param>
+            <returns><c>true</c> if the named member is remmaped; otherwise, <c>false</c>.</returns>
+        </member>
         <member name="M:SharpYaml.Serialization.ITypeDescriptor.Contains(System.String)">
             <summary>
             Determines whether this instance contains a member with the specified member name.
@@ -2883,6 +2908,12 @@
             </summary>
             <value><c>true</c> if [should serialize]; otherwise, <c>false</c>.</value>
         </member>
+        <member name="P:SharpYaml.Serialization.IMemberDescriptor.AlternativeNames">
+            <summary>
+            Gets the alternative names that will map back to this member (may be null).
+            </summary>
+            <value>The alternative names that will map back to this member (may be null).</value>
+        </member>
         <member name="P:SharpYaml.Serialization.IMemberDescriptor.Tag">
             <summary>
             Gets or sets a custom tag to associate with this object.
@@ -2976,6 +3007,14 @@
             </summary>
             <param name="type">The type.</param>
             <returns><c>true</c> if the specified type is primitive; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:SharpYaml.Serialization.Descriptors.PrimitiveDescriptor.ParseEnum(System.String,System.Boolean@)">
+            <summary>
+            Parses the enum and trying to use remap if any declared.
+            </summary>
+            <param name="enumAsText">The enum as text.</param>
+            <param name="remapped">if set to <c>true</c> the enum was remapped.</param>
+            <returns>System.Object.</returns>
         </member>
         <member name="T:SharpYaml.Serialization.Descriptors.PropertyDescriptor">
             <summary>
@@ -3172,12 +3211,13 @@
             <param name="assembly">The assembly.</param>
             <param name="attributeRegistry">The attribute registry to use when quering for <see cref="T:SharpYaml.Serialization.YamlTagAttribute"/>.</param>
         </member>
-        <member name="M:SharpYaml.Serialization.ITagTypeRegistry.RegisterTagMapping(System.String,System.Type)">
+        <member name="M:SharpYaml.Serialization.ITagTypeRegistry.RegisterTagMapping(System.String,System.Type,System.Boolean)">
             <summary>
             Register a mapping between a tag and a type.
             </summary>
             <param name="tag">The tag.</param>
             <param name="type">The type.</param>
+            <param name="alias">if set to <c>true</c> the specified tag is an alias to an existing type that has already a tag associated with it (remap).</param>
         </member>
         <member name="T:SharpYaml.Serialization.IYamlVisitor">
             <summary>
@@ -3519,11 +3559,12 @@
             <param name="type">The type.</param>
             <returns>An instance of <see cref="T:SharpYaml.Serialization.ITypeDescriptor"/>.</returns>
         </member>
-        <member name="M:SharpYaml.Serialization.SerializerContext.TypeFromTag(System.String)">
+        <member name="M:SharpYaml.Serialization.SerializerContext.TypeFromTag(System.String,System.Boolean@)">
             <summary>
             Resolves a type from the specified tag.
             </summary>
             <param name="tagName">Name of the tag.</param>
+            <param name="isAlias"></param>
             <returns>Type.</returns>
         </member>
         <member name="M:SharpYaml.Serialization.SerializerContext.TagFromType(System.Type)">
@@ -3601,6 +3642,12 @@
               <c>true</c> if errors are allowed; otherwise, <c>false</c>.
             </value>
         </member>
+        <member name="P:SharpYaml.Serialization.SerializerContext.HasRemapOccured">
+            <summary>
+            Gets a value indicating whether the deserialization has generated some remap.
+            </summary>
+            <value><c>true</c> if the deserialization has generated some remap; otherwise, <c>false</c>.</value>
+        </member>
         <member name="P:SharpYaml.Serialization.SerializerContext.ObjectFactory">
             <summary>
             Gets or sets the type of the create.
@@ -3651,12 +3698,13 @@
             Initializes a new instance of the <see cref="T:SharpYaml.Serialization.AssemblyRegistry"/> class.
             </summary>
         </member>
-        <member name="M:SharpYaml.Serialization.AssemblyRegistry.RegisterTagMapping(System.String,System.Type)">
+        <member name="M:SharpYaml.Serialization.AssemblyRegistry.RegisterTagMapping(System.String,System.Type,System.Boolean)">
             <summary>
             Register a mapping between a tag and a type.
             </summary>
             <param name="tag">The tag.</param>
             <param name="type">The type.</param>
+            <param name="alias"></param>
         </member>
         <member name="P:SharpYaml.Serialization.AssemblyRegistry.SerializableFactories">
             <summary>
@@ -4536,6 +4584,18 @@
             <returns>A deserialized object.</returns>
             <exception cref="T:System.ArgumentNullException">reader</exception>
         </member>
+        <member name="M:SharpYaml.Serialization.Serializer.Deserialize(System.IO.TextReader,System.Type,System.Object,SharpYaml.Serialization.SerializerContextSettings,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified <see cref="T:System.IO.TextReader"/> with an expected specific type.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="expectedType">The expected type.</param>
+            <param name="existingObject">The object to deserialize into. If null (the default) then a new object will be created</param>
+            <param name="contextSettings">The context settings.</param>
+            <param name="context">The context used to deserialize this object.</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">reader</exception>
+        </member>
         <member name="M:SharpYaml.Serialization.Serializer.Deserialize``1(System.IO.TextReader,System.Object)">
             <summary>
             Deserializes an object from the specified <see cref="T:System.IO.TextReader"/> with an expected specific type.
@@ -4561,6 +4621,17 @@
             <param name="fromText">From text.</param>
             <param name="expectedType">The expected type.</param>
             <param name="existingObject">The object to deserialize into. If null (the default) then a new object will be created</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">stream</exception>
+        </member>
+        <member name="M:SharpYaml.Serialization.Serializer.Deserialize(System.String,System.Type,System.Object,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified string. with an expected specific type.
+            </summary>
+            <param name="fromText">From text.</param>
+            <param name="expectedType">The expected type.</param>
+            <param name="existingObject">The object to deserialize into. If null (the default) then a new object will be created</param>
+            <param name="context">The context used to deserialize this object.</param>
             <returns>A deserialized object.</returns>
             <exception cref="T:System.ArgumentNullException">stream</exception>
         </member>
@@ -4604,6 +4675,49 @@
             <returns>A deserialized object.</returns>
             <exception cref="T:System.ArgumentNullException">reader</exception>
         </member>
+        <member name="M:SharpYaml.Serialization.Serializer.Deserialize``1(System.String,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified string. with an expected specific type.
+            </summary>
+            <typeparam name="T">The expected type</typeparam>
+            <param name="fromText">From text.</param>
+            <param name="context">The context.</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">stream</exception>
+        </member>
+        <member name="M:SharpYaml.Serialization.Serializer.Deserialize``1(SharpYaml.EventReader,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified <see cref="T:SharpYaml.EventReader"/> with an expected specific type.
+            </summary>
+            <typeparam name="T">The expected type</typeparam>
+            <param name="reader">The reader.</param>
+            <param name="context">The context used to deserialize this object.</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">reader</exception>
+        </member>
+        <member name="M:SharpYaml.Serialization.Serializer.DeserializeInto``1(System.String,``0,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified string. with an expected specific type.
+            </summary>
+            <typeparam name="T">The expected type</typeparam>
+            <param name="fromText">From text.</param>
+            <param name="existingObject">The object to deserialize into.</param>
+            <param name="context">The context used to deserialize this object.</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">stream</exception>
+            Note: These need a different name, because otherwise they will conflict with existing Deserialize(string,Type). They are new so the difference should not matter
+        </member>
+        <member name="M:SharpYaml.Serialization.Serializer.DeserializeInto``1(SharpYaml.EventReader,``0,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified <see cref="T:SharpYaml.EventReader"/> with an expected specific type.
+            </summary>
+            <typeparam name="T">The expected type</typeparam>
+            <param name="reader">The reader.</param>
+            <param name="existingObject">The object to deserialize into.</param>
+            <param name="context">The context used to deserialize this object.</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">reader</exception>
+        </member>
         <member name="M:SharpYaml.Serialization.Serializer.Deserialize(SharpYaml.EventReader,System.Type,System.Object,SharpYaml.Serialization.SerializerContextSettings)">
             <summary>
             Deserializes an object from the specified <see cref="T:SharpYaml.EventReader"/> with an expected specific type.
@@ -4612,6 +4726,18 @@
             <param name="expectedType">The expected type, maybe null.</param>
             <param name="existingObject">An existing object, may be null.</param>
             <param name="contextSettings">The context settings.</param>
+            <returns>A deserialized object.</returns>
+            <exception cref="T:System.ArgumentNullException">reader</exception>
+        </member>
+        <member name="M:SharpYaml.Serialization.Serializer.Deserialize(SharpYaml.EventReader,System.Type,System.Object,SharpYaml.Serialization.SerializerContextSettings,SharpYaml.Serialization.SerializerContext@)">
+            <summary>
+            Deserializes an object from the specified <see cref="T:SharpYaml.EventReader"/> with an expected specific type.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="expectedType">The expected type, maybe null.</param>
+            <param name="existingObject">An existing object, may be null.</param>
+            <param name="contextSettings">The context settings.</param>
+            <param name="context">The context used to deserialize the object.</param>
             <returns>A deserialized object.</returns>
             <exception cref="T:System.ArgumentNullException">reader</exception>
         </member>
@@ -4642,12 +4768,13 @@
             </summary>
             <param name="assembly">The assembly.</param>
         </member>
-        <member name="M:SharpYaml.Serialization.SerializerSettings.RegisterTagMapping(System.String,System.Type)">
+        <member name="M:SharpYaml.Serialization.SerializerSettings.RegisterTagMapping(System.String,System.Type,System.Boolean)">
             <summary>
             Register a mapping between a tag and a type.
             </summary>
             <param name="tagName">Name of the tag.</param>
             <param name="tagType">Type of the tag.</param>
+            <param name="isAlias">if set to <c>true</c> the new tag name is an alias to a type that has already a tag name associated to it.</param>
         </member>
         <member name="M:SharpYaml.Serialization.SerializerSettings.RegisterSerializer(System.Type,SharpYaml.Serialization.IYamlSerializable)">
             <summary>
