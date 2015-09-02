@@ -1091,6 +1091,46 @@
             </summary>
             <value>The comparer.</value>
         </member>
+        <member name="T:SharpYaml.Serialization.DescriptorCategory">
+            <summary>
+            A category used by <see cref="T:SharpYaml.Serialization.ITypeDescriptor"/>.
+            </summary>
+        </member>
+        <member name="F:SharpYaml.Serialization.DescriptorCategory.Primitive">
+            <summary>
+            A primitive.
+            </summary>
+        </member>
+        <member name="F:SharpYaml.Serialization.DescriptorCategory.Collection">
+            <summary>
+            A collection.
+            </summary>
+        </member>
+        <member name="F:SharpYaml.Serialization.DescriptorCategory.Array">
+            <summary>
+            An array
+            </summary>
+        </member>
+        <member name="F:SharpYaml.Serialization.DescriptorCategory.Dictionary">
+            <summary>
+            A dictionary
+            </summary>
+        </member>
+        <member name="F:SharpYaml.Serialization.DescriptorCategory.Object">
+            <summary>
+            An object
+            </summary>
+        </member>
+        <member name="F:SharpYaml.Serialization.DescriptorCategory.Nullable">
+            <summary>
+            A nullable value
+            </summary>
+        </member>
+        <member name="F:SharpYaml.Serialization.DescriptorCategory.Custom">
+            <summary>
+            A custom descriptor.
+            </summary>
+        </member>
         <member name="T:SharpYaml.Serialization.Descriptors.DefaultKeyComparer">
             <summary>
             Default comparer used to sort keys for object members and dictionary keys. See remarks.
@@ -1226,12 +1266,25 @@
             Some parameters that can be transmitted from caller
             </summary>
         </member>
+        <member name="M:SharpYaml.Serialization.SerializerContextSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpYaml.Serialization.SerializerContextSettings"/> class.
+            </summary>
+        </member>
         <member name="P:SharpYaml.Serialization.SerializerContextSettings.Logger">
             <summary>
             Gets the logger.
             </summary>
             <value>
             The logger.
+            </value>
+        </member>
+        <member name="P:SharpYaml.Serialization.SerializerContextSettings.MemberMask">
+            <summary>
+            Gets or sets the member mask that will be used to filter <see cref="P:SharpYaml.Serialization.YamlMemberAttribute.Mask"/>.
+            </summary>
+            <value>
+            The member mask.
             </value>
         </member>
         <member name="T:SharpYaml.Serialization.Serializers.DefaultObjectSerializerBackend">
@@ -2613,6 +2666,12 @@
             </summary>
             <value>The member count.</value>
         </member>
+        <member name="P:SharpYaml.Serialization.ITypeDescriptor.Category">
+            <summary>
+            Gets the category of this descriptor.
+            </summary>
+            <value>The category.</value>
+        </member>
         <member name="P:SharpYaml.Serialization.ITypeDescriptor.HasMembers">
             <summary>
             Gets a value indicating whether this instance has members.
@@ -2895,6 +2954,22 @@
             Gets a value indicating whether this instance has set method.
             </summary>
             <value><c>true</c> if this instance has set method; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:SharpYaml.Serialization.IMemberDescriptor.IsPublic">
+            <summary>
+            Gets a value indicating whether this member is public.
+            </summary>
+            <value>
+              <c>true</c> if this member is public; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:SharpYaml.Serialization.IMemberDescriptor.Mask">
+            <summary>
+            Gets the serialization mask, that will be checked against the context to know if this field needs to be serialized.
+            </summary>
+            <value>
+            The mask.
+            </value>
         </member>
         <member name="P:SharpYaml.Serialization.IMemberDescriptor.Style">
             <summary>
@@ -3654,6 +3729,14 @@
             </summary>
             <value><c>true</c> if the deserialization has generated some remap; otherwise, <c>false</c>.</value>
         </member>
+        <member name="P:SharpYaml.Serialization.SerializerContext.MemberMask">
+            <summary>
+            Gets or sets the member mask that will be used to filter <see cref="P:SharpYaml.Serialization.YamlMemberAttribute.Mask"/>.
+            </summary>
+            <value>
+            The member mask.
+            </value>
+        </member>
         <member name="P:SharpYaml.Serialization.SerializerContext.ObjectFactory">
             <summary>
             Gets or sets the type of the create.
@@ -4188,6 +4271,11 @@
             Specify the way to store a property or field of some class or structure.
             </summary>
         </member>
+        <member name="M:SharpYaml.Serialization.YamlMemberAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SharpYaml.Serialization.YamlMemberAttribute"/> class.
+            </summary>
+        </member>
         <member name="M:SharpYaml.Serialization.YamlMemberAttribute.#ctor(System.Int32)">
             <summary>
             Initializes a new instance of the <see cref="T:SharpYaml.Serialization.YamlMemberAttribute"/> class.
@@ -4230,6 +4318,12 @@
             Gets or sets the order. Default is -1 (default to alphabetical)
             </summary>
             <value>The order.</value>
+        </member>
+        <member name="P:SharpYaml.Serialization.YamlMemberAttribute.Mask">
+            <summary>
+            Gets the mask.
+            </summary>
+            <value>The mask.</value>
         </member>
         <member name="T:SharpYaml.Serialization.YamlNodeIdentityEqualityComparer">
             <summary>
