@@ -2828,6 +2828,11 @@
             </summary>
             <param name="keyComparer">The key comparer.</param>
         </member>
+        <member name="P:SharpYaml.Serialization.Descriptors.ObjectDescriptor.Attributes">
+            <summary>
+            Gets attributes attached to this type.
+            </summary>
+        </member>
         <member name="P:SharpYaml.Serialization.Descriptors.ObjectDescriptor.NamingConvention">
             <summary>
             Gets the naming convention.
